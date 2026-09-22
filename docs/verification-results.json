@@ -1,0 +1,210 @@
+{
+  "date": "2026-09-22T05:50:34.212Z",
+  "logic": {
+    "passed": 31,
+    "failed": 0
+  },
+  "dataValidation": "passed",
+  "layoutAudio": {
+    "chromium": {
+      "version": "151.0.7922.34",
+      "narrowLayout": true,
+      "exitDuringAudio": true,
+      "htmlAudio": [
+        {
+          "phoneme": "a",
+          "status": "ended",
+          "duration": 1.5
+        },
+        {
+          "phoneme": "e",
+          "status": "ended",
+          "duration": 1.3
+        },
+        {
+          "phoneme": "i",
+          "status": "ended",
+          "duration": 1.2
+        },
+        {
+          "phoneme": "o",
+          "status": "ended",
+          "duration": 1.1
+        },
+        {
+          "phoneme": "u",
+          "status": "ended",
+          "duration": 1.3
+        },
+        {
+          "phoneme": "l",
+          "status": "ended",
+          "duration": 1.5
+        },
+        {
+          "phoneme": "m",
+          "status": "ended",
+          "duration": 1.6
+        },
+        {
+          "phoneme": "s",
+          "status": "ended",
+          "duration": 1.45
+        },
+        {
+          "phoneme": "n",
+          "status": "ended",
+          "duration": 1.55
+        }
+      ],
+      "errors": []
+    },
+    "webkit": {
+      "version": "26.5",
+      "narrowLayout": true,
+      "exitDuringAudio": true,
+      "htmlAudio": [
+        {
+          "phoneme": "a",
+          "status": "ended",
+          "duration": 1.5
+        },
+        {
+          "phoneme": "e",
+          "status": "ended",
+          "duration": 1.3
+        },
+        {
+          "phoneme": "i",
+          "status": "ended",
+          "duration": 1.2
+        },
+        {
+          "phoneme": "o",
+          "status": "ended",
+          "duration": 1.1
+        },
+        {
+          "phoneme": "u",
+          "status": "ended",
+          "duration": 1.3
+        },
+        {
+          "phoneme": "l",
+          "status": "ended",
+          "duration": 1.5
+        },
+        {
+          "phoneme": "m",
+          "status": "ended",
+          "duration": 1.6
+        },
+        {
+          "phoneme": "s",
+          "status": "ended",
+          "duration": 1.45
+        },
+        {
+          "phoneme": "n",
+          "status": "ended",
+          "duration": 1.55
+        }
+      ],
+      "errors": []
+    }
+  },
+  "browserRegression": {
+    "date": "2026-09-22T05:48:00.231Z",
+    "browsers": [
+      {
+        "name": "chromium",
+        "version": "151.0.7922.34",
+        "checks": [
+          "carga bajo /LectoAP/",
+          "9 AAC decodificados con muestras no silenciosas",
+          "20 motores: preparación, respuesta táctil, feedback y salida",
+          "offline: 71 entradas, recarga y Range AAC 206",
+          "lectura con pictogramas offline",
+          "sin errores JavaScript ni solicitudes a terceros"
+        ],
+        "errors": [],
+        "audio": [
+          {
+            "phoneme": "a",
+            "duration": 1.5,
+            "nonSilent": true
+          },
+          {
+            "phoneme": "e",
+            "duration": 1.3,
+            "nonSilent": true
+          },
+          {
+            "phoneme": "i",
+            "duration": 1.2,
+            "nonSilent": true
+          },
+          {
+            "phoneme": "o",
+            "duration": 1.1,
+            "nonSilent": true
+          },
+          {
+            "phoneme": "u",
+            "duration": 1.3,
+            "nonSilent": true
+          },
+          {
+            "phoneme": "l",
+            "duration": 1.5,
+            "nonSilent": true
+          },
+          {
+            "phoneme": "m",
+            "duration": 1.6,
+            "nonSilent": true
+          },
+          {
+            "phoneme": "s",
+            "duration": 1.45,
+            "nonSilent": true
+          },
+          {
+            "phoneme": "n",
+            "duration": 1.55,
+            "nonSilent": true
+          }
+        ],
+        "status": "passed"
+      },
+      {
+        "name": "webkit",
+        "version": "26.5",
+        "checks": [
+          "carga bajo /LectoAP/",
+          "20 motores: preparación, respuesta táctil, feedback y salida"
+        ],
+        "errors": [],
+        "audio": {
+          "unavailable": true,
+          "reason": "Web Audio no disponible en este build de navegador",
+          "htmlAAC": "probably"
+        },
+        "offlineLimitation": "page.reload: WebKit encountered an internal error\nCall log:\n\u001b[2m  - waiting for navigation until \"load\"\u001b[22m\n",
+        "status": "partial"
+      }
+    ]
+  },
+  "update": {
+    "browser": "151.0.7922.34",
+    "passed": true,
+    "checks": [
+      "actualización permanece esperando durante sesión",
+      "activación explícita docente recarga fuera de sesión",
+      "caché anterior eliminada en el mismo scope",
+      "salir y volver conserva continuar sin duplicar respuestas",
+      "tanda completa de 5 ítems y pantalla final"
+    ]
+  },
+  "audioFinalBrowser": "migration scenario retained as an optional local test; technical hashes and offline cache are covered by validation and Chromium regression"
+}

@@ -1,0 +1,85 @@
+{
+  "nearPairs": [
+    [
+      "sol",
+      "sal"
+    ],
+    [
+      "ola",
+      "ala"
+    ],
+    [
+      "oso",
+      "osa"
+    ],
+    [
+      "osa",
+      "asa"
+    ],
+    [
+      "mesa",
+      "masa"
+    ],
+    [
+      "lana",
+      "luna"
+    ],
+    [
+      "limon",
+      "melon"
+    ]
+  ],
+  "changes": [
+    [
+      "mesa",
+      "masa"
+    ],
+    [
+      "lana",
+      "luna"
+    ],
+    [
+      "sol",
+      "sal"
+    ],
+    [
+      "ola",
+      "ala"
+    ]
+  ],
+  "additions": [
+    {
+      "from": "ala",
+      "to": "sala",
+      "phonemesFrom": [
+        "a",
+        "l",
+        "a"
+      ],
+      "phonemesTo": [
+        "s",
+        "a",
+        "l",
+        "a"
+      ],
+      "added": "s",
+      "note": "SALA solo en comparación avanzada; fuera del núcleo inicial."
+    }
+  ],
+  "manipulations": [
+    {
+      "operation": "substitute",
+      "from": "mesa",
+      "to": "masa",
+      "index": 1,
+      "phoneme": "a"
+    },
+    {
+      "operation": "substitute",
+      "from": "lana",
+      "to": "luna",
+      "index": 1,
+      "phoneme": "u"
+    }
+  ]
+}

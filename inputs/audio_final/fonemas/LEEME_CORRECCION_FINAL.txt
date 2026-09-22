@@ -1,0 +1,27 @@
+LECTOAP — FONEMAS V1 CORREGIDOS (VERSIÓN FINAL)
+
+IMPORTANTE:
+La grabación original contiene NÚMERO HABLADO -> FONEMA.
+Las dos versiones anteriores se recortaron con un desplazamiento incorrecto.
+
+Esta versión usa ventanas manuales verificadas para aislar el FONEMA que sigue a cada número:
+
+a.m4a  -> /a/
+e.m4a  -> /e/
+i.m4a  -> /i/
+o.m4a  -> /o/
+u.m4a  -> /u/
+l.m4a  -> /l/
+m.m4a  -> /m/
+s.m4a  -> /s/
+n.m4a  -> /n/
+
+Comprobación acústica adicional:
+- /s/ presenta claramente energía fricativa de alta frecuencia, distinta de /m/.
+- /o/ y /u/ presentan perfiles vocálicos diferenciados.
+- Los cortes ya no corresponden a los números 1–9.
+
+INSTRUCCIÓN PARA CODEX:
+Sustituir COMPLETAMENTE cualquier versión anterior de estos 9 archivos.
+Borrar/invalidar cachés antiguas y subir la versión del service worker/content cache.
+No mezclar paquetes anteriores con este.

@@ -1,0 +1,65 @@
+[
+  {
+    "id": "a",
+    "ipa": "a",
+    "kind": "vowel",
+    "audio": "assets/audio/phonemes/a.0e21936b7525e6cc.m4a",
+    "status": "active"
+  },
+  {
+    "id": "e",
+    "ipa": "e",
+    "kind": "vowel",
+    "audio": "assets/audio/phonemes/e.fc7a2e7c29f3b4d2.m4a",
+    "status": "active"
+  },
+  {
+    "id": "i",
+    "ipa": "i",
+    "kind": "vowel",
+    "audio": "assets/audio/phonemes/i.d4b15fbc5cbd5c1c.m4a",
+    "status": "active"
+  },
+  {
+    "id": "o",
+    "ipa": "o",
+    "kind": "vowel",
+    "audio": "assets/audio/phonemes/o.d8e9eefc43fdc25e.m4a",
+    "status": "active"
+  },
+  {
+    "id": "u",
+    "ipa": "u",
+    "kind": "vowel",
+    "audio": "assets/audio/phonemes/u.6d802d892d5c52d4.m4a",
+    "status": "active"
+  },
+  {
+    "id": "l",
+    "ipa": "l",
+    "kind": "consonant",
+    "audio": "assets/audio/phonemes/l.88160184e1b54e00.m4a",
+    "status": "active"
+  },
+  {
+    "id": "m",
+    "ipa": "m",
+    "kind": "consonant",
+    "audio": "assets/audio/phonemes/m.be7f94677a38cca1.m4a",
+    "status": "active"
+  },
+  {
+    "id": "s",
+    "ipa": "s",
+    "kind": "consonant",
+    "audio": "assets/audio/phonemes/s.f85375555df587eb.m4a",
+    "status": "active"
+  },
+  {
+    "id": "n",
+    "ipa": "n",
+    "kind": "consonant",
+    "audio": "assets/audio/phonemes/n.b5850da9be569dae.m4a",
+    "status": "active"
+  }
+]

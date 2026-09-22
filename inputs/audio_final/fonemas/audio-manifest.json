@@ -1,0 +1,83 @@
+[
+  {
+    "phoneme": "a",
+    "file": "assets/audio/phonemes/a.m4a",
+    "source": "Fonemas (18) Lucas.m4a",
+    "sourceStartMs": 3250,
+    "sourceEndMs": 4750,
+    "processing": "recorte manual corregido del fonema posterior al número hablado; normalización conservadora; AAC 64 kbps",
+    "status": "validated_final_v1"
+  },
+  {
+    "phoneme": "e",
+    "file": "assets/audio/phonemes/e.m4a",
+    "source": "Fonemas (18) Lucas.m4a",
+    "sourceStartMs": 7250,
+    "sourceEndMs": 8550,
+    "processing": "recorte manual corregido del fonema posterior al número hablado; normalización conservadora; AAC 64 kbps",
+    "status": "validated_final_v1"
+  },
+  {
+    "phoneme": "i",
+    "file": "assets/audio/phonemes/i.m4a",
+    "source": "Fonemas (18) Lucas.m4a",
+    "sourceStartMs": 10750,
+    "sourceEndMs": 11950,
+    "processing": "recorte manual corregido del fonema posterior al número hablado; normalización conservadora; AAC 64 kbps",
+    "status": "validated_final_v1"
+  },
+  {
+    "phoneme": "o",
+    "file": "assets/audio/phonemes/o.m4a",
+    "source": "Fonemas (18) Lucas.m4a",
+    "sourceStartMs": 13850,
+    "sourceEndMs": 14950,
+    "processing": "recorte manual corregido del fonema posterior al número hablado; normalización conservadora; AAC 64 kbps",
+    "status": "validated_final_v1"
+  },
+  {
+    "phoneme": "u",
+    "file": "assets/audio/phonemes/u.m4a",
+    "source": "Fonemas (18) Lucas.m4a",
+    "sourceStartMs": 17050,
+    "sourceEndMs": 18350,
+    "processing": "recorte manual corregido del fonema posterior al número hablado; normalización conservadora; AAC 64 kbps",
+    "status": "validated_final_v1"
+  },
+  {
+    "phoneme": "l",
+    "file": "assets/audio/phonemes/l.m4a",
+    "source": "Fonemas (18) Lucas.m4a",
+    "sourceStartMs": 20200,
+    "sourceEndMs": 21700,
+    "processing": "recorte manual corregido del fonema posterior al número hablado; normalización conservadora; AAC 64 kbps",
+    "status": "validated_final_v1"
+  },
+  {
+    "phoneme": "m",
+    "file": "assets/audio/phonemes/m.m4a",
+    "source": "Fonemas (18) Lucas.m4a",
+    "sourceStartMs": 23450,
+    "sourceEndMs": 25050,
+    "processing": "recorte manual corregido del fonema posterior al número hablado; normalización conservadora; AAC 64 kbps",
+    "status": "validated_final_v1"
+  },
+  {
+    "phoneme": "s",
+    "file": "assets/audio/phonemes/s.m4a",
+    "source": "Fonemas (18) Lucas.m4a",
+    "sourceStartMs": 27150,
+    "sourceEndMs": 28600,
+    "processing": "recorte manual corregido del fonema posterior al número hablado; normalización conservadora; AAC 64 kbps",
+    "status": "validated_final_v1"
+  },
+  {
+    "phoneme": "n",
+    "file": "assets/audio/phonemes/n.m4a",
+    "source": "Fonemas (18) Lucas.m4a",
+    "sourceStartMs": 30450,
+    "sourceEndMs": 32000,
+    "processing": "recorte manual corregido del fonema posterior al número hablado; normalización conservadora; AAC 64 kbps",
+    "status": "validated_final_v1"
+  }
+]

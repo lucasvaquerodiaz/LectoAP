@@ -1,0 +1,60 @@
+[
+  {
+    "id": "nube",
+    "word": "nube",
+    "displayUpper": "NUBE",
+    "phonemes": [
+      "n",
+      "u",
+      "b",
+      "e"
+    ],
+    "graphemes": [
+      "n",
+      "u",
+      "b",
+      "e"
+    ],
+    "phonemeCount": 4,
+    "syllableCount": 2,
+    "structure": "CVCV",
+    "initialPhoneme": "n",
+    "finalPhoneme": "e",
+    "phonemePositions": {
+      "n": [
+        0
+      ],
+      "u": [
+        1
+      ],
+      "b": [
+        2
+      ],
+      "e": [
+        3
+      ]
+    },
+    "requiredLetters": [
+      "n",
+      "u",
+      "b",
+      "e"
+    ],
+    "oral": true,
+    "reading": false,
+    "writing": false,
+    "requiresAccentSupport": false,
+    "segmentation": false,
+    "blending": false,
+    "imageRequired": true,
+    "imageClarity": "high",
+    "image": "assets/pictograms/nube.png",
+    "reviewRequired": false,
+    "difficulty": 1,
+    "priority": 1,
+    "wordAudio": null,
+    "wordAudioRequired": false,
+    "meaning": "nube",
+    "kind": "word"
+  }
+]

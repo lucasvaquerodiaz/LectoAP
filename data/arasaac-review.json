@@ -1,0 +1,53 @@
+[
+  {
+    "word": "osa",
+    "status": "review_required",
+    "candidates": [
+      {
+        "id": "2488",
+        "label": "oso / osa",
+        "url": "https://static.arasaac.org/pictograms/2488/2488_300.png"
+      },
+      {
+        "id": "2869",
+        "label": "oso / oso panda / panda / osa / osa panda",
+        "url": "https://static.arasaac.org/pictograms/2869/2869_300.png"
+      },
+      {
+        "id": "2868",
+        "label": "oso / oso polar / osa / osa polar",
+        "url": "https://static.arasaac.org/pictograms/2868/2868_300.png"
+      }
+    ],
+    "reason": "Los candidatos son compartidos con OSO y no distinguen el sexo de forma inequívoca."
+  },
+  {
+    "word": "asa",
+    "status": "review_required",
+    "candidates": [],
+    "reason": "No se obtuvo candidato exacto. No se sustituye por una imagen de otra acepción."
+  },
+  {
+    "word": "mula",
+    "status": "review_required",
+    "candidates": [],
+    "reason": "No se obtuvo candidato exacto. No se sustituye por una imagen de otra acepción."
+  },
+  {
+    "word": "masa",
+    "status": "review_required",
+    "candidates": [
+      {
+        "id": "32476",
+        "label": "masa",
+        "url": "https://static.arasaac.org/pictograms/32476/32476_300.png"
+      },
+      {
+        "id": "38442",
+        "label": "masa",
+        "url": "https://static.arasaac.org/pictograms/38442/38442_300.png"
+      }
+    ],
+    "reason": "32476 muestra masa extendida; 38442 relaciona una bola con pan. Confirmar denominación masa de pan cruda con el docente."
+  }
+]

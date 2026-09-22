@@ -1,0 +1,158 @@
+[
+  {
+    "id": "a",
+    "display": "a",
+    "phonemes": [
+      "a"
+    ],
+    "core": true
+  },
+  {
+    "id": "e",
+    "display": "e",
+    "phonemes": [
+      "e"
+    ],
+    "core": true
+  },
+  {
+    "id": "i",
+    "display": "i",
+    "phonemes": [
+      "i"
+    ],
+    "core": true
+  },
+  {
+    "id": "o",
+    "display": "o",
+    "phonemes": [
+      "o"
+    ],
+    "core": true
+  },
+  {
+    "id": "u",
+    "display": "u",
+    "phonemes": [
+      "u"
+    ],
+    "core": true
+  },
+  {
+    "id": "l",
+    "display": "l",
+    "phonemes": [
+      "l"
+    ],
+    "core": true
+  },
+  {
+    "id": "m",
+    "display": "m",
+    "phonemes": [
+      "m"
+    ],
+    "core": true
+  },
+  {
+    "id": "s",
+    "display": "s",
+    "phonemes": [
+      "s"
+    ],
+    "core": true
+  },
+  {
+    "id": "n",
+    "display": "n",
+    "phonemes": [
+      "n"
+    ],
+    "core": true
+  },
+  {
+    "id": "ó",
+    "display": "ó",
+    "phonemes": [
+      "o"
+    ],
+    "core": false,
+    "requiresAccentSupport": true
+  },
+  {
+    "id": "b",
+    "display": "b",
+    "phonemes": [
+      "b"
+    ],
+    "core": false
+  },
+  {
+    "id": "v",
+    "display": "v",
+    "phonemes": [
+      "b"
+    ],
+    "core": false
+  },
+  {
+    "id": "c",
+    "display": "c",
+    "phonemes": [
+      "k",
+      "θ"
+    ],
+    "contextRequired": true,
+    "core": false
+  },
+  {
+    "id": "z",
+    "display": "z",
+    "phonemes": [
+      "θ"
+    ],
+    "core": false
+  },
+  {
+    "id": "h",
+    "display": "h",
+    "phonemes": [],
+    "core": false
+  },
+  {
+    "id": "ch",
+    "display": "ch",
+    "phonemes": [
+      "tʃ"
+    ],
+    "core": false
+  },
+  {
+    "id": "ll",
+    "display": "ll",
+    "phonemes": [
+      "ʝ"
+    ],
+    "core": false
+  },
+  {
+    "id": "y",
+    "display": "y",
+    "phonemes": [
+      "ʝ"
+    ],
+    "contextRequired": true,
+    "core": false
+  },
+  {
+    "id": "r",
+    "display": "r",
+    "phonemes": [
+      "ɾ",
+      "r"
+    ],
+    "contextRequired": true,
+    "core": false
+  }
+]

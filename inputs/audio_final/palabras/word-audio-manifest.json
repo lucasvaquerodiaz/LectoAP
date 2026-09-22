@@ -1,0 +1,173 @@
+[
+  {
+    "word": "sol",
+    "file": "assets/audio/words/sol.m4a",
+    "source": "Palabras básicas LectoAP.m4a",
+    "sourceStartMs": 1130,
+    "sourceEndMs": 2055,
+    "processing": "recorte con margen natural + normalización de pico a -3 dBFS; AAC 64 kbps",
+    "status": "validated_v1"
+  },
+  {
+    "word": "sal",
+    "file": "assets/audio/words/sal.m4a",
+    "source": "Palabras básicas LectoAP.m4a",
+    "sourceStartMs": 2685,
+    "sourceEndMs": 3490,
+    "processing": "recorte con margen natural + normalización de pico a -3 dBFS; AAC 64 kbps",
+    "status": "validated_v1"
+  },
+  {
+    "word": "ala",
+    "file": "assets/audio/words/ala.m4a",
+    "source": "Palabras básicas LectoAP.m4a",
+    "sourceStartMs": 3985,
+    "sourceEndMs": 4675,
+    "processing": "recorte con margen natural + normalización de pico a -3 dBFS; AAC 64 kbps",
+    "status": "validated_v1"
+  },
+  {
+    "word": "ola",
+    "file": "assets/audio/words/ola.m4a",
+    "source": "Palabras básicas LectoAP.m4a",
+    "sourceStartMs": 5215,
+    "sourceEndMs": 5930,
+    "processing": "recorte con margen natural + normalización de pico a -3 dBFS; AAC 64 kbps",
+    "status": "validated_v1"
+  },
+  {
+    "word": "oso",
+    "file": "assets/audio/words/oso.m4a",
+    "source": "Palabras básicas LectoAP.m4a",
+    "sourceStartMs": 6380,
+    "sourceEndMs": 7180,
+    "processing": "recorte con margen natural + normalización de pico a -3 dBFS; AAC 64 kbps",
+    "status": "validated_v1"
+  },
+  {
+    "word": "osa",
+    "file": "assets/audio/words/osa.m4a",
+    "source": "Palabras básicas LectoAP.m4a",
+    "sourceStartMs": 7410,
+    "sourceEndMs": 8515,
+    "processing": "recorte con margen natural + normalización de pico a -3 dBFS; AAC 64 kbps",
+    "status": "validated_v1"
+  },
+  {
+    "word": "lana",
+    "file": "assets/audio/words/lana.m4a",
+    "source": "Palabras básicas LectoAP.m4a",
+    "sourceStartMs": 8750,
+    "sourceEndMs": 9650,
+    "processing": "recorte con margen natural + normalización de pico a -3 dBFS; AAC 64 kbps",
+    "status": "validated_v1"
+  },
+  {
+    "word": "luna",
+    "file": "assets/audio/words/luna.m4a",
+    "source": "Palabras básicas LectoAP.m4a",
+    "sourceStartMs": 9630,
+    "sourceEndMs": 11040,
+    "processing": "recorte con margen natural + normalización de pico a -3 dBFS; AAC 64 kbps",
+    "status": "validated_v1"
+  },
+  {
+    "word": "mano",
+    "file": "assets/audio/words/mano.m4a",
+    "source": "Palabras básicas LectoAP.m4a",
+    "sourceStartMs": 10955,
+    "sourceEndMs": 12075,
+    "processing": "recorte con margen natural + normalización de pico a -3 dBFS; AAC 64 kbps",
+    "status": "validated_v1"
+  },
+  {
+    "word": "mesa",
+    "file": "assets/audio/words/mesa.m4a",
+    "source": "Palabras básicas LectoAP.m4a",
+    "sourceStartMs": 12420,
+    "sourceEndMs": 13480,
+    "processing": "recorte con margen natural + normalización de pico a -3 dBFS; AAC 64 kbps",
+    "status": "validated_v1"
+  },
+  {
+    "word": "mula",
+    "file": "assets/audio/words/mula.m4a",
+    "source": "Palabras básicas LectoAP.m4a",
+    "sourceStartMs": 13465,
+    "sourceEndMs": 14460,
+    "processing": "recorte con margen natural + normalización de pico a -3 dBFS; AAC 64 kbps",
+    "status": "validated_v1"
+  },
+  {
+    "word": "mono",
+    "file": "assets/audio/words/mono.m4a",
+    "source": "Palabras básicas LectoAP.m4a",
+    "sourceStartMs": 14695,
+    "sourceEndMs": 15680,
+    "processing": "recorte con margen natural + normalización de pico a -3 dBFS; AAC 64 kbps",
+    "status": "validated_v1"
+  },
+  {
+    "word": "asa",
+    "file": "assets/audio/words/asa.m4a",
+    "source": "Palabras básicas LectoAP.m4a",
+    "sourceStartMs": 16095,
+    "sourceEndMs": 16910,
+    "processing": "recorte con margen natural + normalización de pico a -3 dBFS; AAC 64 kbps",
+    "status": "validated_v1"
+  },
+  {
+    "word": "uno",
+    "file": "assets/audio/words/uno.m4a",
+    "source": "Palabras básicas LectoAP.m4a",
+    "sourceStartMs": 17315,
+    "sourceEndMs": 18055,
+    "processing": "recorte con margen natural + normalización de pico a -3 dBFS; AAC 64 kbps",
+    "status": "validated_v1"
+  },
+  {
+    "word": "masa",
+    "file": "assets/audio/words/masa.m4a",
+    "source": "Palabras básicas LectoAP.m4a",
+    "sourceStartMs": 18440,
+    "sourceEndMs": 19345,
+    "processing": "recorte con margen natural + normalización de pico a -3 dBFS; AAC 64 kbps",
+    "status": "validated_v1"
+  },
+  {
+    "word": "suma",
+    "file": "assets/audio/words/suma.m4a",
+    "source": "Palabras básicas LectoAP.m4a",
+    "sourceStartMs": 19730,
+    "sourceEndMs": 20425,
+    "processing": "recorte con margen natural + normalización de pico a -3 dBFS; AAC 64 kbps",
+    "status": "validated_v1"
+  },
+  {
+    "word": "limón",
+    "file": "assets/audio/words/limon.m4a",
+    "source": "Palabras básicas LectoAP.m4a",
+    "sourceStartMs": 20690,
+    "sourceEndMs": 21500,
+    "processing": "recorte con margen natural + normalización de pico a -3 dBFS; AAC 64 kbps",
+    "status": "validated_v1"
+  },
+  {
+    "word": "melón",
+    "file": "assets/audio/words/melon.m4a",
+    "source": "Palabras básicas LectoAP.m4a",
+    "sourceStartMs": 21805,
+    "sourceEndMs": 22675,
+    "processing": "recorte con margen natural + normalización de pico a -3 dBFS; AAC 64 kbps",
+    "status": "validated_v1"
+  },
+  {
+    "word": "molino",
+    "file": "assets/audio/words/molino.m4a",
+    "source": "Palabras básicas LectoAP.m4a",
+    "sourceStartMs": 23020,
+    "sourceEndMs": 23945,
+    "processing": "recorte con margen natural + normalización de pico a -3 dBFS; AAC 64 kbps",
+    "status": "validated_v1"
+  }
+]

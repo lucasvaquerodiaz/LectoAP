@@ -1,0 +1,1059 @@
+[
+  {
+    "id": "sol",
+    "word": "sol",
+    "displayUpper": "SOL",
+    "phonemes": [
+      "s",
+      "o",
+      "l"
+    ],
+    "graphemes": [
+      "s",
+      "o",
+      "l"
+    ],
+    "phonemeCount": 3,
+    "syllableCount": 1,
+    "structure": "CVC",
+    "initialPhoneme": "s",
+    "finalPhoneme": "l",
+    "phonemePositions": {
+      "s": [
+        0
+      ],
+      "o": [
+        1
+      ],
+      "l": [
+        2
+      ]
+    },
+    "requiredLetters": [
+      "s",
+      "o",
+      "l"
+    ],
+    "oral": true,
+    "reading": true,
+    "writing": true,
+    "requiresAccentSupport": false,
+    "segmentation": true,
+    "blending": true,
+    "imageRequired": true,
+    "imageClarity": "high",
+    "image": "assets/pictograms/sol.png",
+    "reviewRequired": false,
+    "difficulty": 1,
+    "priority": 1,
+    "wordAudio": "assets/audio/words/sol.f561844faf2c3942.m4a",
+    "wordAudioRequired": true,
+    "meaning": "sol",
+    "kind": "word"
+  },
+  {
+    "id": "sal",
+    "word": "sal",
+    "displayUpper": "SAL",
+    "phonemes": [
+      "s",
+      "a",
+      "l"
+    ],
+    "graphemes": [
+      "s",
+      "a",
+      "l"
+    ],
+    "phonemeCount": 3,
+    "syllableCount": 1,
+    "structure": "CVC",
+    "initialPhoneme": "s",
+    "finalPhoneme": "l",
+    "phonemePositions": {
+      "s": [
+        0
+      ],
+      "a": [
+        1
+      ],
+      "l": [
+        2
+      ]
+    },
+    "requiredLetters": [
+      "s",
+      "a",
+      "l"
+    ],
+    "oral": true,
+    "reading": true,
+    "writing": true,
+    "requiresAccentSupport": false,
+    "segmentation": true,
+    "blending": true,
+    "imageRequired": true,
+    "imageClarity": "high",
+    "image": "assets/pictograms/sal.png",
+    "reviewRequired": false,
+    "difficulty": 1,
+    "priority": 1,
+    "wordAudio": "assets/audio/words/sal.552ad76a6d7232e5.m4a",
+    "wordAudioRequired": true,
+    "meaning": "sal",
+    "kind": "word"
+  },
+  {
+    "id": "ala",
+    "word": "ala",
+    "displayUpper": "ALA",
+    "phonemes": [
+      "a",
+      "l",
+      "a"
+    ],
+    "graphemes": [
+      "a",
+      "l",
+      "a"
+    ],
+    "phonemeCount": 3,
+    "syllableCount": 2,
+    "structure": "VCV",
+    "initialPhoneme": "a",
+    "finalPhoneme": "a",
+    "phonemePositions": {
+      "a": [
+        0,
+        2
+      ],
+      "l": [
+        1
+      ]
+    },
+    "requiredLetters": [
+      "a",
+      "l"
+    ],
+    "oral": true,
+    "reading": true,
+    "writing": true,
+    "requiresAccentSupport": false,
+    "segmentation": true,
+    "blending": true,
+    "imageRequired": true,
+    "imageClarity": "high",
+    "image": "assets/pictograms/ala.png",
+    "reviewRequired": false,
+    "difficulty": 1,
+    "priority": 1,
+    "wordAudio": "assets/audio/words/ala.e375b385cc8cde29.m4a",
+    "wordAudioRequired": true,
+    "meaning": "ala",
+    "kind": "word"
+  },
+  {
+    "id": "ola",
+    "word": "ola",
+    "displayUpper": "OLA",
+    "phonemes": [
+      "o",
+      "l",
+      "a"
+    ],
+    "graphemes": [
+      "o",
+      "l",
+      "a"
+    ],
+    "phonemeCount": 3,
+    "syllableCount": 2,
+    "structure": "VCV",
+    "initialPhoneme": "o",
+    "finalPhoneme": "a",
+    "phonemePositions": {
+      "o": [
+        0
+      ],
+      "l": [
+        1
+      ],
+      "a": [
+        2
+      ]
+    },
+    "requiredLetters": [
+      "o",
+      "l",
+      "a"
+    ],
+    "oral": true,
+    "reading": true,
+    "writing": true,
+    "requiresAccentSupport": false,
+    "segmentation": true,
+    "blending": true,
+    "imageRequired": true,
+    "imageClarity": "high",
+    "image": "assets/pictograms/ola.png",
+    "reviewRequired": false,
+    "difficulty": 1,
+    "priority": 1,
+    "wordAudio": "assets/audio/words/ola.c46fac26483b5340.m4a",
+    "wordAudioRequired": true,
+    "meaning": "ola",
+    "kind": "word"
+  },
+  {
+    "id": "oso",
+    "word": "oso",
+    "displayUpper": "OSO",
+    "phonemes": [
+      "o",
+      "s",
+      "o"
+    ],
+    "graphemes": [
+      "o",
+      "s",
+      "o"
+    ],
+    "phonemeCount": 3,
+    "syllableCount": 2,
+    "structure": "VCV",
+    "initialPhoneme": "o",
+    "finalPhoneme": "o",
+    "phonemePositions": {
+      "o": [
+        0,
+        2
+      ],
+      "s": [
+        1
+      ]
+    },
+    "requiredLetters": [
+      "o",
+      "s"
+    ],
+    "oral": true,
+    "reading": true,
+    "writing": true,
+    "requiresAccentSupport": false,
+    "segmentation": true,
+    "blending": true,
+    "imageRequired": true,
+    "imageClarity": "high",
+    "image": "assets/pictograms/oso.png",
+    "reviewRequired": false,
+    "difficulty": 1,
+    "priority": 1,
+    "wordAudio": "assets/audio/words/oso.da9ca3136de8fb0b.m4a",
+    "wordAudioRequired": true,
+    "meaning": "oso",
+    "kind": "word"
+  },
+  {
+    "id": "osa",
+    "word": "osa",
+    "displayUpper": "OSA",
+    "phonemes": [
+      "o",
+      "s",
+      "a"
+    ],
+    "graphemes": [
+      "o",
+      "s",
+      "a"
+    ],
+    "phonemeCount": 3,
+    "syllableCount": 2,
+    "structure": "VCV",
+    "initialPhoneme": "o",
+    "finalPhoneme": "a",
+    "phonemePositions": {
+      "o": [
+        0
+      ],
+      "s": [
+        1
+      ],
+      "a": [
+        2
+      ]
+    },
+    "requiredLetters": [
+      "o",
+      "s",
+      "a"
+    ],
+    "oral": true,
+    "reading": true,
+    "writing": true,
+    "requiresAccentSupport": false,
+    "segmentation": true,
+    "blending": true,
+    "imageRequired": true,
+    "imageClarity": "review",
+    "image": null,
+    "reviewRequired": true,
+    "difficulty": 1,
+    "priority": 1,
+    "wordAudio": "assets/audio/words/osa.86c2969b98da8a4f.m4a",
+    "wordAudioRequired": true,
+    "meaning": "osa",
+    "kind": "word"
+  },
+  {
+    "id": "lana",
+    "word": "lana",
+    "displayUpper": "LANA",
+    "phonemes": [
+      "l",
+      "a",
+      "n",
+      "a"
+    ],
+    "graphemes": [
+      "l",
+      "a",
+      "n",
+      "a"
+    ],
+    "phonemeCount": 4,
+    "syllableCount": 2,
+    "structure": "CVCV",
+    "initialPhoneme": "l",
+    "finalPhoneme": "a",
+    "phonemePositions": {
+      "l": [
+        0
+      ],
+      "a": [
+        1,
+        3
+      ],
+      "n": [
+        2
+      ]
+    },
+    "requiredLetters": [
+      "l",
+      "a",
+      "n"
+    ],
+    "oral": true,
+    "reading": true,
+    "writing": true,
+    "requiresAccentSupport": false,
+    "segmentation": true,
+    "blending": true,
+    "imageRequired": true,
+    "imageClarity": "high",
+    "image": "assets/pictograms/lana.png",
+    "reviewRequired": false,
+    "difficulty": 1,
+    "priority": 1,
+    "wordAudio": "assets/audio/words/lana.e623ad59e96c75ae.m4a",
+    "wordAudioRequired": true,
+    "meaning": "lana",
+    "kind": "word"
+  },
+  {
+    "id": "luna",
+    "word": "luna",
+    "displayUpper": "LUNA",
+    "phonemes": [
+      "l",
+      "u",
+      "n",
+      "a"
+    ],
+    "graphemes": [
+      "l",
+      "u",
+      "n",
+      "a"
+    ],
+    "phonemeCount": 4,
+    "syllableCount": 2,
+    "structure": "CVCV",
+    "initialPhoneme": "l",
+    "finalPhoneme": "a",
+    "phonemePositions": {
+      "l": [
+        0
+      ],
+      "u": [
+        1
+      ],
+      "n": [
+        2
+      ],
+      "a": [
+        3
+      ]
+    },
+    "requiredLetters": [
+      "l",
+      "u",
+      "n",
+      "a"
+    ],
+    "oral": true,
+    "reading": true,
+    "writing": true,
+    "requiresAccentSupport": false,
+    "segmentation": true,
+    "blending": true,
+    "imageRequired": true,
+    "imageClarity": "high",
+    "image": "assets/pictograms/luna.png",
+    "reviewRequired": false,
+    "difficulty": 1,
+    "priority": 1,
+    "wordAudio": "assets/audio/words/luna.9b4b9f5bcec974ef.m4a",
+    "wordAudioRequired": true,
+    "meaning": "luna",
+    "kind": "word"
+  },
+  {
+    "id": "mano",
+    "word": "mano",
+    "displayUpper": "MANO",
+    "phonemes": [
+      "m",
+      "a",
+      "n",
+      "o"
+    ],
+    "graphemes": [
+      "m",
+      "a",
+      "n",
+      "o"
+    ],
+    "phonemeCount": 4,
+    "syllableCount": 2,
+    "structure": "CVCV",
+    "initialPhoneme": "m",
+    "finalPhoneme": "o",
+    "phonemePositions": {
+      "m": [
+        0
+      ],
+      "a": [
+        1
+      ],
+      "n": [
+        2
+      ],
+      "o": [
+        3
+      ]
+    },
+    "requiredLetters": [
+      "m",
+      "a",
+      "n",
+      "o"
+    ],
+    "oral": true,
+    "reading": true,
+    "writing": true,
+    "requiresAccentSupport": false,
+    "segmentation": true,
+    "blending": true,
+    "imageRequired": true,
+    "imageClarity": "high",
+    "image": "assets/pictograms/mano.png",
+    "reviewRequired": false,
+    "difficulty": 1,
+    "priority": 1,
+    "wordAudio": "assets/audio/words/mano.7eaa0180aee71852.m4a",
+    "wordAudioRequired": true,
+    "meaning": "mano",
+    "kind": "word"
+  },
+  {
+    "id": "mesa",
+    "word": "mesa",
+    "displayUpper": "MESA",
+    "phonemes": [
+      "m",
+      "e",
+      "s",
+      "a"
+    ],
+    "graphemes": [
+      "m",
+      "e",
+      "s",
+      "a"
+    ],
+    "phonemeCount": 4,
+    "syllableCount": 2,
+    "structure": "CVCV",
+    "initialPhoneme": "m",
+    "finalPhoneme": "a",
+    "phonemePositions": {
+      "m": [
+        0
+      ],
+      "e": [
+        1
+      ],
+      "s": [
+        2
+      ],
+      "a": [
+        3
+      ]
+    },
+    "requiredLetters": [
+      "m",
+      "e",
+      "s",
+      "a"
+    ],
+    "oral": true,
+    "reading": true,
+    "writing": true,
+    "requiresAccentSupport": false,
+    "segmentation": true,
+    "blending": true,
+    "imageRequired": true,
+    "imageClarity": "high",
+    "image": "assets/pictograms/mesa.png",
+    "reviewRequired": false,
+    "difficulty": 1,
+    "priority": 1,
+    "wordAudio": "assets/audio/words/mesa.601b0ce8021ef759.m4a",
+    "wordAudioRequired": true,
+    "meaning": "mesa",
+    "kind": "word"
+  },
+  {
+    "id": "mula",
+    "word": "mula",
+    "displayUpper": "MULA",
+    "phonemes": [
+      "m",
+      "u",
+      "l",
+      "a"
+    ],
+    "graphemes": [
+      "m",
+      "u",
+      "l",
+      "a"
+    ],
+    "phonemeCount": 4,
+    "syllableCount": 2,
+    "structure": "CVCV",
+    "initialPhoneme": "m",
+    "finalPhoneme": "a",
+    "phonemePositions": {
+      "m": [
+        0
+      ],
+      "u": [
+        1
+      ],
+      "l": [
+        2
+      ],
+      "a": [
+        3
+      ]
+    },
+    "requiredLetters": [
+      "m",
+      "u",
+      "l",
+      "a"
+    ],
+    "oral": true,
+    "reading": true,
+    "writing": true,
+    "requiresAccentSupport": false,
+    "segmentation": true,
+    "blending": true,
+    "imageRequired": true,
+    "imageClarity": "review",
+    "image": null,
+    "reviewRequired": true,
+    "difficulty": 1,
+    "priority": 1,
+    "wordAudio": "assets/audio/words/mula.a70d77b5bde00385.m4a",
+    "wordAudioRequired": true,
+    "meaning": "mula",
+    "kind": "word"
+  },
+  {
+    "id": "mono",
+    "word": "mono",
+    "displayUpper": "MONO",
+    "phonemes": [
+      "m",
+      "o",
+      "n",
+      "o"
+    ],
+    "graphemes": [
+      "m",
+      "o",
+      "n",
+      "o"
+    ],
+    "phonemeCount": 4,
+    "syllableCount": 2,
+    "structure": "CVCV",
+    "initialPhoneme": "m",
+    "finalPhoneme": "o",
+    "phonemePositions": {
+      "m": [
+        0
+      ],
+      "o": [
+        1,
+        3
+      ],
+      "n": [
+        2
+      ]
+    },
+    "requiredLetters": [
+      "m",
+      "o",
+      "n"
+    ],
+    "oral": true,
+    "reading": true,
+    "writing": true,
+    "requiresAccentSupport": false,
+    "segmentation": true,
+    "blending": true,
+    "imageRequired": true,
+    "imageClarity": "high",
+    "image": "assets/pictograms/mono.png",
+    "reviewRequired": false,
+    "difficulty": 1,
+    "priority": 1,
+    "wordAudio": "assets/audio/words/mono.cb7a9c020d2a1461.m4a",
+    "wordAudioRequired": true,
+    "meaning": "animal",
+    "kind": "word"
+  },
+  {
+    "id": "asa",
+    "word": "asa",
+    "displayUpper": "ASA",
+    "phonemes": [
+      "a",
+      "s",
+      "a"
+    ],
+    "graphemes": [
+      "a",
+      "s",
+      "a"
+    ],
+    "phonemeCount": 3,
+    "syllableCount": 2,
+    "structure": "VCV",
+    "initialPhoneme": "a",
+    "finalPhoneme": "a",
+    "phonemePositions": {
+      "a": [
+        0,
+        2
+      ],
+      "s": [
+        1
+      ]
+    },
+    "requiredLetters": [
+      "a",
+      "s"
+    ],
+    "oral": true,
+    "reading": true,
+    "writing": true,
+    "requiresAccentSupport": false,
+    "segmentation": true,
+    "blending": true,
+    "imageRequired": true,
+    "imageClarity": "review",
+    "image": null,
+    "reviewRequired": true,
+    "difficulty": 2,
+    "priority": 2,
+    "wordAudio": "assets/audio/words/asa.97c939ebe959abf3.m4a",
+    "wordAudioRequired": true,
+    "meaning": "asa",
+    "kind": "word"
+  },
+  {
+    "id": "uno",
+    "word": "uno",
+    "displayUpper": "UNO",
+    "phonemes": [
+      "u",
+      "n",
+      "o"
+    ],
+    "graphemes": [
+      "u",
+      "n",
+      "o"
+    ],
+    "phonemeCount": 3,
+    "syllableCount": 2,
+    "structure": "VCV",
+    "initialPhoneme": "u",
+    "finalPhoneme": "o",
+    "phonemePositions": {
+      "u": [
+        0
+      ],
+      "n": [
+        1
+      ],
+      "o": [
+        2
+      ]
+    },
+    "requiredLetters": [
+      "u",
+      "n",
+      "o"
+    ],
+    "oral": true,
+    "reading": true,
+    "writing": true,
+    "requiresAccentSupport": false,
+    "segmentation": true,
+    "blending": true,
+    "imageRequired": true,
+    "imageClarity": "high",
+    "image": "assets/pictograms/uno.png",
+    "reviewRequired": false,
+    "difficulty": 2,
+    "priority": 2,
+    "wordAudio": "assets/audio/words/uno.114a1162af07b31d.m4a",
+    "wordAudioRequired": true,
+    "meaning": "uno",
+    "kind": "word"
+  },
+  {
+    "id": "masa",
+    "word": "masa",
+    "displayUpper": "MASA",
+    "phonemes": [
+      "m",
+      "a",
+      "s",
+      "a"
+    ],
+    "graphemes": [
+      "m",
+      "a",
+      "s",
+      "a"
+    ],
+    "phonemeCount": 4,
+    "syllableCount": 2,
+    "structure": "CVCV",
+    "initialPhoneme": "m",
+    "finalPhoneme": "a",
+    "phonemePositions": {
+      "m": [
+        0
+      ],
+      "a": [
+        1,
+        3
+      ],
+      "s": [
+        2
+      ]
+    },
+    "requiredLetters": [
+      "m",
+      "a",
+      "s"
+    ],
+    "oral": true,
+    "reading": true,
+    "writing": true,
+    "requiresAccentSupport": false,
+    "segmentation": true,
+    "blending": true,
+    "imageRequired": true,
+    "imageClarity": "review",
+    "image": null,
+    "reviewRequired": true,
+    "difficulty": 2,
+    "priority": 2,
+    "wordAudio": "assets/audio/words/masa.64297841be6993ab.m4a",
+    "wordAudioRequired": true,
+    "meaning": "masa de pan cruda",
+    "kind": "word"
+  },
+  {
+    "id": "suma",
+    "word": "suma",
+    "displayUpper": "SUMA",
+    "phonemes": [
+      "s",
+      "u",
+      "m",
+      "a"
+    ],
+    "graphemes": [
+      "s",
+      "u",
+      "m",
+      "a"
+    ],
+    "phonemeCount": 4,
+    "syllableCount": 2,
+    "structure": "CVCV",
+    "initialPhoneme": "s",
+    "finalPhoneme": "a",
+    "phonemePositions": {
+      "s": [
+        0
+      ],
+      "u": [
+        1
+      ],
+      "m": [
+        2
+      ],
+      "a": [
+        3
+      ]
+    },
+    "requiredLetters": [
+      "s",
+      "u",
+      "m",
+      "a"
+    ],
+    "oral": true,
+    "reading": true,
+    "writing": true,
+    "requiresAccentSupport": false,
+    "segmentation": true,
+    "blending": true,
+    "imageRequired": true,
+    "imageClarity": "high",
+    "image": "assets/pictograms/suma.png",
+    "reviewRequired": false,
+    "difficulty": 2,
+    "priority": 2,
+    "wordAudio": "assets/audio/words/suma.3bd8de7063f6f489.m4a",
+    "wordAudioRequired": true,
+    "meaning": "suma",
+    "kind": "word"
+  },
+  {
+    "id": "limon",
+    "word": "limón",
+    "displayUpper": "LIMÓN",
+    "phonemes": [
+      "l",
+      "i",
+      "m",
+      "o",
+      "n"
+    ],
+    "graphemes": [
+      "l",
+      "i",
+      "m",
+      "ó",
+      "n"
+    ],
+    "phonemeCount": 5,
+    "syllableCount": 2,
+    "structure": "CVCVC",
+    "initialPhoneme": "l",
+    "finalPhoneme": "n",
+    "phonemePositions": {
+      "l": [
+        0
+      ],
+      "i": [
+        1
+      ],
+      "m": [
+        2
+      ],
+      "o": [
+        3
+      ],
+      "n": [
+        4
+      ]
+    },
+    "requiredLetters": [
+      "l",
+      "i",
+      "m",
+      "ó",
+      "n"
+    ],
+    "oral": true,
+    "reading": true,
+    "writing": true,
+    "requiresAccentSupport": true,
+    "segmentation": true,
+    "blending": true,
+    "imageRequired": true,
+    "imageClarity": "high",
+    "image": "assets/pictograms/limon.png",
+    "reviewRequired": false,
+    "difficulty": 3,
+    "priority": 3,
+    "wordAudio": "assets/audio/words/limon.6682c472ee5bf17d.m4a",
+    "wordAudioRequired": true,
+    "meaning": "limón",
+    "kind": "word"
+  },
+  {
+    "id": "melon",
+    "word": "melón",
+    "displayUpper": "MELÓN",
+    "phonemes": [
+      "m",
+      "e",
+      "l",
+      "o",
+      "n"
+    ],
+    "graphemes": [
+      "m",
+      "e",
+      "l",
+      "ó",
+      "n"
+    ],
+    "phonemeCount": 5,
+    "syllableCount": 2,
+    "structure": "CVCVC",
+    "initialPhoneme": "m",
+    "finalPhoneme": "n",
+    "phonemePositions": {
+      "m": [
+        0
+      ],
+      "e": [
+        1
+      ],
+      "l": [
+        2
+      ],
+      "o": [
+        3
+      ],
+      "n": [
+        4
+      ]
+    },
+    "requiredLetters": [
+      "m",
+      "e",
+      "l",
+      "ó",
+      "n"
+    ],
+    "oral": true,
+    "reading": true,
+    "writing": true,
+    "requiresAccentSupport": true,
+    "segmentation": true,
+    "blending": true,
+    "imageRequired": true,
+    "imageClarity": "high",
+    "image": "assets/pictograms/melon.png",
+    "reviewRequired": false,
+    "difficulty": 3,
+    "priority": 3,
+    "wordAudio": "assets/audio/words/melon.544fd6e5e2fb24b8.m4a",
+    "wordAudioRequired": true,
+    "meaning": "melón",
+    "kind": "word"
+  },
+  {
+    "id": "molino",
+    "word": "molino",
+    "displayUpper": "MOLINO",
+    "phonemes": [
+      "m",
+      "o",
+      "l",
+      "i",
+      "n",
+      "o"
+    ],
+    "graphemes": [
+      "m",
+      "o",
+      "l",
+      "i",
+      "n",
+      "o"
+    ],
+    "phonemeCount": 6,
+    "syllableCount": 3,
+    "structure": "CVCVCV",
+    "initialPhoneme": "m",
+    "finalPhoneme": "o",
+    "phonemePositions": {
+      "m": [
+        0
+      ],
+      "o": [
+        1,
+        5
+      ],
+      "l": [
+        2
+      ],
+      "i": [
+        3
+      ],
+      "n": [
+        4
+      ]
+    },
+    "requiredLetters": [
+      "m",
+      "o",
+      "l",
+      "i",
+      "n"
+    ],
+    "oral": true,
+    "reading": true,
+    "writing": true,
+    "requiresAccentSupport": false,
+    "segmentation": true,
+    "blending": true,
+    "imageRequired": true,
+    "imageClarity": "high",
+    "image": "assets/pictograms/molino.png",
+    "reviewRequired": false,
+    "difficulty": 3,
+    "priority": 3,
+    "wordAudio": "assets/audio/words/molino.7ec405c3e2593e46.m4a",
+    "wordAudioRequired": true,
+    "meaning": "molino",
+    "kind": "word"
+  }
+]

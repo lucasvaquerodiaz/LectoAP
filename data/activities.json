@@ -1,0 +1,22 @@
+[
+ {"id":"CF01","module":"CF","name":"Reconocer un sonido","response":"choice","wordAudioHelp":"optional"},
+ {"id":"CF02","module":"CF","name":"Buscar en imágenes","response":"multi","wordAudioHelp":"optional"},
+ {"id":"CF03","module":"CF","name":"Aislar el primer o último sonido","response":"audio","wordAudioHelp":"optional"},
+ {"id":"CF04","module":"CF","name":"Contar sonidos","response":"choice","wordAudioHelp":"optional"},
+ {"id":"CF05","module":"CF","name":"Localizar un sonido","response":"multi","wordAudioHelp":"optional"},
+ {"id":"CF06","module":"CF","name":"Segmentar: un sonido por caja","response":"sequence","wordAudioHelp":"optional"},
+ {"id":"CF07","module":"CF","name":"Integrar: palabra secreta","response":"image","wordAudioHelp":"disabled"},
+ {"id":"CF08","module":"CF","name":"Cambiar un sonido · extensión","response":"image","wordAudioHelp":"disabled","extension":true},
+ {"id":"SL01","module":"SL","name":"Sonido → letra","response":"choice","wordAudioHelp":"disabled"},
+ {"id":"SL02","module":"SL","name":"Letra → sonido","response":"audio","wordAudioHelp":"disabled"},
+ {"id":"SL03","module":"SL","name":"Imagen → letra inicial","response":"choice","wordAudioHelp":"optional"},
+ {"id":"SL04","module":"SL","name":"Construir con letras","response":"sequence","wordAudioHelp":"optional"},
+ {"id":"SL05","module":"SL","name":"Dictado de sílabas","response":"sequence","wordAudioHelp":"disabled"},
+ {"id":"SL06","module":"SL","name":"Dictado de palabras","response":"sequence","wordAudioHelp":"disabled"},
+ {"id":"SL07","module":"SL","name":"Leer → imagen","response":"image","wordAudioHelp":"disabled"},
+ {"id":"S+L01","module":"COMBO","name":"Sonidos y letras compartidos","response":"multi","wordAudioHelp":"optional"},
+ {"id":"S+L02","module":"COMBO","name":"¿Qué letra se añadió?","response":"choice","wordAudioHelp":"optional"},
+ {"id":"S+L03","module":"COMBO","name":"¿Qué letra cambió?","response":"choice","wordAudioHelp":"optional"},
+ {"id":"VOC01","module":"VOC","name":"Palabra oral → imagen","response":"image","wordAudioHelp":"disabled"},
+ {"id":"VOC02","module":"VOC","name":"Función → objeto","response":"image","wordAudioHelp":"optional"}
+]

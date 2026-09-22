@@ -1,0 +1,939 @@
+[
+  {
+    "id": "sy-a",
+    "string": "a",
+    "word": "a",
+    "displayUpper": "A",
+    "phonemes": [
+      "a"
+    ],
+    "graphemes": [
+      "a"
+    ],
+    "phonemeCount": 1,
+    "structure": "V",
+    "requiredLetters": [
+      "a"
+    ],
+    "priority": 2,
+    "frequency": "common",
+    "difficulty": 1,
+    "recommended": true,
+    "interleave": true,
+    "writing": true,
+    "reading": true,
+    "kind": "syllable"
+  },
+  {
+    "id": "sy-e",
+    "string": "e",
+    "word": "e",
+    "displayUpper": "E",
+    "phonemes": [
+      "e"
+    ],
+    "graphemes": [
+      "e"
+    ],
+    "phonemeCount": 1,
+    "structure": "V",
+    "requiredLetters": [
+      "e"
+    ],
+    "priority": 2,
+    "frequency": "common",
+    "difficulty": 1,
+    "recommended": true,
+    "interleave": true,
+    "writing": true,
+    "reading": true,
+    "kind": "syllable"
+  },
+  {
+    "id": "sy-i",
+    "string": "i",
+    "word": "i",
+    "displayUpper": "I",
+    "phonemes": [
+      "i"
+    ],
+    "graphemes": [
+      "i"
+    ],
+    "phonemeCount": 1,
+    "structure": "V",
+    "requiredLetters": [
+      "i"
+    ],
+    "priority": 2,
+    "frequency": "common",
+    "difficulty": 1,
+    "recommended": true,
+    "interleave": true,
+    "writing": true,
+    "reading": true,
+    "kind": "syllable"
+  },
+  {
+    "id": "sy-o",
+    "string": "o",
+    "word": "o",
+    "displayUpper": "O",
+    "phonemes": [
+      "o"
+    ],
+    "graphemes": [
+      "o"
+    ],
+    "phonemeCount": 1,
+    "structure": "V",
+    "requiredLetters": [
+      "o"
+    ],
+    "priority": 2,
+    "frequency": "common",
+    "difficulty": 1,
+    "recommended": true,
+    "interleave": true,
+    "writing": true,
+    "reading": true,
+    "kind": "syllable"
+  },
+  {
+    "id": "sy-u",
+    "string": "u",
+    "word": "u",
+    "displayUpper": "U",
+    "phonemes": [
+      "u"
+    ],
+    "graphemes": [
+      "u"
+    ],
+    "phonemeCount": 1,
+    "structure": "V",
+    "requiredLetters": [
+      "u"
+    ],
+    "priority": 2,
+    "frequency": "common",
+    "difficulty": 1,
+    "recommended": true,
+    "interleave": true,
+    "writing": true,
+    "reading": true,
+    "kind": "syllable"
+  },
+  {
+    "id": "sy-la",
+    "string": "la",
+    "word": "la",
+    "displayUpper": "LA",
+    "phonemes": [
+      "l",
+      "a"
+    ],
+    "graphemes": [
+      "l",
+      "a"
+    ],
+    "phonemeCount": 2,
+    "structure": "CV",
+    "requiredLetters": [
+      "l",
+      "a"
+    ],
+    "priority": 1,
+    "frequency": "common",
+    "difficulty": 2,
+    "recommended": true,
+    "interleave": true,
+    "writing": true,
+    "reading": true,
+    "kind": "syllable"
+  },
+  {
+    "id": "sy-le",
+    "string": "le",
+    "word": "le",
+    "displayUpper": "LE",
+    "phonemes": [
+      "l",
+      "e"
+    ],
+    "graphemes": [
+      "l",
+      "e"
+    ],
+    "phonemeCount": 2,
+    "structure": "CV",
+    "requiredLetters": [
+      "l",
+      "e"
+    ],
+    "priority": 1,
+    "frequency": "common",
+    "difficulty": 2,
+    "recommended": true,
+    "interleave": true,
+    "writing": true,
+    "reading": true,
+    "kind": "syllable"
+  },
+  {
+    "id": "sy-li",
+    "string": "li",
+    "word": "li",
+    "displayUpper": "LI",
+    "phonemes": [
+      "l",
+      "i"
+    ],
+    "graphemes": [
+      "l",
+      "i"
+    ],
+    "phonemeCount": 2,
+    "structure": "CV",
+    "requiredLetters": [
+      "l",
+      "i"
+    ],
+    "priority": 1,
+    "frequency": "common",
+    "difficulty": 2,
+    "recommended": true,
+    "interleave": true,
+    "writing": true,
+    "reading": true,
+    "kind": "syllable"
+  },
+  {
+    "id": "sy-lo",
+    "string": "lo",
+    "word": "lo",
+    "displayUpper": "LO",
+    "phonemes": [
+      "l",
+      "o"
+    ],
+    "graphemes": [
+      "l",
+      "o"
+    ],
+    "phonemeCount": 2,
+    "structure": "CV",
+    "requiredLetters": [
+      "l",
+      "o"
+    ],
+    "priority": 1,
+    "frequency": "common",
+    "difficulty": 2,
+    "recommended": true,
+    "interleave": true,
+    "writing": true,
+    "reading": true,
+    "kind": "syllable"
+  },
+  {
+    "id": "sy-lu",
+    "string": "lu",
+    "word": "lu",
+    "displayUpper": "LU",
+    "phonemes": [
+      "l",
+      "u"
+    ],
+    "graphemes": [
+      "l",
+      "u"
+    ],
+    "phonemeCount": 2,
+    "structure": "CV",
+    "requiredLetters": [
+      "l",
+      "u"
+    ],
+    "priority": 1,
+    "frequency": "common",
+    "difficulty": 2,
+    "recommended": true,
+    "interleave": true,
+    "writing": true,
+    "reading": true,
+    "kind": "syllable"
+  },
+  {
+    "id": "sy-ma",
+    "string": "ma",
+    "word": "ma",
+    "displayUpper": "MA",
+    "phonemes": [
+      "m",
+      "a"
+    ],
+    "graphemes": [
+      "m",
+      "a"
+    ],
+    "phonemeCount": 2,
+    "structure": "CV",
+    "requiredLetters": [
+      "m",
+      "a"
+    ],
+    "priority": 1,
+    "frequency": "common",
+    "difficulty": 2,
+    "recommended": true,
+    "interleave": true,
+    "writing": true,
+    "reading": true,
+    "kind": "syllable"
+  },
+  {
+    "id": "sy-me",
+    "string": "me",
+    "word": "me",
+    "displayUpper": "ME",
+    "phonemes": [
+      "m",
+      "e"
+    ],
+    "graphemes": [
+      "m",
+      "e"
+    ],
+    "phonemeCount": 2,
+    "structure": "CV",
+    "requiredLetters": [
+      "m",
+      "e"
+    ],
+    "priority": 1,
+    "frequency": "common",
+    "difficulty": 2,
+    "recommended": true,
+    "interleave": true,
+    "writing": true,
+    "reading": true,
+    "kind": "syllable"
+  },
+  {
+    "id": "sy-mi",
+    "string": "mi",
+    "word": "mi",
+    "displayUpper": "MI",
+    "phonemes": [
+      "m",
+      "i"
+    ],
+    "graphemes": [
+      "m",
+      "i"
+    ],
+    "phonemeCount": 2,
+    "structure": "CV",
+    "requiredLetters": [
+      "m",
+      "i"
+    ],
+    "priority": 1,
+    "frequency": "common",
+    "difficulty": 2,
+    "recommended": true,
+    "interleave": true,
+    "writing": true,
+    "reading": true,
+    "kind": "syllable"
+  },
+  {
+    "id": "sy-mo",
+    "string": "mo",
+    "word": "mo",
+    "displayUpper": "MO",
+    "phonemes": [
+      "m",
+      "o"
+    ],
+    "graphemes": [
+      "m",
+      "o"
+    ],
+    "phonemeCount": 2,
+    "structure": "CV",
+    "requiredLetters": [
+      "m",
+      "o"
+    ],
+    "priority": 1,
+    "frequency": "common",
+    "difficulty": 2,
+    "recommended": true,
+    "interleave": true,
+    "writing": true,
+    "reading": true,
+    "kind": "syllable"
+  },
+  {
+    "id": "sy-mu",
+    "string": "mu",
+    "word": "mu",
+    "displayUpper": "MU",
+    "phonemes": [
+      "m",
+      "u"
+    ],
+    "graphemes": [
+      "m",
+      "u"
+    ],
+    "phonemeCount": 2,
+    "structure": "CV",
+    "requiredLetters": [
+      "m",
+      "u"
+    ],
+    "priority": 1,
+    "frequency": "common",
+    "difficulty": 2,
+    "recommended": true,
+    "interleave": true,
+    "writing": true,
+    "reading": true,
+    "kind": "syllable"
+  },
+  {
+    "id": "sy-sa",
+    "string": "sa",
+    "word": "sa",
+    "displayUpper": "SA",
+    "phonemes": [
+      "s",
+      "a"
+    ],
+    "graphemes": [
+      "s",
+      "a"
+    ],
+    "phonemeCount": 2,
+    "structure": "CV",
+    "requiredLetters": [
+      "s",
+      "a"
+    ],
+    "priority": 1,
+    "frequency": "common",
+    "difficulty": 2,
+    "recommended": true,
+    "interleave": true,
+    "writing": true,
+    "reading": true,
+    "kind": "syllable"
+  },
+  {
+    "id": "sy-se",
+    "string": "se",
+    "word": "se",
+    "displayUpper": "SE",
+    "phonemes": [
+      "s",
+      "e"
+    ],
+    "graphemes": [
+      "s",
+      "e"
+    ],
+    "phonemeCount": 2,
+    "structure": "CV",
+    "requiredLetters": [
+      "s",
+      "e"
+    ],
+    "priority": 1,
+    "frequency": "common",
+    "difficulty": 2,
+    "recommended": true,
+    "interleave": true,
+    "writing": true,
+    "reading": true,
+    "kind": "syllable"
+  },
+  {
+    "id": "sy-si",
+    "string": "si",
+    "word": "si",
+    "displayUpper": "SI",
+    "phonemes": [
+      "s",
+      "i"
+    ],
+    "graphemes": [
+      "s",
+      "i"
+    ],
+    "phonemeCount": 2,
+    "structure": "CV",
+    "requiredLetters": [
+      "s",
+      "i"
+    ],
+    "priority": 1,
+    "frequency": "common",
+    "difficulty": 2,
+    "recommended": true,
+    "interleave": true,
+    "writing": true,
+    "reading": true,
+    "kind": "syllable"
+  },
+  {
+    "id": "sy-so",
+    "string": "so",
+    "word": "so",
+    "displayUpper": "SO",
+    "phonemes": [
+      "s",
+      "o"
+    ],
+    "graphemes": [
+      "s",
+      "o"
+    ],
+    "phonemeCount": 2,
+    "structure": "CV",
+    "requiredLetters": [
+      "s",
+      "o"
+    ],
+    "priority": 1,
+    "frequency": "common",
+    "difficulty": 2,
+    "recommended": true,
+    "interleave": true,
+    "writing": true,
+    "reading": true,
+    "kind": "syllable"
+  },
+  {
+    "id": "sy-su",
+    "string": "su",
+    "word": "su",
+    "displayUpper": "SU",
+    "phonemes": [
+      "s",
+      "u"
+    ],
+    "graphemes": [
+      "s",
+      "u"
+    ],
+    "phonemeCount": 2,
+    "structure": "CV",
+    "requiredLetters": [
+      "s",
+      "u"
+    ],
+    "priority": 1,
+    "frequency": "common",
+    "difficulty": 2,
+    "recommended": true,
+    "interleave": true,
+    "writing": true,
+    "reading": true,
+    "kind": "syllable"
+  },
+  {
+    "id": "sy-na",
+    "string": "na",
+    "word": "na",
+    "displayUpper": "NA",
+    "phonemes": [
+      "n",
+      "a"
+    ],
+    "graphemes": [
+      "n",
+      "a"
+    ],
+    "phonemeCount": 2,
+    "structure": "CV",
+    "requiredLetters": [
+      "n",
+      "a"
+    ],
+    "priority": 1,
+    "frequency": "common",
+    "difficulty": 2,
+    "recommended": true,
+    "interleave": true,
+    "writing": true,
+    "reading": true,
+    "kind": "syllable"
+  },
+  {
+    "id": "sy-ne",
+    "string": "ne",
+    "word": "ne",
+    "displayUpper": "NE",
+    "phonemes": [
+      "n",
+      "e"
+    ],
+    "graphemes": [
+      "n",
+      "e"
+    ],
+    "phonemeCount": 2,
+    "structure": "CV",
+    "requiredLetters": [
+      "n",
+      "e"
+    ],
+    "priority": 1,
+    "frequency": "common",
+    "difficulty": 2,
+    "recommended": true,
+    "interleave": true,
+    "writing": true,
+    "reading": true,
+    "kind": "syllable"
+  },
+  {
+    "id": "sy-ni",
+    "string": "ni",
+    "word": "ni",
+    "displayUpper": "NI",
+    "phonemes": [
+      "n",
+      "i"
+    ],
+    "graphemes": [
+      "n",
+      "i"
+    ],
+    "phonemeCount": 2,
+    "structure": "CV",
+    "requiredLetters": [
+      "n",
+      "i"
+    ],
+    "priority": 1,
+    "frequency": "common",
+    "difficulty": 2,
+    "recommended": true,
+    "interleave": true,
+    "writing": true,
+    "reading": true,
+    "kind": "syllable"
+  },
+  {
+    "id": "sy-no",
+    "string": "no",
+    "word": "no",
+    "displayUpper": "NO",
+    "phonemes": [
+      "n",
+      "o"
+    ],
+    "graphemes": [
+      "n",
+      "o"
+    ],
+    "phonemeCount": 2,
+    "structure": "CV",
+    "requiredLetters": [
+      "n",
+      "o"
+    ],
+    "priority": 1,
+    "frequency": "common",
+    "difficulty": 2,
+    "recommended": true,
+    "interleave": true,
+    "writing": true,
+    "reading": true,
+    "kind": "syllable"
+  },
+  {
+    "id": "sy-nu",
+    "string": "nu",
+    "word": "nu",
+    "displayUpper": "NU",
+    "phonemes": [
+      "n",
+      "u"
+    ],
+    "graphemes": [
+      "n",
+      "u"
+    ],
+    "phonemeCount": 2,
+    "structure": "CV",
+    "requiredLetters": [
+      "n",
+      "u"
+    ],
+    "priority": 1,
+    "frequency": "common",
+    "difficulty": 2,
+    "recommended": true,
+    "interleave": true,
+    "writing": true,
+    "reading": true,
+    "kind": "syllable"
+  },
+  {
+    "id": "sy-al",
+    "string": "al",
+    "word": "al",
+    "displayUpper": "AL",
+    "phonemes": [
+      "a",
+      "l"
+    ],
+    "graphemes": [
+      "a",
+      "l"
+    ],
+    "phonemeCount": 2,
+    "structure": "VC",
+    "requiredLetters": [
+      "a",
+      "l"
+    ],
+    "priority": 1,
+    "frequency": "common",
+    "difficulty": 2,
+    "recommended": true,
+    "interleave": true,
+    "writing": true,
+    "reading": true,
+    "kind": "syllable"
+  },
+  {
+    "id": "sy-el",
+    "string": "el",
+    "word": "el",
+    "displayUpper": "EL",
+    "phonemes": [
+      "e",
+      "l"
+    ],
+    "graphemes": [
+      "e",
+      "l"
+    ],
+    "phonemeCount": 2,
+    "structure": "VC",
+    "requiredLetters": [
+      "e",
+      "l"
+    ],
+    "priority": 1,
+    "frequency": "common",
+    "difficulty": 2,
+    "recommended": true,
+    "interleave": true,
+    "writing": true,
+    "reading": true,
+    "kind": "syllable"
+  },
+  {
+    "id": "sy-es",
+    "string": "es",
+    "word": "es",
+    "displayUpper": "ES",
+    "phonemes": [
+      "e",
+      "s"
+    ],
+    "graphemes": [
+      "e",
+      "s"
+    ],
+    "phonemeCount": 2,
+    "structure": "VC",
+    "requiredLetters": [
+      "e",
+      "s"
+    ],
+    "priority": 1,
+    "frequency": "common",
+    "difficulty": 2,
+    "recommended": true,
+    "interleave": true,
+    "writing": true,
+    "reading": true,
+    "kind": "syllable"
+  },
+  {
+    "id": "sy-en",
+    "string": "en",
+    "word": "en",
+    "displayUpper": "EN",
+    "phonemes": [
+      "e",
+      "n"
+    ],
+    "graphemes": [
+      "e",
+      "n"
+    ],
+    "phonemeCount": 2,
+    "structure": "VC",
+    "requiredLetters": [
+      "e",
+      "n"
+    ],
+    "priority": 1,
+    "frequency": "common",
+    "difficulty": 2,
+    "recommended": true,
+    "interleave": true,
+    "writing": true,
+    "reading": true,
+    "kind": "syllable"
+  },
+  {
+    "id": "sy-un",
+    "string": "un",
+    "word": "un",
+    "displayUpper": "UN",
+    "phonemes": [
+      "u",
+      "n"
+    ],
+    "graphemes": [
+      "u",
+      "n"
+    ],
+    "phonemeCount": 2,
+    "structure": "VC",
+    "requiredLetters": [
+      "u",
+      "n"
+    ],
+    "priority": 1,
+    "frequency": "common",
+    "difficulty": 2,
+    "recommended": true,
+    "interleave": true,
+    "writing": true,
+    "reading": true,
+    "kind": "syllable"
+  },
+  {
+    "id": "sy-as",
+    "string": "as",
+    "word": "as",
+    "displayUpper": "AS",
+    "phonemes": [
+      "a",
+      "s"
+    ],
+    "graphemes": [
+      "a",
+      "s"
+    ],
+    "phonemeCount": 2,
+    "structure": "VC",
+    "requiredLetters": [
+      "a",
+      "s"
+    ],
+    "priority": 1,
+    "frequency": "common",
+    "difficulty": 2,
+    "recommended": true,
+    "interleave": true,
+    "writing": true,
+    "reading": true,
+    "kind": "syllable"
+  },
+  {
+    "id": "sy-os",
+    "string": "os",
+    "word": "os",
+    "displayUpper": "OS",
+    "phonemes": [
+      "o",
+      "s"
+    ],
+    "graphemes": [
+      "o",
+      "s"
+    ],
+    "phonemeCount": 2,
+    "structure": "VC",
+    "requiredLetters": [
+      "o",
+      "s"
+    ],
+    "priority": 1,
+    "frequency": "common",
+    "difficulty": 2,
+    "recommended": true,
+    "interleave": true,
+    "writing": true,
+    "reading": true,
+    "kind": "syllable"
+  },
+  {
+    "id": "sy-ol",
+    "string": "ol",
+    "word": "ol",
+    "displayUpper": "OL",
+    "phonemes": [
+      "o",
+      "l"
+    ],
+    "graphemes": [
+      "o",
+      "l"
+    ],
+    "phonemeCount": 2,
+    "structure": "VC",
+    "requiredLetters": [
+      "o",
+      "l"
+    ],
+    "priority": 1,
+    "frequency": "common",
+    "difficulty": 2,
+    "recommended": true,
+    "interleave": true,
+    "writing": true,
+    "reading": true,
+    "kind": "syllable"
+  },
+  {
+    "id": "sy-an",
+    "string": "an",
+    "word": "an",
+    "displayUpper": "AN",
+    "phonemes": [
+      "a",
+      "n"
+    ],
+    "graphemes": [
+      "a",
+      "n"
+    ],
+    "phonemeCount": 2,
+    "structure": "VC",
+    "requiredLetters": [
+      "a",
+      "n"
+    ],
+    "priority": 1,
+    "frequency": "common",
+    "difficulty": 2,
+    "recommended": true,
+    "interleave": true,
+    "writing": true,
+    "reading": true,
+    "kind": "syllable"
+  }
+]

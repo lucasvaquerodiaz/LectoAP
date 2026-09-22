@@ -1,0 +1,15 @@
+import {mkdir,cp,readFile,writeFile,readdir,rm} from 'node:fs/promises';
+import {resolve,sep} from 'node:path';
+import {createHash} from 'node:crypto';
+import {loadData,validateData} from './validate-data.mjs';
+const data=await loadData(),errors=await validateData(data);if(errors.length)throw Error(errors.join('\n'));
+const root=resolve('.'),dist=resolve('dist');if(dist!==root+sep+'dist')throw Error('Unsafe build output');
+await rm(dist,{recursive:true,force:true});await mkdir(dist,{recursive:true});
+await cp('public',dist,{recursive:true});await cp('src',dist+'/src',{recursive:true});await mkdir(dist+'/data');
+for(const name of await readdir('data'))if(name.endsWith('.json'))await cp('data/'+name,dist+'/data/'+name);
+await cp('CREDITS_AND_LICENSES.md',dist+'/CREDITS_AND_LICENSES.md');
+const list=async(dir,prefix='')=>{let files=[];for(const e of await readdir(dir,{withFileTypes:true})){const p=prefix+e.name;if(e.isDirectory())files.push(...await list(dir+'/'+e.name,p+'/'));else files.push(p);}return files;};
+const assets=(await list(dist)).sort();const hash=createHash('sha256');for(const f of assets)hash.update(f).update(await readFile(dist+'/'+f));
+const version=`${data.version.appVersion}-${data.version.contentVersion}-${hash.digest('hex').slice(0,12)}`;
+const template=await readFile('src/sw-template.js','utf8');await writeFile(dist+'/sw.js',template.replace('__VERSION__',version).replace('__ASSETS__',JSON.stringify(['./',...assets.map(f=>'./'+f)])));
+console.log(`Build ${version}: ${assets.length} recursos + service worker → dist/`);
