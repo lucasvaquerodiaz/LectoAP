@@ -1,7 +1,8 @@
 export const DEFAULTS = {module:'CF',activity:'CF07',activeLetters:[...'aeioulmsn'],case:'upper',count:6,difficulty:'auto',audio:true,repetition:true,help:true,position:'initial',accentSupport:false,combinedReady:false,structures:['V','CV','VC','CVC','VCV','CVCV','CVCVC','CVCVCV'],introduce:''};
+export const normalizeLetter=letter=>String(letter).normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
 export const shuffle=(a,rng=Math.random)=>{a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(rng()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;};
 export function getWords(bank,{task='oral',activeLetters=DEFAULTS.activeLetters,maxPhonemes=99,requireImage=false,accentSupport=false,structures=null}={}){
- return bank.filter(w=>w[task] && w.phonemeCount<=maxPhonemes && (!structures||structures.includes(w.structure)) && (!requireImage||w.image&&!w.reviewRequired) && (!['reading','writing'].includes(task)||w.requiredLetters.every(l=>activeLetters.includes(l)||(l==='ó'&&activeLetters.includes('o')&&(task==='reading'||accentSupport)))) && (task!=='writing'||!w.requiresAccentSupport||accentSupport));
+ return bank.filter(w=>w[task] && w.phonemeCount<=maxPhonemes && (!structures||structures.includes(w.structure)) && (!requireImage||w.image&&!w.reviewRequired) && (!['reading','writing'].includes(task)||w.requiredLetters.every(l=>activeLetters.some(a=>normalizeLetter(a)===normalizeLetter(l))||(l==='ó'&&activeLetters.includes('o')&&(task==='reading'||accentSupport)))) && (task!=='writing'||!w.requiresAccentSupport||accentSupport));
 }
 export function distance(a,b){const d=Array.from({length:a.length+1},(_,i)=>[i]);for(let j=0;j<=b.length;j++)d[0][j]=j;for(let i=1;i<=a.length;i++)for(let j=1;j<=b.length;j++)d[i][j]=Math.min(d[i-1][j]+1,d[i][j-1]+1,d[i-1][j-1]+(a[i-1]===b[j-1]?0:1));return d[a.length][b.length];}
 export function distractors(target,pool,n,level,rng=Math.random){return shuffle(pool.filter(w=>w.id!==target.id&&w.image!==target.image),rng).sort((a,b)=>level===0?distance(target.phonemes,b.phonemes)-distance(target.phonemes,a.phonemes):level===2?distance(target.phonemes,a.phonemes)-distance(target.phonemes,b.phonemes):Math.abs(distance(target.phonemes,a.phonemes)-2)-Math.abs(distance(target.phonemes,b.phonemes)-2)).slice(0,n);}
@@ -10,6 +11,7 @@ export function adapt(state,correct,automatic=true){const next={...state,recent:
 const positions=(w,p,position)=>position==='initial'?w.initialPhoneme===p:position==='final'?w.finalPhoneme===p:w.phonemes.includes(p);
 const makeOption=(id,label,type='text')=>({id:String(id),label:String(label),type});
 const imageOption=w=>({id:w.id,label:w.word,type:'image',image:w.image});
+const easyMNFilter=(options,expected,level)=>level===0&&expected.some(x=>['m','n'].includes(normalizeLetter(x)))?options.filter(o=>o.type==='image'||o.id===String(expected[0])||!['m','n'].includes(o.id)||o.id===normalizeLetter(expected[0])):options;
 export function validateItem(item){
  if(!item||!item.expected.length)throw Error('Ítem sin respuesta');
  if(new Set(item.options.map(o=>o.id)).size!==item.options.length)throw Error('Distractores idénticos');
@@ -32,7 +34,7 @@ export function generateItem(data,session,rng=Math.random){
  let pool=getWords(data.words.concat(written?[]:data.oral),{task,activeLetters:c.activeLetters,accentSupport:c.accentSupport,maxPhonemes:max,structures:c.structures}).filter(w=>w.priority<=(c.difficulty==='hard'?3:c.difficulty==='medium'?3:1));
  const imagePool=pool.filter(w=>w.image&&!w.reviewRequired);
  let targets=pool;
- if(['CF01','CF02','CF03','CF04','CF05','CF06','CF07','CF08','SL03','SL04','SL07','VOC01','VOC02'].includes(c.activity))targets=imagePool;
+ if(['CF01','CF02','CF03','CF04','CF05','CF06','CF07','CF08','SL03','SL04','SL07','S+L01','VOC01','VOC02'].includes(c.activity))targets=imagePool;
  if(['CF06','CF07','SL06'].includes(c.activity))targets=targets.filter(w=>w.phonemes.every(p=>active.includes(p)));
  if(c.activity==='CF06')targets=targets.filter(w=>w.segmentation);
  if(c.activity==='CF07')targets=targets.filter(w=>w.blending);
@@ -67,7 +69,7 @@ export function generateItem(data,session,rng=Math.random){
     case 'SL03':p=target.graphemes[0];if(!c.activeLetters.includes(p))throw Error('Letra no activa');item.prompt='¿Con qué letra empieza?';item.options=letterOpts;item.expected=[p];break;
     case 'SL04':case 'SL05':case 'SL06':item.prompt=c.activity==='SL04'?'Construye la palabra.':c.activity==='SL05'?'Escucha y construye la sílaba.':'Escucha y construye la palabra.';item.audio=c.activity==='SL04'?[]:target.phonemes;item.options=shuffle([...new Set(target.graphemes)],rng).map(g=>makeOption(g,g));item.expected=target.graphemes;break;
     case 'SL07':item.prompt='Lee y elige la imagen.';item.display=target.word;imageChoices();break;
-    case 'S+L01':{const other=shuffle(pool.filter(w=>w.id!==target.id&&w.graphemes.some(g=>target.graphemes.includes(g))),rng)[0];if(!other)throw Error('Falta pareja');item.prompt='Elige todas las letras que comparten.';item.display=target.word+' · '+other.word;item.options=shuffle([...new Set(target.graphemes.concat(other.graphemes))],rng).map(g=>makeOption(g,g));item.expected=[...new Set(target.graphemes.filter(g=>other.graphemes.includes(g)))];break;}
+    case 'S+L01':{const targetLetters=new Set(target.graphemes.map(normalizeLetter));const other=shuffle(imagePool.filter(w=>w.id!==target.id&&w.graphemes.some(g=>targetLetters.has(normalizeLetter(g)))),rng)[0];if(!other)throw Error('Falta pareja');item.prompt='Elige todas las letras que comparten.';item.pair=[target,other];const letters=[...new Set(target.graphemes.concat(other.graphemes).map(normalizeLetter))];item.options=shuffle(letters,rng).map(g=>makeOption(g,g));item.expected=[...new Set(target.graphemes.filter(g=>other.graphemes.some(h=>normalizeLetter(h)===normalizeLetter(g))).map(normalizeLetter))];break;}
     case 'S+L02':{const rows=data.relations.additions.filter(r=>r.phonemesTo.every(p=>active.includes(p)));if(!rows.length)throw Error('Falta pareja de adición compatible');const row=rows[0];item.prompt='¿Qué letra se añadió?';item.display=row.from+' → '+row.to;item.options=letterOpts;item.expected=[row.added];break;}
     case 'S+L03':{const row=data.relations.changes.find(([a,b])=>a===target.id&&pool.some(w=>w.id===b));if(!row)throw Error('Falta pareja de cambio');const to=pool.find(w=>w.id===row[1]);const index=target.phonemes.findIndex((p,i)=>p!==to.phonemes[i]);item.prompt='¿Qué letra aparece en el lugar de la anterior?';item.display=target.word+' → '+to.word;item.options=letterOpts;item.expected=[to.graphemes[index]];break;}
     case 'VOC01':item.prompt='Escucha la palabra y elige la imagen.';imageChoices();break;
@@ -76,7 +78,8 @@ export function generateItem(data,session,rng=Math.random){
    }
    if(['CF03','SL01','SL02','SL03'].includes(c.activity)){
     const correct=item.options.filter(o=>item.expected.includes(o.id));
-    item.options=shuffle(correct.concat(shuffle(item.options.filter(o=>!item.expected.includes(o.id)),rng).slice(0,level+2)),rng);
+    const distractors=easyMNFilter(item.options.filter(o=>!item.expected.includes(o.id)),item.expected,level);
+    item.options=shuffle(correct.concat(shuffle(distractors,rng).slice(0,level+2)),rng);
     item.adaptiveDimension='optionCount';
    }else item.adaptiveDimension=c.activity==='CF06'?'optionCount':'distractorSimilarity';
    item.showImage=['CF01','CF03','CF04','CF05','CF06','SL03','SL04'].includes(c.activity);
@@ -87,3 +90,4 @@ export function generateItem(data,session,rng=Math.random){
  throw Error(lastError+' Ajusta el modo docente.');
 }
 export function recordResponse(session,item,correct){session.history.push({targetId:item.target.id,structure:item.structure,level:item.level});session.responses.push(!!correct);session.introCount++;session.adaptive=adapt(session.adaptive,correct,session.config.difficulty==='auto');}
+
