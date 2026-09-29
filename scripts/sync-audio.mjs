@@ -1,5 +1,5 @@
 // Import only recordings from the teacher's final input folders.
-import {readFile,writeFile,mkdir,readdir,unlink} from 'node:fs/promises';
+import {readFile,writeFile,mkdir,readdir,unlink,stat} from 'node:fs/promises';
 import {createHash} from 'node:crypto';
 import {resolve,sep} from 'node:path';
 import {fileURLToPath} from 'node:url';
@@ -13,6 +13,7 @@ const specs={
  syllable:{manifest:'syllable-audio-manifest.json',folder:'syllables',key:'unit'}
 };
 const plain=s=>s.normalize('NFD').replace(/[\u0300-\u036f]/g,'');
+const recentAudioThreshold=Date.parse('2026-09-27T22:00:00.000Z');
 export async function syncAudio(){
  const prepared={};
  for(const [kind,spec] of Object.entries(specs)){
@@ -24,7 +25,8 @@ export async function syncAudio(){
    if(entry.file!==`assets/audio/${kind==='phoneme'?'phonemes':'words'}/${id}.m4a`)throw Error('Nombre de archivo no corresponde: '+entry[spec.key]);
    const sourceFile=`${sourceRoots[kind]}/${entry.file}`,bytes=await readFile(sourceFile),hash=sha256(bytes);
    if(bytes.length<1000||!bytes.includes(Buffer.from('ftyp'))||!bytes.includes(Buffer.from('mp4a')))throw Error('M4A/AAC inválido: '+sourceFile);
-   prepared[kind].push({bytes,entry:{...entry,id,file:`assets/audio/${spec.folder}/${id}.${hash.slice(0,16)}.m4a`,sourceFile,sha256:hash,status:'final_v11',integration:'byte-identical teacher source',...(kind==='phoneme'?{graphemes:[id]}:kind==='word'?{fallback:null,required:true}:{required:true})}});
+   const recent=kind!=='phoneme'&&(await stat(sourceFile)).mtimeMs>=recentAudioThreshold;
+   prepared[kind].push({bytes,entry:{...entry,id,file:`assets/audio/${spec.folder}/${id}.${hash.slice(0,16)}.m4a`,sourceFile,sha256:hash,status:'final_v11',integration:'byte-identical teacher source',playbackGain:recent?2.5:1,...(kind==='phoneme'?{graphemes:[id]}:kind==='word'?{fallback:null,required:true}:{required:true})}});
   }
  }
  if(prepared.phoneme.length!==9||prepared.syllable.length!==38)throw Error('Inventario incompleto de fonemas o sílabas.');

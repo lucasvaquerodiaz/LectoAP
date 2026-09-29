@@ -8,6 +8,7 @@
     "sourceFile": "inputs/audio_final/palabras/assets/audio/words/ala.m4a",
     "sha256": "e375b385cc8cde29b85cbd22c424237029f6cc97abfeb63a315ac004b147a027",
     "integration": "byte-identical teacher source",
+    "playbackGain": 1,
     "fallback": null,
     "required": true
   },
@@ -20,6 +21,7 @@
     "sourceFile": "inputs/audio_final/palabras/assets/audio/words/alma.m4a",
     "sha256": "4c3aa910273a30eb74f28a92c1428ba2cd09b04bcd0d07e7a40245d43d360737",
     "integration": "byte-identical teacher source",
+    "playbackGain": 2.5,
     "fallback": null,
     "required": true
   },
@@ -32,6 +34,7 @@
     "sourceFile": "inputs/audio_final/palabras/assets/audio/words/alumna.m4a",
     "sha256": "d8f5f4518abbc549cb8684ded64933fb0ac22e9107dd1286494e6fd63151bd23",
     "integration": "byte-identical teacher source",
+    "playbackGain": 2.5,
     "fallback": null,
     "required": true
   },
@@ -44,6 +47,7 @@
     "sourceFile": "inputs/audio_final/palabras/assets/audio/words/alumno.m4a",
     "sha256": "117023efa5e7ffeb09e282f5f7793376a9dc34cc40a4ad48f587df171b0ee84c",
     "integration": "byte-identical teacher source",
+    "playbackGain": 2.5,
     "fallback": null,
     "required": true
   },
@@ -56,6 +60,7 @@
     "sourceFile": "inputs/audio_final/palabras/assets/audio/words/ama.m4a",
     "sha256": "89824465a2e5e9614ac515a6197ff5df6ba3de99f6c3b60a99788263b45c5582",
     "integration": "byte-identical teacher source",
+    "playbackGain": 2.5,
     "fallback": null,
     "required": true
   },
@@ -68,6 +73,7 @@
     "sourceFile": "inputs/audio_final/palabras/assets/audio/words/amo.m4a",
     "sha256": "eb75723f7763d40cad31ad82b365d696723c972d3c1e3e83d484697a80071229",
     "integration": "byte-identical teacher source",
+    "playbackGain": 2.5,
     "fallback": null,
     "required": true
   },
@@ -80,6 +86,7 @@
     "sourceFile": "inputs/audio_final/palabras/assets/audio/words/animal.m4a",
     "sha256": "f5d22eb9da6d4ef6c31d7a0bdb4aed0dedfca34ab4e0a7e5e2776544e8760484",
     "integration": "byte-identical teacher source",
+    "playbackGain": 2.5,
     "fallback": null,
     "required": true
   },
@@ -92,6 +99,7 @@
     "sourceFile": "inputs/audio_final/palabras/assets/audio/words/asa.m4a",
     "sha256": "97c939ebe959abf3df7edd823a5fd73f7371d281f7bf6d97d40932bc74023bdd",
     "integration": "byte-identical teacher source",
+    "playbackGain": 1,
     "fallback": null,
     "required": true
   },
@@ -104,6 +112,7 @@
     "sourceFile": "inputs/audio_final/palabras/assets/audio/words/asno.m4a",
     "sha256": "0257b80c82801f1137b87765068aa2e523b16f34bb958718772cbfaf667a070f",
     "integration": "byte-identical teacher source",
+    "playbackGain": 2.5,
     "fallback": null,
     "required": true
   },
@@ -116,6 +125,7 @@
     "sourceFile": "inputs/audio_final/palabras/assets/audio/words/isla.m4a",
     "sha256": "dd4c12a94ddbe785f68ceda60f2aab9e3bc58ba6c6ea221e70ecc9dab2512428",
     "integration": "byte-identical teacher source",
+    "playbackGain": 2.5,
     "fallback": null,
     "required": true
   },
@@ -128,6 +138,7 @@
     "sourceFile": "inputs/audio_final/palabras/assets/audio/words/lana.m4a",
     "sha256": "e623ad59e96c75ae51ad2fb1595ffdf4e6331cef08338358b38d9f99cd5e8ecd",
     "integration": "byte-identical teacher source",
+    "playbackGain": 1,
     "fallback": null,
     "required": true
   },
@@ -140,6 +151,7 @@
     "sourceFile": "inputs/audio_final/palabras/assets/audio/words/lee.m4a",
     "sha256": "6a7ea0d056bf0ab38a3f2601447d5055fdbb504f5a4cc9c0ae98ce75de308979",
     "integration": "byte-identical teacher source",
+    "playbackGain": 2.5,
     "fallback": null,
     "required": true
   },
@@ -152,6 +164,7 @@
     "sourceFile": "inputs/audio_final/palabras/assets/audio/words/leo.m4a",
     "sha256": "11f43ad7f73f0a237cc2fcf6a7218fa7b3d7160e83dcb3334a61167fa5564491",
     "integration": "byte-identical teacher source",
+    "playbackGain": 2.5,
     "fallback": null,
     "required": true
   },
@@ -164,6 +177,7 @@
     "sourceFile": "inputs/audio_final/palabras/assets/audio/words/lima.m4a",
     "sha256": "1e92ba86eb7d32cd58aee97edc8d3b8f9faa189c918d95d86535c5557b031a13",
     "integration": "byte-identical teacher source",
+    "playbackGain": 2.5,
     "fallback": null,
     "required": true
   },
@@ -176,6 +190,7 @@
     "sourceFile": "inputs/audio_final/palabras/assets/audio/words/limon.m4a",
     "sha256": "6682c472ee5bf17d4308be34d01ffeca8727ee0f1af403cfce56a963481a800f",
     "integration": "byte-identical teacher source",
+    "playbackGain": 1,
     "fallback": null,
     "required": true
   },
@@ -188,6 +203,7 @@
     "sourceFile": "inputs/audio_final/palabras/assets/audio/words/lisa.m4a",
     "sha256": "c31d2fd5bb844e152e705ff93d355b670bf833eb257ae7524fe75e1a936c8789",
     "integration": "byte-identical teacher source",
+    "playbackGain": 2.5,
     "fallback": null,
     "required": true
   },
@@ -200,6 +216,7 @@
     "sourceFile": "inputs/audio_final/palabras/assets/audio/words/liso.m4a",
     "sha256": "04c14a60587140e6896015eba3dcbf712d8b993cdadab88b0291b57f14d50901",
     "integration": "byte-identical teacher source",
+    "playbackGain": 2.5,
     "fallback": null,
     "required": true
   },
@@ -212,6 +229,7 @@
     "sourceFile": "inputs/audio_final/palabras/assets/audio/words/luna.m4a",
     "sha256": "4dedded0ef9b92b30ff57ded0c9cba07fead1ffd8656f6b64e5ac9e80a027067",
     "integration": "byte-identical teacher source",
+    "playbackGain": 2.5,
     "fallback": null,
     "required": true
   },
@@ -224,6 +242,7 @@
     "sourceFile": "inputs/audio_final/palabras/assets/audio/words/mala.m4a",
     "sha256": "7f1b296706e67d2ba81814513d715d976672b5c76687c9b88fecc1d062f13627",
     "integration": "byte-identical teacher source",
+    "playbackGain": 2.5,
     "fallback": null,
     "required": true
   },
@@ -236,6 +255,7 @@
     "sourceFile": "inputs/audio_final/palabras/assets/audio/words/malo.m4a",
     "sha256": "f58e81239a3a2a82f285c6b1ec8d47c7366201071f07db9c450de7fcf3b62638",
     "integration": "byte-identical teacher source",
+    "playbackGain": 2.5,
     "fallback": null,
     "required": true
   },
@@ -248,6 +268,7 @@
     "sourceFile": "inputs/audio_final/palabras/assets/audio/words/mano.m4a",
     "sha256": "7eaa0180aee718521ebb6f4c27acbe8d554f151bedfd357c213e3b679c52c618",
     "integration": "byte-identical teacher source",
+    "playbackGain": 1,
     "fallback": null,
     "required": true
   },
@@ -260,6 +281,7 @@
     "sourceFile": "inputs/audio_final/palabras/assets/audio/words/mansa.m4a",
     "sha256": "dcbaa95c93eb1b6b3e7c59d84c3fab31ee660b426c7c6edf9c08beac26663016",
     "integration": "byte-identical teacher source",
+    "playbackGain": 2.5,
     "fallback": null,
     "required": true
   },
@@ -272,6 +294,7 @@
     "sourceFile": "inputs/audio_final/palabras/assets/audio/words/manso.m4a",
     "sha256": "fc593cc1e5e49184757f5728144c7206c0cd7d627bd888526b2f0ed184655c4a",
     "integration": "byte-identical teacher source",
+    "playbackGain": 2.5,
     "fallback": null,
     "required": true
   },
@@ -284,6 +307,7 @@
     "sourceFile": "inputs/audio_final/palabras/assets/audio/words/manual.m4a",
     "sha256": "d537745a13238d7a8395d4e0b9737788bfd9de82a51662646b0e9687313cce0c",
     "integration": "byte-identical teacher source",
+    "playbackGain": 2.5,
     "fallback": null,
     "required": true
   },
@@ -296,6 +320,7 @@
     "sourceFile": "inputs/audio_final/palabras/assets/audio/words/masa.m4a",
     "sha256": "64297841be6993ab6467d1ddafdea66ef6023b9180181a4a631b291f8951c630",
     "integration": "byte-identical teacher source",
+    "playbackGain": 1,
     "fallback": null,
     "required": true
   },
@@ -308,6 +333,7 @@
     "sourceFile": "inputs/audio_final/palabras/assets/audio/words/melena.m4a",
     "sha256": "d71868484996ff82675a2ad91da1f8b19e3e9f98d9f31cb884c07050be7d5e3b",
     "integration": "byte-identical teacher source",
+    "playbackGain": 2.5,
     "fallback": null,
     "required": true
   },
@@ -320,6 +346,7 @@
     "sourceFile": "inputs/audio_final/palabras/assets/audio/words/melon.m4a",
     "sha256": "544fd6e5e2fb24b822a5746af97d3299003830dabd984695f2eba49173614b26",
     "integration": "byte-identical teacher source",
+    "playbackGain": 1,
     "fallback": null,
     "required": true
   },
@@ -332,6 +359,7 @@
     "sourceFile": "inputs/audio_final/palabras/assets/audio/words/mesa.m4a",
     "sha256": "601b0ce8021ef759681e9e197557b6bbeeffcf772fba0e45e292ee868974d1ec",
     "integration": "byte-identical teacher source",
+    "playbackGain": 1,
     "fallback": null,
     "required": true
   },
@@ -344,6 +372,7 @@
     "sourceFile": "inputs/audio_final/palabras/assets/audio/words/milenio.m4a",
     "sha256": "dbe2dc5729fa8ab9363b591c3bb32278e4dd85b0c4006564f0bb64aafcdc0a25",
     "integration": "byte-identical teacher source",
+    "playbackGain": 2.5,
     "fallback": null,
     "required": true
   },
@@ -356,6 +385,7 @@
     "sourceFile": "inputs/audio_final/palabras/assets/audio/words/mima.m4a",
     "sha256": "a879a0c650b258f771777f23870ae0d5a9c4e25ab1a1b6fdd23f252aae8446ff",
     "integration": "byte-identical teacher source",
+    "playbackGain": 2.5,
     "fallback": null,
     "required": true
   },
@@ -368,6 +398,7 @@
     "sourceFile": "inputs/audio_final/palabras/assets/audio/words/mimo.m4a",
     "sha256": "7917ca114d253c0c1f3b7320d87d6b2b673af63c6696c7c1f70e40e0f084b4fa",
     "integration": "byte-identical teacher source",
+    "playbackGain": 2.5,
     "fallback": null,
     "required": true
   },
@@ -380,6 +411,7 @@
     "sourceFile": "inputs/audio_final/palabras/assets/audio/words/mina.m4a",
     "sha256": "e11aafccb4f119e93371739ce436e20426a197d1cdd1966965b45d6f49480c2c",
     "integration": "byte-identical teacher source",
+    "playbackGain": 2.5,
     "fallback": null,
     "required": true
   },
@@ -392,6 +424,7 @@
     "sourceFile": "inputs/audio_final/palabras/assets/audio/words/mision.m4a",
     "sha256": "d0bb12dc038ac7952270921b514aa2e23a7bc77b50592ad1366e9f2a49e3d0d6",
     "integration": "byte-identical teacher source",
+    "playbackGain": 2.5,
     "fallback": null,
     "required": true
   },
@@ -404,6 +437,7 @@
     "sourceFile": "inputs/audio_final/palabras/assets/audio/words/molino.m4a",
     "sha256": "7ec405c3e2593e4657294583a62a868c7e588e63c8f63363a32156b1c3c395c8",
     "integration": "byte-identical teacher source",
+    "playbackGain": 1,
     "fallback": null,
     "required": true
   },
@@ -416,6 +450,7 @@
     "sourceFile": "inputs/audio_final/palabras/assets/audio/words/mona.m4a",
     "sha256": "2e76d63e898a0563adbb07c5e945b06404be3af43aa7195e44b3a69f43ba452b",
     "integration": "byte-identical teacher source",
+    "playbackGain": 2.5,
     "fallback": null,
     "required": true
   },
@@ -428,6 +463,7 @@
     "sourceFile": "inputs/audio_final/palabras/assets/audio/words/mono.m4a",
     "sha256": "cb7a9c020d2a14617164f5a686ab6da4c1205205aed1edb1f2a236af717d8bde",
     "integration": "byte-identical teacher source",
+    "playbackGain": 1,
     "fallback": null,
     "required": true
   },
@@ -440,6 +476,7 @@
     "sourceFile": "inputs/audio_final/palabras/assets/audio/words/mula.m4a",
     "sha256": "a70d77b5bde0038538782afc50b8643d4df3b8b14b6fa3cd5ce0357a7089dfc7",
     "integration": "byte-identical teacher source",
+    "playbackGain": 1,
     "fallback": null,
     "required": true
   },
@@ -452,6 +489,7 @@
     "sourceFile": "inputs/audio_final/palabras/assets/audio/words/museo.m4a",
     "sha256": "6a24b670badeddbca94b7cbdc89c02ab1d6c3c83ac5984a6b729f9a5b637faea",
     "integration": "byte-identical teacher source",
+    "playbackGain": 2.5,
     "fallback": null,
     "required": true
   },
@@ -464,6 +502,7 @@
     "sourceFile": "inputs/audio_final/palabras/assets/audio/words/muslo.m4a",
     "sha256": "690fc5108782737334cef02d4250dfec6b1b4cb23b4942b5009fdd9398c7d3b0",
     "integration": "byte-identical teacher source",
+    "playbackGain": 2.5,
     "fallback": null,
     "required": true
   },
@@ -476,6 +515,7 @@
     "sourceFile": "inputs/audio_final/palabras/assets/audio/words/nena.m4a",
     "sha256": "5b5f7a785ad07b9acacc25057bf34e16c3faf4aa535094cbf259f7f7ff885122",
     "integration": "byte-identical teacher source",
+    "playbackGain": 2.5,
     "fallback": null,
     "required": true
   },
@@ -488,6 +528,7 @@
     "sourceFile": "inputs/audio_final/palabras/assets/audio/words/nene.m4a",
     "sha256": "a59678bb027b8e5986635fa2ca84ed576e3ad04c4cdaa03a940bacede887180a",
     "integration": "byte-identical teacher source",
+    "playbackGain": 2.5,
     "fallback": null,
     "required": true
   },
@@ -500,6 +541,7 @@
     "sourceFile": "inputs/audio_final/palabras/assets/audio/words/nube.m4a",
     "sha256": "bbd90baeb976179b47a52e296361b4a11107642019284f02eb2adab6bea17a86",
     "integration": "byte-identical teacher source",
+    "playbackGain": 2.5,
     "fallback": null,
     "required": true
   },
@@ -512,6 +554,7 @@
     "sourceFile": "inputs/audio_final/palabras/assets/audio/words/ola.m4a",
     "sha256": "c46fac26483b5340c815b004773bf6d4bbfcc98fddc0ffbbb5035aa5c51f7c2d",
     "integration": "byte-identical teacher source",
+    "playbackGain": 1,
     "fallback": null,
     "required": true
   },
@@ -524,6 +567,7 @@
     "sourceFile": "inputs/audio_final/palabras/assets/audio/words/olmo.m4a",
     "sha256": "76e8a59819a3c1db4a2b5ca91907661864c9ee01510f5af97edf6b707cc31f29",
     "integration": "byte-identical teacher source",
+    "playbackGain": 2.5,
     "fallback": null,
     "required": true
   },
@@ -536,6 +580,7 @@
     "sourceFile": "inputs/audio_final/palabras/assets/audio/words/osa.m4a",
     "sha256": "86c2969b98da8a4fe3f1c893f2caba5b52ae6fa74ba68243acf7d36d1d0d11e3",
     "integration": "byte-identical teacher source",
+    "playbackGain": 1,
     "fallback": null,
     "required": true
   },
@@ -548,6 +593,7 @@
     "sourceFile": "inputs/audio_final/palabras/assets/audio/words/oso.m4a",
     "sha256": "da9ca3136de8fb0be6e7a35a9ed06a6f49a4664419738b8799f86ae00919715e",
     "integration": "byte-identical teacher source",
+    "playbackGain": 1,
     "fallback": null,
     "required": true
   },
@@ -560,6 +606,7 @@
     "sourceFile": "inputs/audio_final/palabras/assets/audio/words/sal.m4a",
     "sha256": "fdfa711d35afa94a6f77ac11391e7216003667a1d997eaf2c5e4d7a77683f145",
     "integration": "byte-identical teacher source",
+    "playbackGain": 2.5,
     "fallback": null,
     "required": true
   },
@@ -572,6 +619,7 @@
     "sourceFile": "inputs/audio_final/palabras/assets/audio/words/sala.m4a",
     "sha256": "ff490ace121202c5b1433ecb04227d1e8d6d40aa47b0cec0c67a1a6ad00682ec",
     "integration": "byte-identical teacher source",
+    "playbackGain": 2.5,
     "fallback": null,
     "required": true
   },
@@ -584,6 +632,7 @@
     "sourceFile": "inputs/audio_final/palabras/assets/audio/words/sale.m4a",
     "sha256": "6a10300c6b48f74c074ed92f35d8bee54e2f7cfb425f723daa4e80237b9dfb5d",
     "integration": "byte-identical teacher source",
+    "playbackGain": 2.5,
     "fallback": null,
     "required": true
   },
@@ -596,6 +645,7 @@
     "sourceFile": "inputs/audio_final/palabras/assets/audio/words/salmon.m4a",
     "sha256": "4dc4c14c87e1627e828e2f7385e0ada43ad651bf2e5ce4101d5f0d0fb42a6610",
     "integration": "byte-identical teacher source",
+    "playbackGain": 2.5,
     "fallback": null,
     "required": true
   },
@@ -608,6 +658,7 @@
     "sourceFile": "inputs/audio_final/palabras/assets/audio/words/salon.m4a",
     "sha256": "2591176bd417cd5a403de7cd68d8d47c3c96d3800f399266488b0178023f1711",
     "integration": "byte-identical teacher source",
+    "playbackGain": 2.5,
     "fallback": null,
     "required": true
   },
@@ -620,6 +671,7 @@
     "sourceFile": "inputs/audio_final/palabras/assets/audio/words/sano.m4a",
     "sha256": "4135bf43b7de50bb62c9c1b3aafdce860bd1ffb039914ca76294c08d00487e58",
     "integration": "byte-identical teacher source",
+    "playbackGain": 2.5,
     "fallback": null,
     "required": true
   },
@@ -632,6 +684,7 @@
     "sourceFile": "inputs/audio_final/palabras/assets/audio/words/semana.m4a",
     "sha256": "13adf75fbc9ceca0ff3ed3ce5746049cd6198d78ba1d0ffdb5f8e13773791770",
     "integration": "byte-identical teacher source",
+    "playbackGain": 2.5,
     "fallback": null,
     "required": true
   },
@@ -644,6 +697,7 @@
     "sourceFile": "inputs/audio_final/palabras/assets/audio/words/sol.m4a",
     "sha256": "5850a324110929f6b963ed84d9a97c037426cb52dca45a420c0ab75662143fc3",
     "integration": "byte-identical teacher source",
+    "playbackGain": 2.5,
     "fallback": null,
     "required": true
   },
@@ -656,6 +710,7 @@
     "sourceFile": "inputs/audio_final/palabras/assets/audio/words/sola.m4a",
     "sha256": "87f9270601af0bce1c8ffb732d669f0ed8778b29743c4d0d93ae6956929c39f1",
     "integration": "byte-identical teacher source",
+    "playbackGain": 2.5,
     "fallback": null,
     "required": true
   },
@@ -668,6 +723,7 @@
     "sourceFile": "inputs/audio_final/palabras/assets/audio/words/solo.m4a",
     "sha256": "80708514e1ebfc6253fc449fa65629c63074b8f4ea0dce7e0517ad38020a1a54",
     "integration": "byte-identical teacher source",
+    "playbackGain": 2.5,
     "fallback": null,
     "required": true
   },
@@ -680,6 +736,7 @@
     "sourceFile": "inputs/audio_final/palabras/assets/audio/words/suma.m4a",
     "sha256": "3bd8de7063f6f489c18eb130fafd8906045069f3aaeda55945e4bf60065260e9",
     "integration": "byte-identical teacher source",
+    "playbackGain": 1,
     "fallback": null,
     "required": true
   },
@@ -692,6 +749,7 @@
     "sourceFile": "inputs/audio_final/palabras/assets/audio/words/una.m4a",
     "sha256": "cde960e552b7766f984922a4c4d8b18db6feff50984a84c43a680131f2d09239",
     "integration": "byte-identical teacher source",
+    "playbackGain": 2.5,
     "fallback": null,
     "required": true
   },
@@ -704,6 +762,7 @@
     "sourceFile": "inputs/audio_final/palabras/assets/audio/words/uno.m4a",
     "sha256": "114a1162af07b31d2bab461856f4b1db2a69afb0d143a6b13389c0fb2476869a",
     "integration": "byte-identical teacher source",
+    "playbackGain": 1,
     "fallback": null,
     "required": true
   }

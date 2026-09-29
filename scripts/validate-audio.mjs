@@ -1,10 +1,11 @@
-import {readFile,readdir} from 'node:fs/promises';
+import {readFile,readdir,stat} from 'node:fs/promises';
 import {sha256,sourceRoots} from './sync-audio.mjs';
 const specs={
  phoneme:{rows:'audio',manifest:'audio-manifest.json',key:'phoneme',folder:'phonemes'},
  word:{rows:'wordAudio',manifest:'word-audio-manifest.json',key:'word',folder:'words'},
  syllable:{rows:'syllableAudio',manifest:'syllable-audio-manifest.json',key:'unit',folder:'syllables'}
 };
+const recentAudioThreshold=Date.parse('2026-09-27T22:00:00.000Z');
 export async function validateAudio(data){
  const errors=[],assert=(ok,message)=>{if(!ok)errors.push(message);};
  const all=[];
@@ -17,6 +18,8 @@ export async function validateAudio(data){
    const entry=source.find(x=>x[spec.key]===a[spec.key]);
    assert(!!entry,'Audio no declarado en fuente definitiva: '+a.id);if(!entry)continue;
    const authoritative=sourceRoots[kind]+'/'+entry.file;
+   const recent=kind!=='phoneme'&&(await stat(authoritative)).mtimeMs>=recentAudioThreshold;
+   assert(a.playbackGain===(recent?2.5:1),'Ganancia de reproducción desincronizada: '+a.id);
    assert(a.sourceFile===authoritative,'Fuente no definitiva: '+a.id);
    try{
     const original=await readFile(authoritative),hash=sha256(original);

@@ -3,6 +3,7 @@ import {PhonemeAudio} from './audio.js';
 import {wordAudioPolicy} from './word-audio-policy.js';
 import {instructionIcons} from './icons.js';
 import {CHILD_COURSE,childConfig} from './child-course.js';
+import {canRemoveWrongOption,shouldRevealPositions} from './help-policy.js';
 const root=document.getElementById('app');
 const names={CF:'Conciencia fonémica',SL:'Sonidos y letras',COMBO:'Sonidos + letras'};
 const hiddenActivities=new Set(['CF08','S+L02']);
@@ -50,13 +51,13 @@ function preloadItem(policy){
 }
 function showHelpButton(){
  const area=document.getElementById('help-controls');if(!area)return;
- const available=item.options.some(o=>!item.expected.includes(o.id)&&!removedOptions.has(o.id))||(item.response==='sequence'&&answer.length>0);
+ const available=canRemoveWrongOption(item)&&(item.options.some(o=>!item.expected.includes(o.id)&&!removedOptions.has(o.id))||(item.response==='sequence'&&answer.length>0));
  area.innerHTML=resolved?'':(item.response==='sequence'?'<button type="button" aria-label="Borrar toda la respuesta">Borrar todo</button>':'')+(!resolved&&attempts>=2&&available?'<button class="icon-button" type="button" aria-label="Ayuda: quitar una opción incorrecta" title="Ayuda">?</button>':'');
  area.querySelector('[aria-label="Borrar toda la respuesta"]')?.addEventListener('click',()=>{answer=[];renderSlots();showHelpButton();feedback('');});
  area.querySelector('[aria-label="Ayuda: quitar una opción incorrecta"]')?.addEventListener('click',applyHelp);
 }
 function applyHelp(){
- if(resolved||attempts<2)return;
+ if(resolved||attempts<2||!canRemoveWrongOption(item))return;
  const wrong=item.options.filter(o=>!item.expected.includes(o.id)&&!removedOptions.has(o.id));
  if(!wrong.length){if(item.response==='sequence'&&answer.length){answer.pop();renderSlots();showHelpButton();feedback('');}return;}
  const removed=wrong[Math.floor(Math.random()*wrong.length)];
@@ -68,7 +69,7 @@ function applyHelp(){
 }
 function renderSlots(){const el=document.getElementById('slots');if(!el)return;el.innerHTML=item.expected.map((_,i)=>`<button class="tile" data-slot="${i}" aria-label="Caja ${i+1}${answer[i]?', ocupada':''}">${answer[i]?(item.module==='CF'?'●':esc(textCase(answer[i]))):''}</button>`).join('');el.querySelectorAll('button').forEach(b=>b.onclick=()=>{if(resolved)return;const i=Number(b.dataset.slot);if(answer[i]&&item.module==='CF')play([answer[i]]);answer.splice(i,1);renderSlots();});}
 function choose(i){if(resolved)return;const id=item.options[i].id;if(item.response==='sequence'){if(answer.length<item.expected.length)answer.push(id);renderSlots();}else if(item.response==='multi'){answer=answer.includes(id)?answer.filter(x=>x!==id):answer.concat(id);root.querySelectorAll('[data-option]').forEach(b=>{const on=answer.includes(item.options[Number(b.dataset.option)].id);b.classList.toggle('selected',on);b.setAttribute('aria-pressed',String(on));});}else{answer=[id];checkAnswer();}}
-function checkAnswer(){if(resolved)return;if(item.response==='sequence'&&answer.length!==item.expected.length){feedback('✗');return;}const correct=isCorrect(item,answer);attempts++;if(!correct)firstCorrect=false;if(correct){resolved=true;feedback('✓ ¡Muy bien!');if(item.activity==='SL06'&&item.target.image&&!item.target.reviewRequired){const im=document.createElement('img');im.src=item.target.image;im.alt='Imagen de la palabra construida';im.className='target-image';document.getElementById('feedback').append(im);}finishItem();showHelpButton();}else{feedback('✗');showHelpButton();}}
+function checkAnswer(){if(resolved)return;if(item.response==='sequence'&&answer.length!==item.expected.length){feedback('✗');return;}const correct=isCorrect(item,answer);attempts++;if(!correct)firstCorrect=false;if(correct){resolved=true;feedback('✓ ¡Muy bien!');if(item.activity==='SL06'&&item.target.image&&!item.target.reviewRequired){const im=document.createElement('img');im.src=item.target.image;im.alt='Imagen de la palabra construida';im.className='target-image';document.getElementById('feedback').append(im);}finishItem();showHelpButton();}else if(shouldRevealPositions(item,attempts)){answer=item.expected.slice();resolved=true;student();feedback('Posiciones correctas marcadas.');finishItem();showHelpButton();}else{feedback('✗');showHelpButton();}}
 function finishItem(){recordResponse(session,item,firstCorrect);showNext();}
 function showNext(){clearTimeout(advanceTimer);advanceTimer=setTimeout(()=>{advanceTimer=null;if(resolved&&session)nextItem();},1500);}
 function nextItem(){player.stop();if(session.history.length>=config.count){complete();return;}try{item=generateItem(data,session);prepare();}catch(e){if(childStepIndex>=0){home();const notice=document.createElement('p');notice.className='notice error';notice.textContent=e.message;root.querySelector('main')?.append(notice);}else{session=null;settings(e.message);}}}

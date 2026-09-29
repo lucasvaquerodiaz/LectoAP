@@ -34,7 +34,7 @@ export class PhonemeAudio {
  playSyllable(id){return this.playEntries([this.entry('syllable',id)],0);}
  async playEntries(entries,gap){
   this.stop();const token=this.token;await this.unlock();
-  if(this.context){const buffers=await Promise.all(entries.map(e=>this.buffer(e)));if(token!==this.token)return;let at=this.context.currentTime+.04;for(const b of buffers){const source=this.context.createBufferSource();source.buffer=b;source.connect(this.context.destination);source.start(at);this.sources.push(source);at+=b.duration+gap;}return;}
+  if(this.context){const buffers=await Promise.all(entries.map(e=>this.buffer(e)));if(token!==this.token)return;let at=this.context.currentTime+.04;for(let i=0;i<buffers.length;i++){const b=buffers[i],entry=entries[i],source=this.context.createBufferSource();source.buffer=b;if(entry.playbackGain>1){let peak=0;for(let channel=0;channel<b.numberOfChannels;channel++){const samples=b.getChannelData(channel);for(let j=0;j<samples.length;j++)peak=Math.max(peak,Math.abs(samples[j]));}const gain=this.context.createGain();gain.gain.value=Math.min(entry.playbackGain,peak?0.92/peak:entry.playbackGain);source.connect(gain);gain.connect(this.context.destination);}else source.connect(this.context.destination);source.start(at);this.sources.push(source);at+=b.duration+gap;}return;}
   for(const entry of entries){
    if(token!==this.token)return;
    await new Promise((resolve,reject)=>{const a=new Audio(entry.file);this.element=a;this.cancelPending=resolve;a.onended=()=>{this.cancelPending=null;resolve();};a.onerror=()=>{this.cancelPending=null;reject(Error('No se puede reproducir el audio definitivo.'));};a.play().catch(reject);});
