@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {loadData} from '../scripts/validate-data.mjs';
-import {CHILD_COURSE,childConfig} from '../src/child-course.js';
+import {CHILD_COURSE,childCompletion,childConfig} from '../src/child-course.js';
 import {createSession,generateItem,isCorrect} from '../src/engine.js';
 
 const data=await loadData();
@@ -9,6 +9,11 @@ const rng=seed=>()=>{seed=(seed*1664525+1013904223)>>>0;return seed/4294967296;}
 
 test('el curso autónomo conserva el orden solicitado, usa seis ítems fáciles y solo palabras grabadas',()=>{
  assert.deepEqual(CHILD_COURSE.map(s=>s.activity),['CF01','CF02','CF03','CF05','CF07','SL01','SL02','SL03','SL05','SL07','SL04','SL06']);
+ assert(CHILD_COURSE.every(s=>s.label&&s.hint&&s.icon));
+ assert.equal(childCompletion('course',0),'next');
+ assert.equal(childCompletion('course',CHILD_COURSE.length-2),'next');
+ assert.equal(childCompletion('course',CHILD_COURSE.length-1),'menu');
+ assert.equal(childCompletion('single',0),'menu');
  const recorded=new Set(data.wordAudio.map(a=>a.id));
  for(let index=0;index<CHILD_COURSE.length;index++){
   const config=childConfig(index);
@@ -41,3 +46,4 @@ test('en fácil M y N no producen negativas engañosas ni distraen como respuest
   }
  }
 });
+
