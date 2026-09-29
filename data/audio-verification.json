@@ -1,7 +1,7 @@
 {
-  "sourceFingerprint": "121647b69d98744f764e98589dcb3eb1c00966f8aa71ba473c6546e6ea460625",
+  "sourceFingerprint": "9c3058cb23ed1b0359ebd85b77ff428bd6a98d2ee33310f0584177f954b0a745",
   "status": "confirmed_by_teacher",
   "method": "Confirmación explícita del docente: Ya verifiqué todos los audios.",
-  "previousConfirmation": "Sí, he escuchado y confirmado los 28 audios",
-  "notes": "El docente confirma haber verificado todos los audios nuevos y anteriores."
+  "previousConfirmation": "Confirmación previa del docente de los 28 audios iniciales.",
+  "notes": "La confirmación del docente queda vinculada a las huellas actuales de los 106 audios definitivos."
 }

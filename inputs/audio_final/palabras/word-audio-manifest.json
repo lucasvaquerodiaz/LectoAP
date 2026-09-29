@@ -9,37 +9,43 @@
     "word": "alma",
     "file": "assets/audio/words/alma.m4a",
     "source": "Archivo individual aportado por el docente",
-    "status": "provided_by_teacher"
+    "status": "provided_by_teacher",
+    "playbackGain": 2.5
   },
   {
     "word": "alumna",
     "file": "assets/audio/words/alumna.m4a",
     "source": "Archivo individual aportado por el docente",
-    "status": "provided_by_teacher"
+    "status": "provided_by_teacher",
+    "playbackGain": 2.5
   },
   {
     "word": "alumno",
     "file": "assets/audio/words/alumno.m4a",
     "source": "Archivo individual aportado por el docente",
-    "status": "provided_by_teacher"
+    "status": "provided_by_teacher",
+    "playbackGain": 2.5
   },
   {
     "word": "ama",
     "file": "assets/audio/words/ama.m4a",
     "source": "Archivo individual aportado por el docente",
-    "status": "provided_by_teacher"
+    "status": "provided_by_teacher",
+    "playbackGain": 2.5
   },
   {
     "word": "amo",
     "file": "assets/audio/words/amo.m4a",
     "source": "Archivo individual aportado por el docente",
-    "status": "provided_by_teacher"
+    "status": "provided_by_teacher",
+    "playbackGain": 2.5
   },
   {
     "word": "animal",
     "file": "assets/audio/words/animal.m4a",
     "source": "Archivo individual aportado por el docente",
-    "status": "provided_by_teacher"
+    "status": "provided_by_teacher",
+    "playbackGain": 2.5
   },
   {
     "word": "asa",
@@ -51,13 +57,15 @@
     "word": "asno",
     "file": "assets/audio/words/asno.m4a",
     "source": "Archivo individual aportado por el docente",
-    "status": "provided_by_teacher"
+    "status": "provided_by_teacher",
+    "playbackGain": 2.5
   },
   {
     "word": "isla",
     "file": "assets/audio/words/isla.m4a",
     "source": "Archivo individual aportado por el docente",
-    "status": "provided_by_teacher"
+    "status": "provided_by_teacher",
+    "playbackGain": 2.5
   },
   {
     "word": "lana",
@@ -69,19 +77,22 @@
     "word": "lee",
     "file": "assets/audio/words/lee.m4a",
     "source": "Archivo individual aportado por el docente",
-    "status": "provided_by_teacher"
+    "status": "provided_by_teacher",
+    "playbackGain": 2.5
   },
   {
     "word": "leo",
     "file": "assets/audio/words/leo.m4a",
     "source": "Archivo individual aportado por el docente",
-    "status": "provided_by_teacher"
+    "status": "provided_by_teacher",
+    "playbackGain": 2.5
   },
   {
     "word": "lima",
     "file": "assets/audio/words/lima.m4a",
     "source": "Archivo individual aportado por el docente",
-    "status": "provided_by_teacher"
+    "status": "provided_by_teacher",
+    "playbackGain": 2.5
   },
   {
     "word": "limón",
@@ -93,31 +104,36 @@
     "word": "lisa",
     "file": "assets/audio/words/lisa.m4a",
     "source": "Archivo individual aportado por el docente",
-    "status": "provided_by_teacher"
+    "status": "provided_by_teacher",
+    "playbackGain": 2.5
   },
   {
     "word": "liso",
     "file": "assets/audio/words/liso.m4a",
     "source": "Archivo individual aportado por el docente",
-    "status": "provided_by_teacher"
+    "status": "provided_by_teacher",
+    "playbackGain": 2.5
   },
   {
     "word": "luna",
     "file": "assets/audio/words/luna.m4a",
     "source": "Archivo individual aportado por el docente",
-    "status": "provided_by_teacher"
+    "status": "provided_by_teacher",
+    "playbackGain": 2.5
   },
   {
     "word": "mala",
     "file": "assets/audio/words/mala.m4a",
     "source": "Archivo individual aportado por el docente",
-    "status": "provided_by_teacher"
+    "status": "provided_by_teacher",
+    "playbackGain": 2.5
   },
   {
     "word": "malo",
     "file": "assets/audio/words/malo.m4a",
     "source": "Archivo individual aportado por el docente",
-    "status": "provided_by_teacher"
+    "status": "provided_by_teacher",
+    "playbackGain": 2.5
   },
   {
     "word": "mano",
@@ -129,19 +145,22 @@
     "word": "mansa",
     "file": "assets/audio/words/mansa.m4a",
     "source": "Archivo individual aportado por el docente",
-    "status": "provided_by_teacher"
+    "status": "provided_by_teacher",
+    "playbackGain": 2.5
   },
   {
     "word": "manso",
     "file": "assets/audio/words/manso.m4a",
     "source": "Archivo individual aportado por el docente",
-    "status": "provided_by_teacher"
+    "status": "provided_by_teacher",
+    "playbackGain": 2.5
   },
   {
     "word": "manual",
     "file": "assets/audio/words/manual.m4a",
     "source": "Archivo individual aportado por el docente",
-    "status": "provided_by_teacher"
+    "status": "provided_by_teacher",
+    "playbackGain": 2.5
   },
   {
     "word": "masa",
@@ -153,7 +172,8 @@
     "word": "melena",
     "file": "assets/audio/words/melena.m4a",
     "source": "Archivo individual aportado por el docente",
-    "status": "provided_by_teacher"
+    "status": "provided_by_teacher",
+    "playbackGain": 2.5
   },
   {
     "word": "melón",
@@ -171,31 +191,36 @@
     "word": "milenio",
     "file": "assets/audio/words/milenio.m4a",
     "source": "Archivo individual aportado por el docente",
-    "status": "provided_by_teacher"
+    "status": "provided_by_teacher",
+    "playbackGain": 2.5
   },
   {
     "word": "mima",
     "file": "assets/audio/words/mima.m4a",
     "source": "Archivo individual aportado por el docente",
-    "status": "provided_by_teacher"
+    "status": "provided_by_teacher",
+    "playbackGain": 2.5
   },
   {
     "word": "mimo",
     "file": "assets/audio/words/mimo.m4a",
     "source": "Archivo individual aportado por el docente",
-    "status": "provided_by_teacher"
+    "status": "provided_by_teacher",
+    "playbackGain": 2.5
   },
   {
     "word": "mina",
     "file": "assets/audio/words/mina.m4a",
     "source": "Archivo individual aportado por el docente",
-    "status": "provided_by_teacher"
+    "status": "provided_by_teacher",
+    "playbackGain": 2.5
   },
   {
     "word": "misión",
     "file": "assets/audio/words/mision.m4a",
     "source": "Archivo individual aportado por el docente",
-    "status": "provided_by_teacher"
+    "status": "provided_by_teacher",
+    "playbackGain": 2.5
   },
   {
     "word": "molino",
@@ -207,7 +232,8 @@
     "word": "mona",
     "file": "assets/audio/words/mona.m4a",
     "source": "Archivo individual aportado por el docente",
-    "status": "provided_by_teacher"
+    "status": "provided_by_teacher",
+    "playbackGain": 2.5
   },
   {
     "word": "mono",
@@ -225,31 +251,36 @@
     "word": "museo",
     "file": "assets/audio/words/museo.m4a",
     "source": "Archivo individual aportado por el docente",
-    "status": "provided_by_teacher"
+    "status": "provided_by_teacher",
+    "playbackGain": 2.5
   },
   {
     "word": "muslo",
     "file": "assets/audio/words/muslo.m4a",
     "source": "Archivo individual aportado por el docente",
-    "status": "provided_by_teacher"
+    "status": "provided_by_teacher",
+    "playbackGain": 2.5
   },
   {
     "word": "nena",
     "file": "assets/audio/words/nena.m4a",
     "source": "Archivo individual aportado por el docente",
-    "status": "provided_by_teacher"
+    "status": "provided_by_teacher",
+    "playbackGain": 2.5
   },
   {
     "word": "nene",
     "file": "assets/audio/words/nene.m4a",
     "source": "Archivo individual aportado por el docente",
-    "status": "provided_by_teacher"
+    "status": "provided_by_teacher",
+    "playbackGain": 2.5
   },
   {
     "word": "nube",
     "file": "assets/audio/words/nube.m4a",
     "source": "Archivo individual aportado por el docente",
-    "status": "provided_by_teacher"
+    "status": "provided_by_teacher",
+    "playbackGain": 2.5
   },
   {
     "word": "ola",
@@ -261,7 +292,8 @@
     "word": "olmo",
     "file": "assets/audio/words/olmo.m4a",
     "source": "Archivo individual aportado por el docente",
-    "status": "provided_by_teacher"
+    "status": "provided_by_teacher",
+    "playbackGain": 2.5
   },
   {
     "word": "osa",
@@ -279,61 +311,71 @@
     "word": "sal",
     "file": "assets/audio/words/sal.m4a",
     "source": "Archivo individual aportado por el docente",
-    "status": "provided_by_teacher"
+    "status": "provided_by_teacher",
+    "playbackGain": 2.5
   },
   {
     "word": "sala",
     "file": "assets/audio/words/sala.m4a",
     "source": "Archivo individual aportado por el docente",
-    "status": "provided_by_teacher"
+    "status": "provided_by_teacher",
+    "playbackGain": 2.5
   },
   {
     "word": "sale",
     "file": "assets/audio/words/sale.m4a",
     "source": "Archivo individual aportado por el docente",
-    "status": "provided_by_teacher"
+    "status": "provided_by_teacher",
+    "playbackGain": 2.5
   },
   {
     "word": "salmón",
     "file": "assets/audio/words/salmon.m4a",
     "source": "Archivo individual aportado por el docente",
-    "status": "provided_by_teacher"
+    "status": "provided_by_teacher",
+    "playbackGain": 2.5
   },
   {
     "word": "salón",
     "file": "assets/audio/words/salon.m4a",
     "source": "Archivo individual aportado por el docente",
-    "status": "provided_by_teacher"
+    "status": "provided_by_teacher",
+    "playbackGain": 2.5
   },
   {
     "word": "sano",
     "file": "assets/audio/words/sano.m4a",
     "source": "Archivo individual aportado por el docente",
-    "status": "provided_by_teacher"
+    "status": "provided_by_teacher",
+    "playbackGain": 2.5
   },
   {
     "word": "semana",
     "file": "assets/audio/words/semana.m4a",
     "source": "Archivo individual aportado por el docente",
-    "status": "provided_by_teacher"
+    "status": "provided_by_teacher",
+    "playbackGain": 2.5
   },
   {
     "word": "sol",
     "file": "assets/audio/words/sol.m4a",
     "source": "Archivo individual aportado por el docente",
-    "status": "provided_by_teacher"
+    "status": "provided_by_teacher",
+    "playbackGain": 2.5
   },
   {
     "word": "sola",
     "file": "assets/audio/words/sola.m4a",
     "source": "Archivo individual aportado por el docente",
-    "status": "provided_by_teacher"
+    "status": "provided_by_teacher",
+    "playbackGain": 2.5
   },
   {
     "word": "solo",
     "file": "assets/audio/words/solo.m4a",
     "source": "Archivo individual aportado por el docente",
-    "status": "provided_by_teacher"
+    "status": "provided_by_teacher",
+    "playbackGain": 2.5
   },
   {
     "word": "suma",
@@ -345,7 +387,8 @@
     "word": "una",
     "file": "assets/audio/words/una.m4a",
     "source": "Archivo individual aportado por el docente",
-    "status": "provided_by_teacher"
+    "status": "provided_by_teacher",
+    "playbackGain": 2.5
   },
   {
     "word": "uno",
