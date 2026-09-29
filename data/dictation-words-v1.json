@@ -1,0 +1,2240 @@
+[
+  {
+    "id": "alma",
+    "word": "alma",
+    "displayUpper": "ALMA",
+    "phonemes": [
+      "a",
+      "l",
+      "m",
+      "a"
+    ],
+    "graphemes": [
+      "a",
+      "l",
+      "m",
+      "a"
+    ],
+    "phonemeCount": 4,
+    "syllableCount": null,
+    "structure": "VCCV",
+    "initialPhoneme": "a",
+    "finalPhoneme": "a",
+    "phonemePositions": {
+      "a": [
+        0,
+        3
+      ],
+      "l": [
+        1
+      ],
+      "m": [
+        2
+      ]
+    },
+    "requiredLetters": [
+      "a",
+      "l",
+      "m"
+    ],
+    "oral": true,
+    "reading": false,
+    "writing": true,
+    "requiresAccentSupport": false,
+    "segmentation": false,
+    "blending": false,
+    "imageRequired": false,
+    "image": null,
+    "reviewRequired": false,
+    "difficulty": 1,
+    "priority": 1,
+    "wordAudio": "assets/audio/words/alma.4c3aa910273a30eb.m4a",
+    "wordAudioRequired": true,
+    "kind": "dictation-word"
+  },
+  {
+    "id": "alumna",
+    "word": "alumna",
+    "displayUpper": "ALUMNA",
+    "phonemes": [
+      "a",
+      "l",
+      "u",
+      "m",
+      "n",
+      "a"
+    ],
+    "graphemes": [
+      "a",
+      "l",
+      "u",
+      "m",
+      "n",
+      "a"
+    ],
+    "phonemeCount": 6,
+    "syllableCount": null,
+    "structure": "VCVCCV",
+    "initialPhoneme": "a",
+    "finalPhoneme": "a",
+    "phonemePositions": {
+      "a": [
+        0,
+        5
+      ],
+      "l": [
+        1
+      ],
+      "u": [
+        2
+      ],
+      "m": [
+        3
+      ],
+      "n": [
+        4
+      ]
+    },
+    "requiredLetters": [
+      "a",
+      "l",
+      "u",
+      "m",
+      "n"
+    ],
+    "oral": true,
+    "reading": false,
+    "writing": true,
+    "requiresAccentSupport": false,
+    "segmentation": false,
+    "blending": false,
+    "imageRequired": false,
+    "image": null,
+    "reviewRequired": false,
+    "difficulty": 3,
+    "priority": 3,
+    "wordAudio": "assets/audio/words/alumna.d8f5f4518abbc549.m4a",
+    "wordAudioRequired": true,
+    "kind": "dictation-word"
+  },
+  {
+    "id": "alumno",
+    "word": "alumno",
+    "displayUpper": "ALUMNO",
+    "phonemes": [
+      "a",
+      "l",
+      "u",
+      "m",
+      "n",
+      "o"
+    ],
+    "graphemes": [
+      "a",
+      "l",
+      "u",
+      "m",
+      "n",
+      "o"
+    ],
+    "phonemeCount": 6,
+    "syllableCount": null,
+    "structure": "VCVCCV",
+    "initialPhoneme": "a",
+    "finalPhoneme": "o",
+    "phonemePositions": {
+      "a": [
+        0
+      ],
+      "l": [
+        1
+      ],
+      "u": [
+        2
+      ],
+      "m": [
+        3
+      ],
+      "n": [
+        4
+      ],
+      "o": [
+        5
+      ]
+    },
+    "requiredLetters": [
+      "a",
+      "l",
+      "u",
+      "m",
+      "n",
+      "o"
+    ],
+    "oral": true,
+    "reading": false,
+    "writing": true,
+    "requiresAccentSupport": false,
+    "segmentation": false,
+    "blending": false,
+    "imageRequired": false,
+    "image": null,
+    "reviewRequired": false,
+    "difficulty": 3,
+    "priority": 3,
+    "wordAudio": "assets/audio/words/alumno.117023efa5e7ffeb.m4a",
+    "wordAudioRequired": true,
+    "kind": "dictation-word"
+  },
+  {
+    "id": "ama",
+    "word": "ama",
+    "displayUpper": "AMA",
+    "phonemes": [
+      "a",
+      "m",
+      "a"
+    ],
+    "graphemes": [
+      "a",
+      "m",
+      "a"
+    ],
+    "phonemeCount": 3,
+    "syllableCount": null,
+    "structure": "VCV",
+    "initialPhoneme": "a",
+    "finalPhoneme": "a",
+    "phonemePositions": {
+      "a": [
+        0,
+        2
+      ],
+      "m": [
+        1
+      ]
+    },
+    "requiredLetters": [
+      "a",
+      "m"
+    ],
+    "oral": true,
+    "reading": false,
+    "writing": true,
+    "requiresAccentSupport": false,
+    "segmentation": false,
+    "blending": false,
+    "imageRequired": false,
+    "image": null,
+    "reviewRequired": false,
+    "difficulty": 1,
+    "priority": 1,
+    "wordAudio": "assets/audio/words/ama.89824465a2e5e961.m4a",
+    "wordAudioRequired": true,
+    "kind": "dictation-word"
+  },
+  {
+    "id": "amo",
+    "word": "amo",
+    "displayUpper": "AMO",
+    "phonemes": [
+      "a",
+      "m",
+      "o"
+    ],
+    "graphemes": [
+      "a",
+      "m",
+      "o"
+    ],
+    "phonemeCount": 3,
+    "syllableCount": null,
+    "structure": "VCV",
+    "initialPhoneme": "a",
+    "finalPhoneme": "o",
+    "phonemePositions": {
+      "a": [
+        0
+      ],
+      "m": [
+        1
+      ],
+      "o": [
+        2
+      ]
+    },
+    "requiredLetters": [
+      "a",
+      "m",
+      "o"
+    ],
+    "oral": true,
+    "reading": false,
+    "writing": true,
+    "requiresAccentSupport": false,
+    "segmentation": false,
+    "blending": false,
+    "imageRequired": false,
+    "image": null,
+    "reviewRequired": false,
+    "difficulty": 1,
+    "priority": 1,
+    "wordAudio": "assets/audio/words/amo.eb75723f7763d40c.m4a",
+    "wordAudioRequired": true,
+    "kind": "dictation-word"
+  },
+  {
+    "id": "animal",
+    "word": "animal",
+    "displayUpper": "ANIMAL",
+    "phonemes": [
+      "a",
+      "n",
+      "i",
+      "m",
+      "a",
+      "l"
+    ],
+    "graphemes": [
+      "a",
+      "n",
+      "i",
+      "m",
+      "a",
+      "l"
+    ],
+    "phonemeCount": 6,
+    "syllableCount": null,
+    "structure": "VCVCVC",
+    "initialPhoneme": "a",
+    "finalPhoneme": "l",
+    "phonemePositions": {
+      "a": [
+        0,
+        4
+      ],
+      "n": [
+        1
+      ],
+      "i": [
+        2
+      ],
+      "m": [
+        3
+      ],
+      "l": [
+        5
+      ]
+    },
+    "requiredLetters": [
+      "a",
+      "n",
+      "i",
+      "m",
+      "l"
+    ],
+    "oral": true,
+    "reading": false,
+    "writing": true,
+    "requiresAccentSupport": false,
+    "segmentation": false,
+    "blending": false,
+    "imageRequired": false,
+    "image": null,
+    "reviewRequired": false,
+    "difficulty": 3,
+    "priority": 3,
+    "wordAudio": "assets/audio/words/animal.f5d22eb9da6d4ef6.m4a",
+    "wordAudioRequired": true,
+    "kind": "dictation-word"
+  },
+  {
+    "id": "asno",
+    "word": "asno",
+    "displayUpper": "ASNO",
+    "phonemes": [
+      "a",
+      "s",
+      "n",
+      "o"
+    ],
+    "graphemes": [
+      "a",
+      "s",
+      "n",
+      "o"
+    ],
+    "phonemeCount": 4,
+    "syllableCount": null,
+    "structure": "VCCV",
+    "initialPhoneme": "a",
+    "finalPhoneme": "o",
+    "phonemePositions": {
+      "a": [
+        0
+      ],
+      "s": [
+        1
+      ],
+      "n": [
+        2
+      ],
+      "o": [
+        3
+      ]
+    },
+    "requiredLetters": [
+      "a",
+      "s",
+      "n",
+      "o"
+    ],
+    "oral": true,
+    "reading": false,
+    "writing": true,
+    "requiresAccentSupport": false,
+    "segmentation": false,
+    "blending": false,
+    "imageRequired": false,
+    "image": null,
+    "reviewRequired": false,
+    "difficulty": 1,
+    "priority": 1,
+    "wordAudio": "assets/audio/words/asno.0257b80c82801f11.m4a",
+    "wordAudioRequired": true,
+    "kind": "dictation-word"
+  },
+  {
+    "id": "isla",
+    "word": "isla",
+    "displayUpper": "ISLA",
+    "phonemes": [
+      "i",
+      "s",
+      "l",
+      "a"
+    ],
+    "graphemes": [
+      "i",
+      "s",
+      "l",
+      "a"
+    ],
+    "phonemeCount": 4,
+    "syllableCount": null,
+    "structure": "VCCV",
+    "initialPhoneme": "i",
+    "finalPhoneme": "a",
+    "phonemePositions": {
+      "i": [
+        0
+      ],
+      "s": [
+        1
+      ],
+      "l": [
+        2
+      ],
+      "a": [
+        3
+      ]
+    },
+    "requiredLetters": [
+      "i",
+      "s",
+      "l",
+      "a"
+    ],
+    "oral": true,
+    "reading": false,
+    "writing": true,
+    "requiresAccentSupport": false,
+    "segmentation": false,
+    "blending": false,
+    "imageRequired": false,
+    "image": null,
+    "reviewRequired": false,
+    "difficulty": 1,
+    "priority": 1,
+    "wordAudio": "assets/audio/words/isla.dd4c12a94ddbe785.m4a",
+    "wordAudioRequired": true,
+    "kind": "dictation-word"
+  },
+  {
+    "id": "lee",
+    "word": "lee",
+    "displayUpper": "LEE",
+    "phonemes": [
+      "l",
+      "e",
+      "e"
+    ],
+    "graphemes": [
+      "l",
+      "e",
+      "e"
+    ],
+    "phonemeCount": 3,
+    "syllableCount": null,
+    "structure": "CVV",
+    "initialPhoneme": "l",
+    "finalPhoneme": "e",
+    "phonemePositions": {
+      "l": [
+        0
+      ],
+      "e": [
+        1,
+        2
+      ]
+    },
+    "requiredLetters": [
+      "l",
+      "e"
+    ],
+    "oral": true,
+    "reading": false,
+    "writing": true,
+    "requiresAccentSupport": false,
+    "segmentation": false,
+    "blending": false,
+    "imageRequired": false,
+    "image": null,
+    "reviewRequired": false,
+    "difficulty": 1,
+    "priority": 1,
+    "wordAudio": "assets/audio/words/lee.6a7ea0d056bf0ab3.m4a",
+    "wordAudioRequired": true,
+    "kind": "dictation-word"
+  },
+  {
+    "id": "leo",
+    "word": "leo",
+    "displayUpper": "LEO",
+    "phonemes": [
+      "l",
+      "e",
+      "o"
+    ],
+    "graphemes": [
+      "l",
+      "e",
+      "o"
+    ],
+    "phonemeCount": 3,
+    "syllableCount": null,
+    "structure": "CVV",
+    "initialPhoneme": "l",
+    "finalPhoneme": "o",
+    "phonemePositions": {
+      "l": [
+        0
+      ],
+      "e": [
+        1
+      ],
+      "o": [
+        2
+      ]
+    },
+    "requiredLetters": [
+      "l",
+      "e",
+      "o"
+    ],
+    "oral": true,
+    "reading": false,
+    "writing": true,
+    "requiresAccentSupport": false,
+    "segmentation": false,
+    "blending": false,
+    "imageRequired": false,
+    "image": null,
+    "reviewRequired": false,
+    "difficulty": 1,
+    "priority": 1,
+    "wordAudio": "assets/audio/words/leo.11f43ad7f73f0a23.m4a",
+    "wordAudioRequired": true,
+    "kind": "dictation-word"
+  },
+  {
+    "id": "lima",
+    "word": "lima",
+    "displayUpper": "LIMA",
+    "phonemes": [
+      "l",
+      "i",
+      "m",
+      "a"
+    ],
+    "graphemes": [
+      "l",
+      "i",
+      "m",
+      "a"
+    ],
+    "phonemeCount": 4,
+    "syllableCount": null,
+    "structure": "CVCV",
+    "initialPhoneme": "l",
+    "finalPhoneme": "a",
+    "phonemePositions": {
+      "l": [
+        0
+      ],
+      "i": [
+        1
+      ],
+      "m": [
+        2
+      ],
+      "a": [
+        3
+      ]
+    },
+    "requiredLetters": [
+      "l",
+      "i",
+      "m",
+      "a"
+    ],
+    "oral": true,
+    "reading": false,
+    "writing": true,
+    "requiresAccentSupport": false,
+    "segmentation": false,
+    "blending": false,
+    "imageRequired": false,
+    "image": null,
+    "reviewRequired": false,
+    "difficulty": 1,
+    "priority": 1,
+    "wordAudio": "assets/audio/words/lima.1e92ba86eb7d32cd.m4a",
+    "wordAudioRequired": true,
+    "kind": "dictation-word"
+  },
+  {
+    "id": "lisa",
+    "word": "lisa",
+    "displayUpper": "LISA",
+    "phonemes": [
+      "l",
+      "i",
+      "s",
+      "a"
+    ],
+    "graphemes": [
+      "l",
+      "i",
+      "s",
+      "a"
+    ],
+    "phonemeCount": 4,
+    "syllableCount": null,
+    "structure": "CVCV",
+    "initialPhoneme": "l",
+    "finalPhoneme": "a",
+    "phonemePositions": {
+      "l": [
+        0
+      ],
+      "i": [
+        1
+      ],
+      "s": [
+        2
+      ],
+      "a": [
+        3
+      ]
+    },
+    "requiredLetters": [
+      "l",
+      "i",
+      "s",
+      "a"
+    ],
+    "oral": true,
+    "reading": false,
+    "writing": true,
+    "requiresAccentSupport": false,
+    "segmentation": false,
+    "blending": false,
+    "imageRequired": false,
+    "image": null,
+    "reviewRequired": false,
+    "difficulty": 1,
+    "priority": 1,
+    "wordAudio": "assets/audio/words/lisa.c31d2fd5bb844e15.m4a",
+    "wordAudioRequired": true,
+    "kind": "dictation-word"
+  },
+  {
+    "id": "liso",
+    "word": "liso",
+    "displayUpper": "LISO",
+    "phonemes": [
+      "l",
+      "i",
+      "s",
+      "o"
+    ],
+    "graphemes": [
+      "l",
+      "i",
+      "s",
+      "o"
+    ],
+    "phonemeCount": 4,
+    "syllableCount": null,
+    "structure": "CVCV",
+    "initialPhoneme": "l",
+    "finalPhoneme": "o",
+    "phonemePositions": {
+      "l": [
+        0
+      ],
+      "i": [
+        1
+      ],
+      "s": [
+        2
+      ],
+      "o": [
+        3
+      ]
+    },
+    "requiredLetters": [
+      "l",
+      "i",
+      "s",
+      "o"
+    ],
+    "oral": true,
+    "reading": false,
+    "writing": true,
+    "requiresAccentSupport": false,
+    "segmentation": false,
+    "blending": false,
+    "imageRequired": false,
+    "image": null,
+    "reviewRequired": false,
+    "difficulty": 1,
+    "priority": 1,
+    "wordAudio": "assets/audio/words/liso.04c14a60587140e6.m4a",
+    "wordAudioRequired": true,
+    "kind": "dictation-word"
+  },
+  {
+    "id": "mala",
+    "word": "mala",
+    "displayUpper": "MALA",
+    "phonemes": [
+      "m",
+      "a",
+      "l",
+      "a"
+    ],
+    "graphemes": [
+      "m",
+      "a",
+      "l",
+      "a"
+    ],
+    "phonemeCount": 4,
+    "syllableCount": null,
+    "structure": "CVCV",
+    "initialPhoneme": "m",
+    "finalPhoneme": "a",
+    "phonemePositions": {
+      "m": [
+        0
+      ],
+      "a": [
+        1,
+        3
+      ],
+      "l": [
+        2
+      ]
+    },
+    "requiredLetters": [
+      "m",
+      "a",
+      "l"
+    ],
+    "oral": true,
+    "reading": false,
+    "writing": true,
+    "requiresAccentSupport": false,
+    "segmentation": false,
+    "blending": false,
+    "imageRequired": false,
+    "image": null,
+    "reviewRequired": false,
+    "difficulty": 1,
+    "priority": 1,
+    "wordAudio": "assets/audio/words/mala.7f1b296706e67d2b.m4a",
+    "wordAudioRequired": true,
+    "kind": "dictation-word"
+  },
+  {
+    "id": "malo",
+    "word": "malo",
+    "displayUpper": "MALO",
+    "phonemes": [
+      "m",
+      "a",
+      "l",
+      "o"
+    ],
+    "graphemes": [
+      "m",
+      "a",
+      "l",
+      "o"
+    ],
+    "phonemeCount": 4,
+    "syllableCount": null,
+    "structure": "CVCV",
+    "initialPhoneme": "m",
+    "finalPhoneme": "o",
+    "phonemePositions": {
+      "m": [
+        0
+      ],
+      "a": [
+        1
+      ],
+      "l": [
+        2
+      ],
+      "o": [
+        3
+      ]
+    },
+    "requiredLetters": [
+      "m",
+      "a",
+      "l",
+      "o"
+    ],
+    "oral": true,
+    "reading": false,
+    "writing": true,
+    "requiresAccentSupport": false,
+    "segmentation": false,
+    "blending": false,
+    "imageRequired": false,
+    "image": null,
+    "reviewRequired": false,
+    "difficulty": 1,
+    "priority": 1,
+    "wordAudio": "assets/audio/words/malo.f58e81239a3a2a82.m4a",
+    "wordAudioRequired": true,
+    "kind": "dictation-word"
+  },
+  {
+    "id": "mansa",
+    "word": "mansa",
+    "displayUpper": "MANSA",
+    "phonemes": [
+      "m",
+      "a",
+      "n",
+      "s",
+      "a"
+    ],
+    "graphemes": [
+      "m",
+      "a",
+      "n",
+      "s",
+      "a"
+    ],
+    "phonemeCount": 5,
+    "syllableCount": null,
+    "structure": "CVCCV",
+    "initialPhoneme": "m",
+    "finalPhoneme": "a",
+    "phonemePositions": {
+      "m": [
+        0
+      ],
+      "a": [
+        1,
+        4
+      ],
+      "n": [
+        2
+      ],
+      "s": [
+        3
+      ]
+    },
+    "requiredLetters": [
+      "m",
+      "a",
+      "n",
+      "s"
+    ],
+    "oral": true,
+    "reading": false,
+    "writing": true,
+    "requiresAccentSupport": false,
+    "segmentation": false,
+    "blending": false,
+    "imageRequired": false,
+    "image": null,
+    "reviewRequired": false,
+    "difficulty": 2,
+    "priority": 3,
+    "wordAudio": "assets/audio/words/mansa.dcbaa95c93eb1b6b.m4a",
+    "wordAudioRequired": true,
+    "kind": "dictation-word"
+  },
+  {
+    "id": "manso",
+    "word": "manso",
+    "displayUpper": "MANSO",
+    "phonemes": [
+      "m",
+      "a",
+      "n",
+      "s",
+      "o"
+    ],
+    "graphemes": [
+      "m",
+      "a",
+      "n",
+      "s",
+      "o"
+    ],
+    "phonemeCount": 5,
+    "syllableCount": null,
+    "structure": "CVCCV",
+    "initialPhoneme": "m",
+    "finalPhoneme": "o",
+    "phonemePositions": {
+      "m": [
+        0
+      ],
+      "a": [
+        1
+      ],
+      "n": [
+        2
+      ],
+      "s": [
+        3
+      ],
+      "o": [
+        4
+      ]
+    },
+    "requiredLetters": [
+      "m",
+      "a",
+      "n",
+      "s",
+      "o"
+    ],
+    "oral": true,
+    "reading": false,
+    "writing": true,
+    "requiresAccentSupport": false,
+    "segmentation": false,
+    "blending": false,
+    "imageRequired": false,
+    "image": null,
+    "reviewRequired": false,
+    "difficulty": 2,
+    "priority": 3,
+    "wordAudio": "assets/audio/words/manso.fc593cc1e5e49184.m4a",
+    "wordAudioRequired": true,
+    "kind": "dictation-word"
+  },
+  {
+    "id": "manual",
+    "word": "manual",
+    "displayUpper": "MANUAL",
+    "phonemes": [
+      "m",
+      "a",
+      "n",
+      "u",
+      "a",
+      "l"
+    ],
+    "graphemes": [
+      "m",
+      "a",
+      "n",
+      "u",
+      "a",
+      "l"
+    ],
+    "phonemeCount": 6,
+    "syllableCount": null,
+    "structure": "CVCVVC",
+    "initialPhoneme": "m",
+    "finalPhoneme": "l",
+    "phonemePositions": {
+      "m": [
+        0
+      ],
+      "a": [
+        1,
+        4
+      ],
+      "n": [
+        2
+      ],
+      "u": [
+        3
+      ],
+      "l": [
+        5
+      ]
+    },
+    "requiredLetters": [
+      "m",
+      "a",
+      "n",
+      "u",
+      "l"
+    ],
+    "oral": true,
+    "reading": false,
+    "writing": true,
+    "requiresAccentSupport": false,
+    "segmentation": false,
+    "blending": false,
+    "imageRequired": false,
+    "image": null,
+    "reviewRequired": false,
+    "difficulty": 3,
+    "priority": 3,
+    "wordAudio": "assets/audio/words/manual.d537745a13238d7a.m4a",
+    "wordAudioRequired": true,
+    "kind": "dictation-word"
+  },
+  {
+    "id": "melena",
+    "word": "melena",
+    "displayUpper": "MELENA",
+    "phonemes": [
+      "m",
+      "e",
+      "l",
+      "e",
+      "n",
+      "a"
+    ],
+    "graphemes": [
+      "m",
+      "e",
+      "l",
+      "e",
+      "n",
+      "a"
+    ],
+    "phonemeCount": 6,
+    "syllableCount": null,
+    "structure": "CVCVCV",
+    "initialPhoneme": "m",
+    "finalPhoneme": "a",
+    "phonemePositions": {
+      "m": [
+        0
+      ],
+      "e": [
+        1,
+        3
+      ],
+      "l": [
+        2
+      ],
+      "n": [
+        4
+      ],
+      "a": [
+        5
+      ]
+    },
+    "requiredLetters": [
+      "m",
+      "e",
+      "l",
+      "n",
+      "a"
+    ],
+    "oral": true,
+    "reading": false,
+    "writing": true,
+    "requiresAccentSupport": false,
+    "segmentation": false,
+    "blending": false,
+    "imageRequired": false,
+    "image": null,
+    "reviewRequired": false,
+    "difficulty": 3,
+    "priority": 3,
+    "wordAudio": "assets/audio/words/melena.d71868484996ff82.m4a",
+    "wordAudioRequired": true,
+    "kind": "dictation-word"
+  },
+  {
+    "id": "milenio",
+    "word": "milenio",
+    "displayUpper": "MILENIO",
+    "phonemes": [
+      "m",
+      "i",
+      "l",
+      "e",
+      "n",
+      "i",
+      "o"
+    ],
+    "graphemes": [
+      "m",
+      "i",
+      "l",
+      "e",
+      "n",
+      "i",
+      "o"
+    ],
+    "phonemeCount": 7,
+    "syllableCount": null,
+    "structure": "CVCVCVV",
+    "initialPhoneme": "m",
+    "finalPhoneme": "o",
+    "phonemePositions": {
+      "m": [
+        0
+      ],
+      "i": [
+        1,
+        5
+      ],
+      "l": [
+        2
+      ],
+      "e": [
+        3
+      ],
+      "n": [
+        4
+      ],
+      "o": [
+        6
+      ]
+    },
+    "requiredLetters": [
+      "m",
+      "i",
+      "l",
+      "e",
+      "n",
+      "o"
+    ],
+    "oral": true,
+    "reading": false,
+    "writing": true,
+    "requiresAccentSupport": false,
+    "segmentation": false,
+    "blending": false,
+    "imageRequired": false,
+    "image": null,
+    "reviewRequired": false,
+    "difficulty": 3,
+    "priority": 3,
+    "wordAudio": "assets/audio/words/milenio.dbe2dc5729fa8ab9.m4a",
+    "wordAudioRequired": true,
+    "kind": "dictation-word"
+  },
+  {
+    "id": "mima",
+    "word": "mima",
+    "displayUpper": "MIMA",
+    "phonemes": [
+      "m",
+      "i",
+      "m",
+      "a"
+    ],
+    "graphemes": [
+      "m",
+      "i",
+      "m",
+      "a"
+    ],
+    "phonemeCount": 4,
+    "syllableCount": null,
+    "structure": "CVCV",
+    "initialPhoneme": "m",
+    "finalPhoneme": "a",
+    "phonemePositions": {
+      "m": [
+        0,
+        2
+      ],
+      "i": [
+        1
+      ],
+      "a": [
+        3
+      ]
+    },
+    "requiredLetters": [
+      "m",
+      "i",
+      "a"
+    ],
+    "oral": true,
+    "reading": false,
+    "writing": true,
+    "requiresAccentSupport": false,
+    "segmentation": false,
+    "blending": false,
+    "imageRequired": false,
+    "image": null,
+    "reviewRequired": false,
+    "difficulty": 1,
+    "priority": 1,
+    "wordAudio": "assets/audio/words/mima.a879a0c650b258f7.m4a",
+    "wordAudioRequired": true,
+    "kind": "dictation-word"
+  },
+  {
+    "id": "mimo",
+    "word": "mimo",
+    "displayUpper": "MIMO",
+    "phonemes": [
+      "m",
+      "i",
+      "m",
+      "o"
+    ],
+    "graphemes": [
+      "m",
+      "i",
+      "m",
+      "o"
+    ],
+    "phonemeCount": 4,
+    "syllableCount": null,
+    "structure": "CVCV",
+    "initialPhoneme": "m",
+    "finalPhoneme": "o",
+    "phonemePositions": {
+      "m": [
+        0,
+        2
+      ],
+      "i": [
+        1
+      ],
+      "o": [
+        3
+      ]
+    },
+    "requiredLetters": [
+      "m",
+      "i",
+      "o"
+    ],
+    "oral": true,
+    "reading": false,
+    "writing": true,
+    "requiresAccentSupport": false,
+    "segmentation": false,
+    "blending": false,
+    "imageRequired": false,
+    "image": null,
+    "reviewRequired": false,
+    "difficulty": 1,
+    "priority": 1,
+    "wordAudio": "assets/audio/words/mimo.7917ca114d253c0c.m4a",
+    "wordAudioRequired": true,
+    "kind": "dictation-word"
+  },
+  {
+    "id": "mina",
+    "word": "mina",
+    "displayUpper": "MINA",
+    "phonemes": [
+      "m",
+      "i",
+      "n",
+      "a"
+    ],
+    "graphemes": [
+      "m",
+      "i",
+      "n",
+      "a"
+    ],
+    "phonemeCount": 4,
+    "syllableCount": null,
+    "structure": "CVCV",
+    "initialPhoneme": "m",
+    "finalPhoneme": "a",
+    "phonemePositions": {
+      "m": [
+        0
+      ],
+      "i": [
+        1
+      ],
+      "n": [
+        2
+      ],
+      "a": [
+        3
+      ]
+    },
+    "requiredLetters": [
+      "m",
+      "i",
+      "n",
+      "a"
+    ],
+    "oral": true,
+    "reading": false,
+    "writing": true,
+    "requiresAccentSupport": false,
+    "segmentation": false,
+    "blending": false,
+    "imageRequired": false,
+    "image": null,
+    "reviewRequired": false,
+    "difficulty": 1,
+    "priority": 1,
+    "wordAudio": "assets/audio/words/mina.e11aafccb4f119e9.m4a",
+    "wordAudioRequired": true,
+    "kind": "dictation-word"
+  },
+  {
+    "id": "mision",
+    "word": "misión",
+    "displayUpper": "MISIÓN",
+    "phonemes": [
+      "m",
+      "i",
+      "s",
+      "i",
+      "o",
+      "n"
+    ],
+    "graphemes": [
+      "m",
+      "i",
+      "s",
+      "i",
+      "ó",
+      "n"
+    ],
+    "phonemeCount": 6,
+    "syllableCount": null,
+    "structure": "CVCVVC",
+    "initialPhoneme": "m",
+    "finalPhoneme": "n",
+    "phonemePositions": {
+      "m": [
+        0
+      ],
+      "i": [
+        1,
+        3
+      ],
+      "s": [
+        2
+      ],
+      "o": [
+        4
+      ],
+      "n": [
+        5
+      ]
+    },
+    "requiredLetters": [
+      "m",
+      "i",
+      "s",
+      "ó",
+      "n"
+    ],
+    "oral": true,
+    "reading": false,
+    "writing": true,
+    "requiresAccentSupport": true,
+    "segmentation": false,
+    "blending": false,
+    "imageRequired": false,
+    "image": null,
+    "reviewRequired": false,
+    "difficulty": 3,
+    "priority": 3,
+    "wordAudio": "assets/audio/words/mision.d0bb12dc038ac795.m4a",
+    "wordAudioRequired": true,
+    "kind": "dictation-word"
+  },
+  {
+    "id": "mona",
+    "word": "mona",
+    "displayUpper": "MONA",
+    "phonemes": [
+      "m",
+      "o",
+      "n",
+      "a"
+    ],
+    "graphemes": [
+      "m",
+      "o",
+      "n",
+      "a"
+    ],
+    "phonemeCount": 4,
+    "syllableCount": null,
+    "structure": "CVCV",
+    "initialPhoneme": "m",
+    "finalPhoneme": "a",
+    "phonemePositions": {
+      "m": [
+        0
+      ],
+      "o": [
+        1
+      ],
+      "n": [
+        2
+      ],
+      "a": [
+        3
+      ]
+    },
+    "requiredLetters": [
+      "m",
+      "o",
+      "n",
+      "a"
+    ],
+    "oral": true,
+    "reading": false,
+    "writing": true,
+    "requiresAccentSupport": false,
+    "segmentation": false,
+    "blending": false,
+    "imageRequired": false,
+    "image": null,
+    "reviewRequired": false,
+    "difficulty": 1,
+    "priority": 1,
+    "wordAudio": "assets/audio/words/mona.2e76d63e898a0563.m4a",
+    "wordAudioRequired": true,
+    "kind": "dictation-word"
+  },
+  {
+    "id": "museo",
+    "word": "museo",
+    "displayUpper": "MUSEO",
+    "phonemes": [
+      "m",
+      "u",
+      "s",
+      "e",
+      "o"
+    ],
+    "graphemes": [
+      "m",
+      "u",
+      "s",
+      "e",
+      "o"
+    ],
+    "phonemeCount": 5,
+    "syllableCount": null,
+    "structure": "CVCVV",
+    "initialPhoneme": "m",
+    "finalPhoneme": "o",
+    "phonemePositions": {
+      "m": [
+        0
+      ],
+      "u": [
+        1
+      ],
+      "s": [
+        2
+      ],
+      "e": [
+        3
+      ],
+      "o": [
+        4
+      ]
+    },
+    "requiredLetters": [
+      "m",
+      "u",
+      "s",
+      "e",
+      "o"
+    ],
+    "oral": true,
+    "reading": false,
+    "writing": true,
+    "requiresAccentSupport": false,
+    "segmentation": false,
+    "blending": false,
+    "imageRequired": false,
+    "image": null,
+    "reviewRequired": false,
+    "difficulty": 2,
+    "priority": 3,
+    "wordAudio": "assets/audio/words/museo.6a24b670badeddbc.m4a",
+    "wordAudioRequired": true,
+    "kind": "dictation-word"
+  },
+  {
+    "id": "muslo",
+    "word": "muslo",
+    "displayUpper": "MUSLO",
+    "phonemes": [
+      "m",
+      "u",
+      "s",
+      "l",
+      "o"
+    ],
+    "graphemes": [
+      "m",
+      "u",
+      "s",
+      "l",
+      "o"
+    ],
+    "phonemeCount": 5,
+    "syllableCount": null,
+    "structure": "CVCCV",
+    "initialPhoneme": "m",
+    "finalPhoneme": "o",
+    "phonemePositions": {
+      "m": [
+        0
+      ],
+      "u": [
+        1
+      ],
+      "s": [
+        2
+      ],
+      "l": [
+        3
+      ],
+      "o": [
+        4
+      ]
+    },
+    "requiredLetters": [
+      "m",
+      "u",
+      "s",
+      "l",
+      "o"
+    ],
+    "oral": true,
+    "reading": false,
+    "writing": true,
+    "requiresAccentSupport": false,
+    "segmentation": false,
+    "blending": false,
+    "imageRequired": false,
+    "image": null,
+    "reviewRequired": false,
+    "difficulty": 2,
+    "priority": 3,
+    "wordAudio": "assets/audio/words/muslo.690fc51087827373.m4a",
+    "wordAudioRequired": true,
+    "kind": "dictation-word"
+  },
+  {
+    "id": "nena",
+    "word": "nena",
+    "displayUpper": "NENA",
+    "phonemes": [
+      "n",
+      "e",
+      "n",
+      "a"
+    ],
+    "graphemes": [
+      "n",
+      "e",
+      "n",
+      "a"
+    ],
+    "phonemeCount": 4,
+    "syllableCount": null,
+    "structure": "CVCV",
+    "initialPhoneme": "n",
+    "finalPhoneme": "a",
+    "phonemePositions": {
+      "n": [
+        0,
+        2
+      ],
+      "e": [
+        1
+      ],
+      "a": [
+        3
+      ]
+    },
+    "requiredLetters": [
+      "n",
+      "e",
+      "a"
+    ],
+    "oral": true,
+    "reading": false,
+    "writing": true,
+    "requiresAccentSupport": false,
+    "segmentation": false,
+    "blending": false,
+    "imageRequired": false,
+    "image": null,
+    "reviewRequired": false,
+    "difficulty": 1,
+    "priority": 1,
+    "wordAudio": "assets/audio/words/nena.5b5f7a785ad07b9a.m4a",
+    "wordAudioRequired": true,
+    "kind": "dictation-word"
+  },
+  {
+    "id": "nene",
+    "word": "nene",
+    "displayUpper": "NENE",
+    "phonemes": [
+      "n",
+      "e",
+      "n",
+      "e"
+    ],
+    "graphemes": [
+      "n",
+      "e",
+      "n",
+      "e"
+    ],
+    "phonemeCount": 4,
+    "syllableCount": null,
+    "structure": "CVCV",
+    "initialPhoneme": "n",
+    "finalPhoneme": "e",
+    "phonemePositions": {
+      "n": [
+        0,
+        2
+      ],
+      "e": [
+        1,
+        3
+      ]
+    },
+    "requiredLetters": [
+      "n",
+      "e"
+    ],
+    "oral": true,
+    "reading": false,
+    "writing": true,
+    "requiresAccentSupport": false,
+    "segmentation": false,
+    "blending": false,
+    "imageRequired": false,
+    "image": null,
+    "reviewRequired": false,
+    "difficulty": 1,
+    "priority": 1,
+    "wordAudio": "assets/audio/words/nene.a59678bb027b8e59.m4a",
+    "wordAudioRequired": true,
+    "kind": "dictation-word"
+  },
+  {
+    "id": "olmo",
+    "word": "olmo",
+    "displayUpper": "OLMO",
+    "phonemes": [
+      "o",
+      "l",
+      "m",
+      "o"
+    ],
+    "graphemes": [
+      "o",
+      "l",
+      "m",
+      "o"
+    ],
+    "phonemeCount": 4,
+    "syllableCount": null,
+    "structure": "VCCV",
+    "initialPhoneme": "o",
+    "finalPhoneme": "o",
+    "phonemePositions": {
+      "o": [
+        0,
+        3
+      ],
+      "l": [
+        1
+      ],
+      "m": [
+        2
+      ]
+    },
+    "requiredLetters": [
+      "o",
+      "l",
+      "m"
+    ],
+    "oral": true,
+    "reading": false,
+    "writing": true,
+    "requiresAccentSupport": false,
+    "segmentation": false,
+    "blending": false,
+    "imageRequired": false,
+    "image": null,
+    "reviewRequired": false,
+    "difficulty": 1,
+    "priority": 1,
+    "wordAudio": "assets/audio/words/olmo.76e8a59819a3c1db.m4a",
+    "wordAudioRequired": true,
+    "kind": "dictation-word"
+  },
+  {
+    "id": "sala",
+    "word": "sala",
+    "displayUpper": "SALA",
+    "phonemes": [
+      "s",
+      "a",
+      "l",
+      "a"
+    ],
+    "graphemes": [
+      "s",
+      "a",
+      "l",
+      "a"
+    ],
+    "phonemeCount": 4,
+    "syllableCount": null,
+    "structure": "CVCV",
+    "initialPhoneme": "s",
+    "finalPhoneme": "a",
+    "phonemePositions": {
+      "s": [
+        0
+      ],
+      "a": [
+        1,
+        3
+      ],
+      "l": [
+        2
+      ]
+    },
+    "requiredLetters": [
+      "s",
+      "a",
+      "l"
+    ],
+    "oral": true,
+    "reading": false,
+    "writing": true,
+    "requiresAccentSupport": false,
+    "segmentation": false,
+    "blending": false,
+    "imageRequired": false,
+    "image": null,
+    "reviewRequired": false,
+    "difficulty": 1,
+    "priority": 1,
+    "wordAudio": "assets/audio/words/sala.ff490ace121202c5.m4a",
+    "wordAudioRequired": true,
+    "kind": "dictation-word"
+  },
+  {
+    "id": "sale",
+    "word": "sale",
+    "displayUpper": "SALE",
+    "phonemes": [
+      "s",
+      "a",
+      "l",
+      "e"
+    ],
+    "graphemes": [
+      "s",
+      "a",
+      "l",
+      "e"
+    ],
+    "phonemeCount": 4,
+    "syllableCount": null,
+    "structure": "CVCV",
+    "initialPhoneme": "s",
+    "finalPhoneme": "e",
+    "phonemePositions": {
+      "s": [
+        0
+      ],
+      "a": [
+        1
+      ],
+      "l": [
+        2
+      ],
+      "e": [
+        3
+      ]
+    },
+    "requiredLetters": [
+      "s",
+      "a",
+      "l",
+      "e"
+    ],
+    "oral": true,
+    "reading": false,
+    "writing": true,
+    "requiresAccentSupport": false,
+    "segmentation": false,
+    "blending": false,
+    "imageRequired": false,
+    "image": null,
+    "reviewRequired": false,
+    "difficulty": 1,
+    "priority": 1,
+    "wordAudio": "assets/audio/words/sale.6a10300c6b48f74c.m4a",
+    "wordAudioRequired": true,
+    "kind": "dictation-word"
+  },
+  {
+    "id": "salmon",
+    "word": "salmón",
+    "displayUpper": "SALMÓN",
+    "phonemes": [
+      "s",
+      "a",
+      "l",
+      "m",
+      "o",
+      "n"
+    ],
+    "graphemes": [
+      "s",
+      "a",
+      "l",
+      "m",
+      "ó",
+      "n"
+    ],
+    "phonemeCount": 6,
+    "syllableCount": null,
+    "structure": "CVCCVC",
+    "initialPhoneme": "s",
+    "finalPhoneme": "n",
+    "phonemePositions": {
+      "s": [
+        0
+      ],
+      "a": [
+        1
+      ],
+      "l": [
+        2
+      ],
+      "m": [
+        3
+      ],
+      "o": [
+        4
+      ],
+      "n": [
+        5
+      ]
+    },
+    "requiredLetters": [
+      "s",
+      "a",
+      "l",
+      "m",
+      "ó",
+      "n"
+    ],
+    "oral": true,
+    "reading": false,
+    "writing": true,
+    "requiresAccentSupport": true,
+    "segmentation": false,
+    "blending": false,
+    "imageRequired": false,
+    "image": null,
+    "reviewRequired": false,
+    "difficulty": 3,
+    "priority": 3,
+    "wordAudio": "assets/audio/words/salmon.4dc4c14c87e1627e.m4a",
+    "wordAudioRequired": true,
+    "kind": "dictation-word"
+  },
+  {
+    "id": "salon",
+    "word": "salón",
+    "displayUpper": "SALÓN",
+    "phonemes": [
+      "s",
+      "a",
+      "l",
+      "o",
+      "n"
+    ],
+    "graphemes": [
+      "s",
+      "a",
+      "l",
+      "ó",
+      "n"
+    ],
+    "phonemeCount": 5,
+    "syllableCount": null,
+    "structure": "CVCVC",
+    "initialPhoneme": "s",
+    "finalPhoneme": "n",
+    "phonemePositions": {
+      "s": [
+        0
+      ],
+      "a": [
+        1
+      ],
+      "l": [
+        2
+      ],
+      "o": [
+        3
+      ],
+      "n": [
+        4
+      ]
+    },
+    "requiredLetters": [
+      "s",
+      "a",
+      "l",
+      "ó",
+      "n"
+    ],
+    "oral": true,
+    "reading": false,
+    "writing": true,
+    "requiresAccentSupport": true,
+    "segmentation": false,
+    "blending": false,
+    "imageRequired": false,
+    "image": null,
+    "reviewRequired": false,
+    "difficulty": 2,
+    "priority": 3,
+    "wordAudio": "assets/audio/words/salon.2591176bd417cd5a.m4a",
+    "wordAudioRequired": true,
+    "kind": "dictation-word"
+  },
+  {
+    "id": "sano",
+    "word": "sano",
+    "displayUpper": "SANO",
+    "phonemes": [
+      "s",
+      "a",
+      "n",
+      "o"
+    ],
+    "graphemes": [
+      "s",
+      "a",
+      "n",
+      "o"
+    ],
+    "phonemeCount": 4,
+    "syllableCount": null,
+    "structure": "CVCV",
+    "initialPhoneme": "s",
+    "finalPhoneme": "o",
+    "phonemePositions": {
+      "s": [
+        0
+      ],
+      "a": [
+        1
+      ],
+      "n": [
+        2
+      ],
+      "o": [
+        3
+      ]
+    },
+    "requiredLetters": [
+      "s",
+      "a",
+      "n",
+      "o"
+    ],
+    "oral": true,
+    "reading": false,
+    "writing": true,
+    "requiresAccentSupport": false,
+    "segmentation": false,
+    "blending": false,
+    "imageRequired": false,
+    "image": null,
+    "reviewRequired": false,
+    "difficulty": 1,
+    "priority": 1,
+    "wordAudio": "assets/audio/words/sano.4135bf43b7de50bb.m4a",
+    "wordAudioRequired": true,
+    "kind": "dictation-word"
+  },
+  {
+    "id": "semana",
+    "word": "semana",
+    "displayUpper": "SEMANA",
+    "phonemes": [
+      "s",
+      "e",
+      "m",
+      "a",
+      "n",
+      "a"
+    ],
+    "graphemes": [
+      "s",
+      "e",
+      "m",
+      "a",
+      "n",
+      "a"
+    ],
+    "phonemeCount": 6,
+    "syllableCount": null,
+    "structure": "CVCVCV",
+    "initialPhoneme": "s",
+    "finalPhoneme": "a",
+    "phonemePositions": {
+      "s": [
+        0
+      ],
+      "e": [
+        1
+      ],
+      "m": [
+        2
+      ],
+      "a": [
+        3,
+        5
+      ],
+      "n": [
+        4
+      ]
+    },
+    "requiredLetters": [
+      "s",
+      "e",
+      "m",
+      "a",
+      "n"
+    ],
+    "oral": true,
+    "reading": false,
+    "writing": true,
+    "requiresAccentSupport": false,
+    "segmentation": false,
+    "blending": false,
+    "imageRequired": false,
+    "image": null,
+    "reviewRequired": false,
+    "difficulty": 3,
+    "priority": 3,
+    "wordAudio": "assets/audio/words/semana.13adf75fbc9ceca0.m4a",
+    "wordAudioRequired": true,
+    "kind": "dictation-word"
+  },
+  {
+    "id": "sola",
+    "word": "sola",
+    "displayUpper": "SOLA",
+    "phonemes": [
+      "s",
+      "o",
+      "l",
+      "a"
+    ],
+    "graphemes": [
+      "s",
+      "o",
+      "l",
+      "a"
+    ],
+    "phonemeCount": 4,
+    "syllableCount": null,
+    "structure": "CVCV",
+    "initialPhoneme": "s",
+    "finalPhoneme": "a",
+    "phonemePositions": {
+      "s": [
+        0
+      ],
+      "o": [
+        1
+      ],
+      "l": [
+        2
+      ],
+      "a": [
+        3
+      ]
+    },
+    "requiredLetters": [
+      "s",
+      "o",
+      "l",
+      "a"
+    ],
+    "oral": true,
+    "reading": false,
+    "writing": true,
+    "requiresAccentSupport": false,
+    "segmentation": false,
+    "blending": false,
+    "imageRequired": false,
+    "image": null,
+    "reviewRequired": false,
+    "difficulty": 1,
+    "priority": 1,
+    "wordAudio": "assets/audio/words/sola.87f9270601af0bce.m4a",
+    "wordAudioRequired": true,
+    "kind": "dictation-word"
+  },
+  {
+    "id": "solo",
+    "word": "solo",
+    "displayUpper": "SOLO",
+    "phonemes": [
+      "s",
+      "o",
+      "l",
+      "o"
+    ],
+    "graphemes": [
+      "s",
+      "o",
+      "l",
+      "o"
+    ],
+    "phonemeCount": 4,
+    "syllableCount": null,
+    "structure": "CVCV",
+    "initialPhoneme": "s",
+    "finalPhoneme": "o",
+    "phonemePositions": {
+      "s": [
+        0
+      ],
+      "o": [
+        1,
+        3
+      ],
+      "l": [
+        2
+      ]
+    },
+    "requiredLetters": [
+      "s",
+      "o",
+      "l"
+    ],
+    "oral": true,
+    "reading": false,
+    "writing": true,
+    "requiresAccentSupport": false,
+    "segmentation": false,
+    "blending": false,
+    "imageRequired": false,
+    "image": null,
+    "reviewRequired": false,
+    "difficulty": 1,
+    "priority": 1,
+    "wordAudio": "assets/audio/words/solo.80708514e1ebfc62.m4a",
+    "wordAudioRequired": true,
+    "kind": "dictation-word"
+  },
+  {
+    "id": "una",
+    "word": "una",
+    "displayUpper": "UNA",
+    "phonemes": [
+      "u",
+      "n",
+      "a"
+    ],
+    "graphemes": [
+      "u",
+      "n",
+      "a"
+    ],
+    "phonemeCount": 3,
+    "syllableCount": null,
+    "structure": "VCV",
+    "initialPhoneme": "u",
+    "finalPhoneme": "a",
+    "phonemePositions": {
+      "u": [
+        0
+      ],
+      "n": [
+        1
+      ],
+      "a": [
+        2
+      ]
+    },
+    "requiredLetters": [
+      "u",
+      "n",
+      "a"
+    ],
+    "oral": true,
+    "reading": false,
+    "writing": true,
+    "requiresAccentSupport": false,
+    "segmentation": false,
+    "blending": false,
+    "imageRequired": false,
+    "image": null,
+    "reviewRequired": false,
+    "difficulty": 1,
+    "priority": 1,
+    "wordAudio": "assets/audio/words/una.cde960e552b7766f.m4a",
+    "wordAudioRequired": true,
+    "kind": "dictation-word"
+  }
+]

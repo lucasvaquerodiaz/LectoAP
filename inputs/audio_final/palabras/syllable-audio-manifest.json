@@ -1,0 +1,230 @@
+[
+  {
+    "unit": "ma",
+    "structure": "CV",
+    "file": "assets/audio/words/ma.m4a",
+    "status": "provided_by_teacher"
+  },
+  {
+    "unit": "me",
+    "structure": "CV",
+    "file": "assets/audio/words/me.m4a",
+    "status": "provided_by_teacher"
+  },
+  {
+    "unit": "mi",
+    "structure": "CV",
+    "file": "assets/audio/words/mi.m4a",
+    "status": "provided_by_teacher"
+  },
+  {
+    "unit": "mo",
+    "structure": "CV",
+    "file": "assets/audio/words/mo.m4a",
+    "status": "provided_by_teacher"
+  },
+  {
+    "unit": "mu",
+    "structure": "CV",
+    "file": "assets/audio/words/mu.m4a",
+    "status": "provided_by_teacher"
+  },
+  {
+    "unit": "la",
+    "structure": "CV",
+    "file": "assets/audio/words/la.m4a",
+    "status": "provided_by_teacher"
+  },
+  {
+    "unit": "le",
+    "structure": "CV",
+    "file": "assets/audio/words/le.m4a",
+    "status": "provided_by_teacher"
+  },
+  {
+    "unit": "li",
+    "structure": "CV",
+    "file": "assets/audio/words/li.m4a",
+    "status": "provided_by_teacher"
+  },
+  {
+    "unit": "lo",
+    "structure": "CV",
+    "file": "assets/audio/words/lo.m4a",
+    "status": "provided_by_teacher"
+  },
+  {
+    "unit": "lu",
+    "structure": "CV",
+    "file": "assets/audio/words/lu.m4a",
+    "status": "provided_by_teacher"
+  },
+  {
+    "unit": "sa",
+    "structure": "CV",
+    "file": "assets/audio/words/sa.m4a",
+    "status": "provided_by_teacher"
+  },
+  {
+    "unit": "se",
+    "structure": "CV",
+    "file": "assets/audio/words/se.m4a",
+    "status": "provided_by_teacher"
+  },
+  {
+    "unit": "si",
+    "structure": "CV",
+    "file": "assets/audio/words/si.m4a",
+    "status": "provided_by_teacher"
+  },
+  {
+    "unit": "so",
+    "structure": "CV",
+    "file": "assets/audio/words/so.m4a",
+    "status": "provided_by_teacher"
+  },
+  {
+    "unit": "su",
+    "structure": "CV",
+    "file": "assets/audio/words/su.m4a",
+    "status": "provided_by_teacher"
+  },
+  {
+    "unit": "na",
+    "structure": "CV",
+    "file": "assets/audio/words/na.m4a",
+    "status": "provided_by_teacher"
+  },
+  {
+    "unit": "ne",
+    "structure": "CV",
+    "file": "assets/audio/words/ne.m4a",
+    "status": "provided_by_teacher"
+  },
+  {
+    "unit": "ni",
+    "structure": "CV",
+    "file": "assets/audio/words/ni.m4a",
+    "status": "provided_by_teacher"
+  },
+  {
+    "unit": "no",
+    "structure": "CV",
+    "file": "assets/audio/words/no.m4a",
+    "status": "provided_by_teacher"
+  },
+  {
+    "unit": "nu",
+    "structure": "CV",
+    "file": "assets/audio/words/nu.m4a",
+    "status": "provided_by_teacher"
+  },
+  {
+    "unit": "al",
+    "structure": "VC",
+    "file": "assets/audio/words/al.m4a",
+    "status": "provided_by_teacher"
+  },
+  {
+    "unit": "el",
+    "structure": "VC",
+    "file": "assets/audio/words/el.m4a",
+    "status": "provided_by_teacher"
+  },
+  {
+    "unit": "es",
+    "structure": "VC",
+    "file": "assets/audio/words/es.m4a",
+    "status": "provided_by_teacher"
+  },
+  {
+    "unit": "en",
+    "structure": "VC",
+    "file": "assets/audio/words/en.m4a",
+    "status": "provided_by_teacher"
+  },
+  {
+    "unit": "un",
+    "structure": "VC",
+    "file": "assets/audio/words/un.m4a",
+    "status": "provided_by_teacher"
+  },
+  {
+    "unit": "on",
+    "structure": "VC",
+    "file": "assets/audio/words/on.m4a",
+    "status": "provided_by_teacher"
+  },
+  {
+    "unit": "sal",
+    "structure": "CVC",
+    "file": "assets/audio/words/sal.m4a",
+    "status": "provided_by_teacher"
+  },
+  {
+    "unit": "sol",
+    "structure": "CVC",
+    "file": "assets/audio/words/sol.m4a",
+    "status": "provided_by_teacher"
+  },
+  {
+    "unit": "son",
+    "structure": "CVC",
+    "file": "assets/audio/words/son.m4a",
+    "status": "provided_by_teacher"
+  },
+  {
+    "unit": "sin",
+    "structure": "CVC",
+    "file": "assets/audio/words/sin.m4a",
+    "status": "provided_by_teacher"
+  },
+  {
+    "unit": "mes",
+    "structure": "CVC",
+    "file": "assets/audio/words/mes.m4a",
+    "status": "provided_by_teacher"
+  },
+  {
+    "unit": "mis",
+    "structure": "CVC",
+    "file": "assets/audio/words/mis.m4a",
+    "status": "provided_by_teacher"
+  },
+  {
+    "unit": "mal",
+    "structure": "CVC",
+    "file": "assets/audio/words/mal.m4a",
+    "status": "provided_by_teacher"
+  },
+  {
+    "unit": "mil",
+    "structure": "CVC",
+    "file": "assets/audio/words/mil.m4a",
+    "status": "provided_by_teacher"
+  },
+  {
+    "unit": "las",
+    "structure": "CVC",
+    "file": "assets/audio/words/las.m4a",
+    "status": "provided_by_teacher"
+  },
+  {
+    "unit": "los",
+    "structure": "CVC",
+    "file": "assets/audio/words/los.m4a",
+    "status": "provided_by_teacher"
+  },
+  {
+    "unit": "nos",
+    "structure": "CVC",
+    "file": "assets/audio/words/nos.m4a",
+    "status": "provided_by_teacher"
+  },
+  {
+    "unit": "sus",
+    "structure": "CVC",
+    "file": "assets/audio/words/sus.m4a",
+    "status": "provided_by_teacher"
+  }
+]

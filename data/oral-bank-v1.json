@@ -52,8 +52,8 @@
     "reviewRequired": false,
     "difficulty": 1,
     "priority": 1,
-    "wordAudio": null,
-    "wordAudioRequired": false,
+    "wordAudio": "assets/audio/words/nube.bbd90baeb976179b.m4a",
+    "wordAudioRequired": true,
     "meaning": "nube",
     "kind": "word"
   }

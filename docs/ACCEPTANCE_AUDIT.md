@@ -1,5 +1,7 @@
 # Auditoría contra la especificación
 
+Auditoría histórica del 21-09-2026, anterior a la actualización 1.4.0. Para el estado actual, consultar `VERIFICATION.md` y `AUDIO_FINAL_INTEGRATION.md`.
+
 Fecha: 21-09-2026. Aplicación 1.1.0; contenido 2.0.0. Se diferencia implementación de verificación real. La V1 usa 9 fonemas y 19 palabras de las fuentes definitivas; la voz docente es fallback de palabras sin grabación. La revisión actual de audio se detalla en AUDIO_FINAL_INTEGRATION.md. No se declara validación en iPad físico ni despliegue real en GitHub Pages.
 
 | § | Requisito | Estado y evidencia |

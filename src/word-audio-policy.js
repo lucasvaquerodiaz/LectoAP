@@ -6,4 +6,3 @@ export function wordAudioPolicy(item,config){
  const options=config.help&&item.wordAudioHelp!=='disabled'?item.options.filter(o=>o.type==='image').map(o=>({id:o.id,word:o.label})):[];
  return {primary,options};
 }
-

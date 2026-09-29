@@ -15,7 +15,7 @@ Si un entorno restringido impide que el ejecutor de tests lance procesos, ejecut
 5. El workflow valida bancos, ejecuta tests de lógica, crea el build y publica el artefacto con las acciones oficiales de Pages.
 6. Abrir la URL que devuelve el job `deploy`, normalmente `https://USUARIO.github.io/REPOSITORIO/`. Conservar la barra final. No se necesita una regla de redirección SPA: no hay rutas de aplicación basadas en History API.
 
-El `start_url`, `scope`, enlaces y cargas de recursos son relativos. El service worker se sirve desde la raíz del build y limita las cachés y peticiones al scope. La prueba local `/LectoAP/` permite comprobar esto antes de publicar. La verificación de la URL real requiere que el usuario proporcione un repositorio y complete el despliegue; no se afirma que ya esté publicado.
+El `start_url`, `scope`, enlaces y cargas de recursos son relativos. El service worker se sirve desde la raíz del build y limita las cachés y peticiones al scope. La prueba local `/LectoAP/` permite comprobar esto antes de publicar. El repositorio de esta instalación es `lucasvaquerodiaz/LectoAP` y la URL pública es `https://lucasvaquerodiaz.github.io/LectoAP/`.
 
 ## Actualizar
 

@@ -1,6 +1,6 @@
-# LectoAP V1 · audio definitivo (app 1.1.0 / contenido 2.0.0)
+# LectoAP · versión 1.4.0 (contenido 3.1.0)
 
-PWA estática de práctica educativa guiada por un docente: conciencia fonémica, correspondencias sonido-letra, lectura/escritura inicial, comparación de palabras y vocabulario. Sin cuentas, backend, analítica ni historial personal. Interfaz propia, recursos locales y 9 fonemas definitivos y 19 palabras grabadas.
+PWA estática para práctica educativa guiada o autónoma: conciencia fonémica, correspondencias sonido-letra y lectura/escritura inicial. Sin cuentas, backend, analítica ni historial personal. Usa recursos locales: 9 fonemas, 59 palabras y 38 sílabas grabadas.
 
 ## Ejecutar
 
@@ -20,9 +20,11 @@ Abrir http://localhost:4173/ o http://localhost:4173/LectoAP/ para probar rutas 
 1. Elegir módulo y actividad en modo docente.
 2. Activar letras y estructuras ya trabajadas; seleccionar tanda de 5, 6, 8 o 10 ítems.
 3. Para introducir una estructura, elegirla en el desplegable: tres ensayos iniciales y mezcla posterior cuando hay otras estructuras elegibles.
-4. Las palabras grabadas se escuchan con «Escuchar palabra». La ficha docente aparece solo cuando falta una grabación (por ejemplo, NUBE o SALA) o el audio está desactivado. Las consignas no grabadas pueden ser leídas por el docente.
+4. Las palabras grabadas se escuchan con ▶. La ficha docente aparece cuando falta una grabación o el audio está desactivado. Las consignas no grabadas pueden ser leídas por el docente.
 5. En conciencia fonémica no aparecen las grafías objetivo en la pantalla del alumno. En segmentación, escuchar y elegir un sonido por caja. En escritura, tocar letras para colocarlas; una letra puede reutilizarse.
-6. Tras un error hay otro intento; tras el segundo, modelado. Solo la primera respuesta alimenta la adaptación. No hay puntos, vidas ni recompensas competitivas.
+6. Un error permite corregir la respuesta. Tras dos errores aparece una ayuda que retira una opción incorrecta cuando es posible. Al acertar, la respuesta se marca en verde y se pasa al siguiente ítem tras 1,5 segundos. Solo la primera respuesta alimenta la adaptación.
+
+El botón **Jugar solo**, con el pictograma de un niño, inicia un recorrido fijo de 12 actividades. Cada una tiene 6 ítems, usa dificultad fácil y pasa automáticamente a la siguiente. La app selecciona palabras con grabación para este modo.
 
 Las ayudas que revelan la solución se desactivan por motor. El botón de repetición controla la secuencia presentada; los botones de audio que forman parte de la respuesta siguen siendo utilizables. Si se desactiva el audio, el docente pronuncia también los sonidos. La app no usa TTS. El dictado de palabras reproduce la palabra real completa; integración mantiene los fonemas aislados y no revela su palabra completa.
 
@@ -31,7 +33,8 @@ Las ayudas que revelan la solución se desactivan por motor. El botón de repeti
 - 20 actividades sobre cuatro tipos reutilizables de respuesta: elección, elección múltiple, audio y secuencia.
 - CF01–CF08; SL01–SL07; S+L01–S+L03; VOC01–VOC02.
 - 19 palabras núcleo registradas; cuatro imágenes pendientes excluidas de tareas visuales: OSA, ASA, MULA, MASA. Pueden usarse palabras escritas compatibles sin una imagen validada en los motores que no la requieren.
-- 34 estímulos de sílabas/vocales: 5 V, 20 CV y 9 VC prioritarias.
+- 38 unidades grabadas: 20 CV, 6 VC y 12 CVC. El dictado de sílabas reproduce la grabación completa de cada unidad.
+- 39 palabras nuevas en el banco de dictado, además del banco núcleo. NUBE conserva su uso oral y visual y no entra en dictado.
 - Banco oral adicional inicial pequeño: NUBE, con transcripción /n u b e/ y pictograma revisado. No se incluyeron automáticamente las listas orientativas sin revisión.
 - 16 pictogramas locales de ARASAAC, incluidos 15 del banco núcleo y NUBE.
 - Comparación avanzada ALA → SALA: SALA no forma parte del núcleo inicial.
@@ -68,7 +71,7 @@ Los resultados se guardan en `test-results/`. La suite de navegador no es una de
 
 ## Publicación e instalación
 
-Ver [DEPLOYMENT.md](docs/DEPLOYMENT.md). El workflow incluido valida, prueba y publica `dist/` mediante GitHub Pages. Hace falta un repositorio del usuario: no se creó ni publicó uno sin un destino indicado. En iPad: abrir la URL HTTPS en Safari, completar la primera carga, Compartir → Añadir a pantalla de inicio. Antes de una sesión, comprobar funcionamiento en modo avión.
+Ver [DEPLOYMENT.md](docs/DEPLOYMENT.md). El workflow valida, prueba y publica `dist/` mediante GitHub Pages en [LectoAP](https://lucasvaquerodiaz.github.io/LectoAP/). En iPad: abrir la URL HTTPS en Safari, completar la primera carga, Compartir → Añadir a pantalla de inicio. Antes de una sesión, comprobar funcionamiento en modo avión.
 
 La migración correctiva desde una caché anterior retira los audios incorrectos y recarga las ventanas del mismo scope, reiniciando cualquier sesión antigua. Las actualizaciones posteriores vuelven al flujo de espera y activación docente. Una instalación desconectada debe conectarse y abrirse al menos una vez para recibir la corrección. La caché combina versión de aplicación, versión de contenido y huella del build. Cada instalación tiene su propio scope. iOS puede desalojar cachés por espacio: si ocurre, volver a completar una carga conectada.
 
@@ -78,5 +81,4 @@ Ver [créditos y licencias](CREDITS_AND_LICENSES.md), [pedagogía](docs/PEDAGOGY
 
 `inputs/audio_final/fonemas/` y `inputs/audio_final/palabras/` son las únicas fuentes. Ejecutar `node scripts/sync-audio.mjs` tras una modificación autorizada. El script usa los manifiestos de esas carpetas, conserva los bytes, genera rutas con SHA-256 y retira copias obsoletas de `public/assets/audio/`. La validación compara fuente, banco, manifiesto y copia publicada; el build falla ante desajustes.
 
-La confirmación auditiva de los 28 archivos la realizó el docente y quedó registrada en `data/audio-verification.json`, vinculada a sus hashes. Un cambio posterior deja la confirmación pendiente hasta nueva revisión. Ver `docs/AUDIO_FINAL_INTEGRATION.md` para pruebas, caché y limitaciones.
-
+El docente confirmó haber verificado todos los audios y esa declaración quedó registrada en `data/audio-verification.json`, vinculada a las huellas de los recursos. Un cambio posterior deja la confirmación pendiente hasta nueva revisión. Ver `docs/AUDIO_FINAL_INTEGRATION.md` para pruebas, caché y limitaciones.

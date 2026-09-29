@@ -5,7 +5,7 @@ Este paquete está pensado para abrirse como carpeta/proyecto en Codex.
 ## Contenido
 - `PROMPT_MAESTRO_CODEX.md`: especificación completa para Codex.
 - `inputs/audio_final/fonemas/`: 9 fonemas definitivos + manifiesto.
-- `inputs/audio_final/palabras/`: 19 palabras definitivas + manifiesto.
+- `inputs/audio_final/palabras/`: 59 palabras y 38 unidades de sílaba declaradas en manifiestos.
 
 ## Flujo recomendado
 1. Descomprime `LectoAP_STARTER.zip` en una carpeta local llamada `LectoAP`.

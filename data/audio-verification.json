@@ -1,8 +1,7 @@
 {
-  "sourceFingerprint": "a28345cb0747d7a972e98a7f16a633d418218f00250ebd00cc7b3f6afaaa2291",
+  "sourceFingerprint": "121647b69d98744f764e98589dcb3eb1c00966f8aa71ba473c6546e6ea460625",
   "status": "confirmed_by_teacher",
-  "method": "explicit user confirmation after listening to all 28 files",
-  "notes": "Correspondencia hablada confirmada por el docente. Codex comprueba inventario, asociación, hashes y reproducción; no dispone de escucha perceptiva.",
-  "confirmedAt": "2026-09-21",
-  "confirmation": "Sí, he escuchado y confirmado los 28 audios"
+  "method": "Confirmación explícita del docente: Ya verifiqué todos los audios.",
+  "previousConfirmation": "Sí, he escuchado y confirmado los 28 audios",
+  "notes": "El docente confirma haber verificado todos los audios nuevos y anteriores."
 }

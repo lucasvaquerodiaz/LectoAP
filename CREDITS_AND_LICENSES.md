@@ -10,9 +10,9 @@ La API oficial publica su contrato en https://api.arasaac.org/arasaac_v1.json y 
 
 ## Grabaciones
 
-Los nueve fonemas definitivos proceden de «Fonemas (18) Lucas.m4a» y las 19 palabras de «Palabras básicas LectoAP.m4a», aportados por el docente en `inputs/audio_final/fonemas/` y `inputs/audio_final/palabras/`. Son la única fuente autorizada desde esta integración. Se conservan byte a byte, sin nuevos recortes ni transcodificación. El manifiesto conserva procedencia y tiempos de las versiones corregidas, sin arrastrar los cortes anteriores.
+Las grabaciones aportadas por el docente se conservan en `inputs/audio_final/fonemas/` y `inputs/audio_final/palabras/`. El inventario actual contiene 9 fonemas, 59 palabras y 38 unidades de sílaba, sin transcodificación. Los manifiestos indican el archivo correspondiente y su huella.
 
-El docente confirmó expresamente haber escuchado y comprobado los 28 audios el 21-09-2026. Codex verifica asociación, hashes y reproducción técnica; no dispone de escucha perceptiva en este entorno. No se presume una licencia pública independiente sobre las grabaciones fuera de este proyecto. Las palabras sin grabación y las consignas no grabadas pueden ser pronunciadas en directo; no hay TTS.
+El docente confirmó expresamente haber verificado todos los audios. La comprobación automática contrasta asociaciones, huellas y reproducción técnica. No se presume una licencia pública independiente sobre las grabaciones fuera de este proyecto. Las consignas no grabadas pueden ser pronunciadas en directo; no hay TTS.
 
 ## Código, interfaz y tipografía
 
@@ -20,4 +20,4 @@ Código e interfaz creados para LectoAP. No se ha añadido una licencia de softw
 
 ## Referencias pedagógicas
 
-La especificación aportada por el usuario es la base de las decisiones pedagógicas. No se aportaron documentos de Defior, Palazón u otros autores en esta carpeta. No se inventan citas bibliográficas. Siembra Estrellas / COMUNICAR-NOS se menciona únicamente como referencia indicada por el usuario: no se han copiado gráficos, interfaces, fichas, articulemas ni ejercicios protegidos.
+La especificación aportada por el usuario es la base de las decisiones pedagógicas. Las referencias bibliográficas solo se incorporarán cuando se disponga de una fuente verificable.

@@ -1,0 +1,17 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {loadData} from '../scripts/validate-data.mjs';
+import {validateAudio} from '../scripts/validate-audio.mjs';
+import {PhonemeAudio} from '../src/audio.js';
+import {wordAudioPolicy} from '../src/word-audio-policy.js';
+import {createSession,generateItem,DEFAULTS} from '../src/engine.js';
+const data=await loadData();
+const confirmed={...data.audioVerification,status:'confirmed_by_teacher'};
+test('106 recursos de fuente definitiva y confirmación vinculada',async()=>{assert.equal(data.audio.length,9);assert.equal(data.wordAudio.length,59);assert.equal(data.syllableAudio.length,38);assert.deepEqual(await validateAudio({...data,audioVerification:confirmed}),[]);assert.equal(new Set([...data.audio,...data.wordAudio,...data.syllableAudio].map(a=>a.file)).size,106);});
+test('A/E/I/O resuelven fonemas y nunca las palabras uno/dos/tres/cuatro',()=>{const p=new PhonemeAudio(data.audio,data.wordAudio,confirmed,data.syllableAudio);for(const id of 'aeioulmsn'){const entry=p.entry('phoneme',id);assert.equal(entry.phoneme,id);assert(entry.file.startsWith('assets/audio/phonemes/'+id+'.'));assert(entry.sourceFile.startsWith('inputs/audio_final/fonemas/'));}assert.equal(p.entry('word','uno').word,'uno');assert.equal(p.entry('syllable','ma').unit,'ma');assert.throws(()=>p.entry('phoneme','uno'));assert.throws(()=>p.entry('word','a'));});
+test('59 palabras y tildes se asocian explícitamente con su archivo',()=>{for(const w of data.words.concat(data.oral,data.dictationWords)){const a=data.wordAudio.find(a=>a.id===w.id);assert.equal(a.word,w.word);assert.equal(a.file,w.wordAudio);assert(w.wordAudioRequired);assert(a.sourceFile.startsWith('inputs/audio_final/palabras/'));}assert(data.oral.find(w=>w.id==='nube').wordAudio);});
+test('reproductor bloquea audios no confirmados o de otra fuente',()=>{assert.throws(()=>new PhonemeAudio(data.audio,data.wordAudio).entry('phoneme','a'),/confirmación/);const rows=structuredClone(data.audio);rows[0].sourceFile='old-package/a.m4a';assert.throws(()=>new PhonemeAudio(rows,data.wordAudio,confirmed).entry('phoneme','a'),/ajeno/);});
+test('integración y lectura jamás reciben palabra objetivo ni audio de opciones',()=>{for(const activity of ['CF07','SL07']){const i=generateItem(data,createSession({...DEFAULTS,activity}));assert.deepEqual(wordAudioPolicy(i,DEFAULTS),{primary:[],options:[]});}});
+test('dictado y vocabulario usan palabra grabada como estímulo, no pista de opciones',()=>{for(const activity of ['SL06','VOC01']){const i=generateItem(data,createSession({...DEFAULTS,activity}));const policy=wordAudioPolicy(i,DEFAULTS);assert.equal(policy.primary[0].id,i.target.id);assert.deepEqual(policy.options,[]);assert.deepEqual(i.audio,[]);}});
+test('ayuda de nombres por imagen respeta configuración',()=>{const i=generateItem(data,createSession({...DEFAULTS,activity:'CF02'}));assert.equal(wordAudioPolicy(i,DEFAULTS).options.length,i.options.length);assert.deepEqual(wordAudioPolicy(i,{...DEFAULTS,help:false}).options,[]);});
+test('validador rechaza fuente, hash o correspondencia de palabra incorrectos',async()=>{const d=structuredClone(data);d.audioVerification.status='pending_listening_confirmation';d.audio[0].sourceFile='old/a.m4a';d.audio[1].sha256='0'.repeat(64);d.words[0].wordAudio=d.wordAudio.find(a=>a.id==='uno').file;const errors=await validateAudio(d);for(const term of ['Fuente no definitiva','Hash de fuente','Palabra asociada','confirmación auditiva'])assert(errors.some(e=>e.includes(term)),term);});

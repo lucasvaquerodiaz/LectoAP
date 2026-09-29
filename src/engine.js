@@ -1,4 +1,5 @@
-export const DEFAULTS = {module:'CF',activity:'CF07',activeLetters:[...'aeioulmsn'],case:'upper',count:6,difficulty:'auto',audio:true,repetition:true,help:true,position:'initial',accentSupport:false,combinedReady:false,structures:['V','CV','VC','CVC','VCV','CVCV','CVCVC','CVCVCV'],introduce:''};
+export const DEFAULTS = {module:'CF',activity:'CF07',activeLetters:[...'aeioulmsn'],case:'upper',count:6,difficulty:'auto',audio:true,repetition:true,help:true,position:'initial',accentSupport:false,combinedReady:false,structures:['V','CV','VC','CVC','VCV','CVV','CVCV','CVCVC','CVCVCV'],introduce:''};
+export const ALL_STRUCTURES=[...DEFAULTS.structures,'VCCV','CVCCV','CVCCVC','CVCVV','CVCVVC','VCVCCV','VCVCVC','CVCVCVV'];
 export const normalizeLetter=letter=>String(letter).normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
 export const shuffle=(a,rng=Math.random)=>{a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(rng()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;};
 export function getWords(bank,{task='oral',activeLetters=DEFAULTS.activeLetters,maxPhonemes=99,requireImage=false,accentSupport=false,structures=null}={}){
@@ -11,7 +12,13 @@ export function adapt(state,correct,automatic=true){const next={...state,recent:
 const positions=(w,p,position)=>position==='initial'?w.initialPhoneme===p:position==='final'?w.finalPhoneme===p:w.phonemes.includes(p);
 const makeOption=(id,label,type='text')=>({id:String(id),label:String(label),type});
 const imageOption=w=>({id:w.id,label:w.word,type:'image',image:w.image});
-const easyMNFilter=(options,expected,level)=>level===0&&expected.some(x=>['m','n'].includes(normalizeLetter(x)))?options.filter(o=>o.type==='image'||o.id===String(expected[0])||!['m','n'].includes(o.id)||o.id===normalizeLetter(expected[0])):options;
+const easyMNFilter=(options,expected,level)=>{
+ if(level!==0)return options;
+ const correct=new Set(expected.map(normalizeLetter));
+ if(correct.has('m')&&!correct.has('n'))return options.filter(o=>o.id!=='n');
+ if(correct.has('n')&&!correct.has('m'))return options.filter(o=>o.id!=='m');
+ return options;
+};
 export function validateItem(item){
  if(!item||!item.expected.length)throw Error('Ítem sin respuesta');
  if(new Set(item.options.map(o=>o.id)).size!==item.options.length)throw Error('Distractores idénticos');
@@ -31,7 +38,10 @@ export function generateItem(data,session,rng=Math.random){
  const written=activity.module==='SL'||activity.module==='COMBO';
  const task=written?(['SL04','SL05','SL06'].includes(c.activity)?'writing':'reading'):'oral';
  const max=c.difficulty==='hard'?6:c.difficulty==='medium'?5:4;
- let pool=getWords(data.words.concat(written?[]:data.oral),{task,activeLetters:c.activeLetters,accentSupport:c.accentSupport,maxPhonemes:max,structures:c.structures}).filter(w=>w.priority<=(c.difficulty==='hard'?3:c.difficulty==='medium'?3:1));
+ const fullBank=c.activity==='SL06'?data.words.concat(data.dictationWords||[]):data.words.concat(written?[]:data.oral);
+ const recorded=new Set(data.wordAudio.map(a=>a.id));
+ const bank=c.recordedOnly?fullBank.filter(w=>recorded.has(w.id)):fullBank;
+ let pool=getWords(bank,{task,activeLetters:c.activeLetters,accentSupport:c.accentSupport,maxPhonemes:max,structures:c.structures}).filter(w=>w.priority<=(c.difficulty==='hard'?3:c.difficulty==='medium'?3:1));
  const imagePool=pool.filter(w=>w.image&&!w.reviewRequired);
  let targets=pool;
  if(['CF01','CF02','CF03','CF04','CF05','CF06','CF07','CF08','SL03','SL04','SL07','S+L01','VOC01','VOC02'].includes(c.activity))targets=imagePool;
@@ -56,10 +66,10 @@ export function generateItem(data,session,rng=Math.random){
    const imageChoices=(t=target)=>{const ds=distractors(t,imagePool,2,level,rng);if(ds.length<2)throw Error('Se necesitan tres imágenes compatibles.');item.options=shuffle([t,...ds],rng).map(imageOption);item.expected=[t.id];};
    let p;
    switch(c.activity){
-    case 'CF01': p=shuffle(active,rng)[0];item.audio=[p];item.prompt='¿Oyes este sonido en la palabra?';item.options=[makeOption('yes','Sí'),makeOption('no','No')];item.expected=[target.phonemes.includes(p)?'yes':'no'];break;
-    case 'CF02': p=shuffle(active.filter(p=>imagePool.some(w=>positions(w,p,c.position))&&imagePool.some(w=>!positions(w,p,c.position))),rng)[0];if(!p)throw Error('No hay contraste para esta posición.');item.audio=[p];item.prompt=c.position==='initial'?'Busca las que empiezan por este sonido.':c.position==='final'?'Busca las que acaban en este sonido.':'Busca las que tienen este sonido.';{const yes=shuffle(imagePool.filter(w=>positions(w,p,c.position)),rng).slice(0,2);const no=shuffle(imagePool.filter(w=>!positions(w,p,c.position)),rng).slice(0,2);item.options=shuffle(yes.concat(no),rng).map(imageOption);item.expected=yes.map(w=>w.id);item.teacher='Nombra las imágenes de izquierda a derecha: '+item.options.map(o=>o.label).join(', ');}break;
+    case 'CF01': p=shuffle(active.filter(sound=>level!==0||!['m','n'].includes(sound)||target.phonemes.includes(sound)||!target.phonemes.includes(sound==='m'?'n':'m')),rng)[0];if(!p)throw Error('No hay contraste claro entre M y N.');item.audio=[p];item.prompt='¿Oyes este sonido en la palabra?';item.options=shuffle([makeOption('yes','Sí'),makeOption('no','No')],rng);item.expected=[target.phonemes.includes(p)?'yes':'no'];break;
+    case 'CF02':{const safeNo=sound=>imagePool.filter(w=>!positions(w,sound,c.position)&&(level!==0||!['m','n'].includes(sound)||!w.phonemes.includes(sound==='m'?'n':'m')));p=shuffle(active.filter(sound=>imagePool.some(w=>positions(w,sound,c.position))&&safeNo(sound).length>=2),rng)[0];if(!p)throw Error('No hay contraste para esta posición.');item.audio=[p];item.prompt=c.position==='initial'?'Busca las que empiezan por este sonido.':c.position==='final'?'Busca las que acaban en este sonido.':'Busca las que tienen este sonido.';const yes=shuffle(imagePool.filter(w=>positions(w,p,c.position)),rng).slice(0,2);const no=shuffle(safeNo(p),rng).slice(0,2);item.options=shuffle(yes.concat(no),rng).map(imageOption);item.expected=yes.map(w=>w.id);item.teacher='Nombra las imágenes de izquierda a derecha: '+item.options.map(o=>o.label).join(', ');break;}
     case 'CF03':p=c.position==='final'?target.finalPhoneme:target.initialPhoneme;if(!active.includes(p))throw Error('Sonido no activo');item.prompt=c.position==='final'?'¿Cuál es el último sonido?':'¿Cuál es el primer sonido?';item.options=phonemeOpts;item.expected=[p];break;
-    case 'CF04':item.prompt='¿Cuántos sonidos tiene?';item.options=[1,2,3,4,5].map(x=>makeOption(x,x));item.expected=[String(target.phonemeCount)];break;
+    case 'CF04':item.prompt='¿Cuántos sonidos tiene?';item.options=shuffle([1,2,3,4,5].map(x=>makeOption(x,x)),rng);item.expected=[String(target.phonemeCount)];break;
     case 'CF05':p=shuffle(target.phonemes.filter(p=>active.includes(p)),rng)[0];if(!p)throw Error('Sin fonema activo');item.audio=[p];item.prompt='Toca los lugares de este sonido.';item.options=target.phonemes.map((_,i)=>makeOption(i,'','box'));item.expected=target.phonemePositions[p].map(String);break;
     case 'CF06':item.prompt='Escucha, elige y coloca un sonido en cada caja.';item.options=shuffle(phonemeOpts.filter(o=>target.phonemes.includes(o.id)).concat(phonemeOpts.filter(o=>!target.phonemes.includes(o.id)).slice(0,level+1)),rng);item.expected=target.phonemes;break;
     case 'CF07':item.prompt='Une los sonidos. ¿Qué palabra es?';item.audio=target.phonemes;imageChoices();break;
@@ -82,12 +92,12 @@ export function generateItem(data,session,rng=Math.random){
     item.options=shuffle(correct.concat(shuffle(distractors,rng).slice(0,level+2)),rng);
     item.adaptiveDimension='optionCount';
    }else item.adaptiveDimension=c.activity==='CF06'?'optionCount':'distractorSimilarity';
+   if(c.activity==='CF06')item.options=easyMNFilter(item.options,item.expected,level);
    item.showImage=['CF01','CF03','CF04','CF05','CF06','SL03','SL04'].includes(c.activity);
-   if(c.activity==='SL06')item.audio=[]; // Whole recorded word is the dictation stimulus.
+   if(['SL05','SL06'].includes(c.activity))item.audio=[]; // Recorded unit or word is the dictation stimulus.
    validateItem(item);return item;
   }catch(e){lastError=e.message;}
  }
  throw Error(lastError+' Ajusta el modo docente.');
 }
 export function recordResponse(session,item,correct){session.history.push({targetId:item.target.id,structure:item.structure,level:item.level});session.responses.push(!!correct);session.introCount++;session.adaptive=adapt(session.adaptive,correct,session.config.difficulty==='auto');}
-

@@ -6,11 +6,11 @@
     "sourceStartMs": 3250,
     "sourceEndMs": 4750,
     "processing": "recorte manual corregido del fonema posterior al número hablado; normalización conservadora; AAC 64 kbps",
-    "status": "final_v1",
+    "status": "final_v11",
     "id": "a",
     "sourceFile": "inputs/audio_final/fonemas/assets/audio/phonemes/a.m4a",
     "sha256": "0e21936b7525e6cc48a78cbaa24b5474b03445bbbce3a797e05c4e11445f81ff",
-    "integration": "byte-identical authoritative final source",
+    "integration": "byte-identical teacher source",
     "graphemes": [
       "a"
     ]
@@ -22,11 +22,11 @@
     "sourceStartMs": 7250,
     "sourceEndMs": 8550,
     "processing": "recorte manual corregido del fonema posterior al número hablado; normalización conservadora; AAC 64 kbps",
-    "status": "final_v1",
+    "status": "final_v11",
     "id": "e",
     "sourceFile": "inputs/audio_final/fonemas/assets/audio/phonemes/e.m4a",
     "sha256": "fc7a2e7c29f3b4d29dd80984ba573f9e30466f30335328355462a90292ad4866",
-    "integration": "byte-identical authoritative final source",
+    "integration": "byte-identical teacher source",
     "graphemes": [
       "e"
     ]
@@ -38,11 +38,11 @@
     "sourceStartMs": 10750,
     "sourceEndMs": 11950,
     "processing": "recorte manual corregido del fonema posterior al número hablado; normalización conservadora; AAC 64 kbps",
-    "status": "final_v1",
+    "status": "final_v11",
     "id": "i",
     "sourceFile": "inputs/audio_final/fonemas/assets/audio/phonemes/i.m4a",
     "sha256": "d4b15fbc5cbd5c1c19e19df510b04504c7ddf33b671dcf7b1935a23f41f00206",
-    "integration": "byte-identical authoritative final source",
+    "integration": "byte-identical teacher source",
     "graphemes": [
       "i"
     ]
@@ -54,11 +54,11 @@
     "sourceStartMs": 13850,
     "sourceEndMs": 14950,
     "processing": "recorte manual corregido del fonema posterior al número hablado; normalización conservadora; AAC 64 kbps",
-    "status": "final_v1",
+    "status": "final_v11",
     "id": "o",
     "sourceFile": "inputs/audio_final/fonemas/assets/audio/phonemes/o.m4a",
     "sha256": "d8e9eefc43fdc25edd7389e91b4b7e95308dc3841a7415ea6ec40bfcaf443dea",
-    "integration": "byte-identical authoritative final source",
+    "integration": "byte-identical teacher source",
     "graphemes": [
       "o"
     ]
@@ -70,11 +70,11 @@
     "sourceStartMs": 17050,
     "sourceEndMs": 18350,
     "processing": "recorte manual corregido del fonema posterior al número hablado; normalización conservadora; AAC 64 kbps",
-    "status": "final_v1",
+    "status": "final_v11",
     "id": "u",
     "sourceFile": "inputs/audio_final/fonemas/assets/audio/phonemes/u.m4a",
     "sha256": "6d802d892d5c52d467b9302ad82c305ac354402b40e21dfc6c6cc7f62c90b0bb",
-    "integration": "byte-identical authoritative final source",
+    "integration": "byte-identical teacher source",
     "graphemes": [
       "u"
     ]
@@ -86,11 +86,11 @@
     "sourceStartMs": 20200,
     "sourceEndMs": 21700,
     "processing": "recorte manual corregido del fonema posterior al número hablado; normalización conservadora; AAC 64 kbps",
-    "status": "final_v1",
+    "status": "final_v11",
     "id": "l",
     "sourceFile": "inputs/audio_final/fonemas/assets/audio/phonemes/l.m4a",
     "sha256": "88160184e1b54e00ca1071030055bbed628e307a0699762f1622c32b19b05544",
-    "integration": "byte-identical authoritative final source",
+    "integration": "byte-identical teacher source",
     "graphemes": [
       "l"
     ]
@@ -102,11 +102,11 @@
     "sourceStartMs": 23450,
     "sourceEndMs": 25050,
     "processing": "recorte manual corregido del fonema posterior al número hablado; normalización conservadora; AAC 64 kbps",
-    "status": "final_v1",
+    "status": "final_v11",
     "id": "m",
     "sourceFile": "inputs/audio_final/fonemas/assets/audio/phonemes/m.m4a",
     "sha256": "be7f94677a38cca12b78c0760984d1a7a91669863a10ae6268dd15b6566ecdf6",
-    "integration": "byte-identical authoritative final source",
+    "integration": "byte-identical teacher source",
     "graphemes": [
       "m"
     ]
@@ -118,11 +118,11 @@
     "sourceStartMs": 27150,
     "sourceEndMs": 28600,
     "processing": "recorte manual corregido del fonema posterior al número hablado; normalización conservadora; AAC 64 kbps",
-    "status": "final_v1",
+    "status": "final_v11",
     "id": "s",
     "sourceFile": "inputs/audio_final/fonemas/assets/audio/phonemes/s.m4a",
     "sha256": "f85375555df587ebe5c91f1ee9fb8a961d3555c8e1c20dd7ef2dcdd9b1572d37",
-    "integration": "byte-identical authoritative final source",
+    "integration": "byte-identical teacher source",
     "graphemes": [
       "s"
     ]
@@ -134,11 +134,11 @@
     "sourceStartMs": 30450,
     "sourceEndMs": 32000,
     "processing": "recorte manual corregido del fonema posterior al número hablado; normalización conservadora; AAC 64 kbps",
-    "status": "final_v1",
+    "status": "final_v11",
     "id": "n",
     "sourceFile": "inputs/audio_final/fonemas/assets/audio/phonemes/n.m4a",
     "sha256": "b5850da9be569dae13225bd64219dbc72ab69a0c95aef78ff4c0e201f0939050",
-    "integration": "byte-identical authoritative final source",
+    "integration": "byte-identical teacher source",
     "graphemes": [
       "n"
     ]

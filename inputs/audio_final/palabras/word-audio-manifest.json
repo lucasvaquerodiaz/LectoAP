@@ -1,173 +1,356 @@
 [
   {
-    "word": "sol",
-    "file": "assets/audio/words/sol.m4a",
-    "source": "Palabras básicas LectoAP.m4a",
-    "sourceStartMs": 1130,
-    "sourceEndMs": 2055,
-    "processing": "recorte con margen natural + normalización de pico a -3 dBFS; AAC 64 kbps",
-    "status": "validated_v1"
-  },
-  {
-    "word": "sal",
-    "file": "assets/audio/words/sal.m4a",
-    "source": "Palabras básicas LectoAP.m4a",
-    "sourceStartMs": 2685,
-    "sourceEndMs": 3490,
-    "processing": "recorte con margen natural + normalización de pico a -3 dBFS; AAC 64 kbps",
-    "status": "validated_v1"
-  },
-  {
     "word": "ala",
     "file": "assets/audio/words/ala.m4a",
-    "source": "Palabras básicas LectoAP.m4a",
-    "sourceStartMs": 3985,
-    "sourceEndMs": 4675,
-    "processing": "recorte con margen natural + normalización de pico a -3 dBFS; AAC 64 kbps",
-    "status": "validated_v1"
+    "source": "Archivo individual aportado por el docente",
+    "status": "provided_by_teacher"
   },
   {
-    "word": "ola",
-    "file": "assets/audio/words/ola.m4a",
-    "source": "Palabras básicas LectoAP.m4a",
-    "sourceStartMs": 5215,
-    "sourceEndMs": 5930,
-    "processing": "recorte con margen natural + normalización de pico a -3 dBFS; AAC 64 kbps",
-    "status": "validated_v1"
+    "word": "alma",
+    "file": "assets/audio/words/alma.m4a",
+    "source": "Archivo individual aportado por el docente",
+    "status": "provided_by_teacher"
   },
   {
-    "word": "oso",
-    "file": "assets/audio/words/oso.m4a",
-    "source": "Palabras básicas LectoAP.m4a",
-    "sourceStartMs": 6380,
-    "sourceEndMs": 7180,
-    "processing": "recorte con margen natural + normalización de pico a -3 dBFS; AAC 64 kbps",
-    "status": "validated_v1"
+    "word": "alumna",
+    "file": "assets/audio/words/alumna.m4a",
+    "source": "Archivo individual aportado por el docente",
+    "status": "provided_by_teacher"
   },
   {
-    "word": "osa",
-    "file": "assets/audio/words/osa.m4a",
-    "source": "Palabras básicas LectoAP.m4a",
-    "sourceStartMs": 7410,
-    "sourceEndMs": 8515,
-    "processing": "recorte con margen natural + normalización de pico a -3 dBFS; AAC 64 kbps",
-    "status": "validated_v1"
+    "word": "alumno",
+    "file": "assets/audio/words/alumno.m4a",
+    "source": "Archivo individual aportado por el docente",
+    "status": "provided_by_teacher"
   },
   {
-    "word": "lana",
-    "file": "assets/audio/words/lana.m4a",
-    "source": "Palabras básicas LectoAP.m4a",
-    "sourceStartMs": 8750,
-    "sourceEndMs": 9650,
-    "processing": "recorte con margen natural + normalización de pico a -3 dBFS; AAC 64 kbps",
-    "status": "validated_v1"
+    "word": "ama",
+    "file": "assets/audio/words/ama.m4a",
+    "source": "Archivo individual aportado por el docente",
+    "status": "provided_by_teacher"
   },
   {
-    "word": "luna",
-    "file": "assets/audio/words/luna.m4a",
-    "source": "Palabras básicas LectoAP.m4a",
-    "sourceStartMs": 9630,
-    "sourceEndMs": 11040,
-    "processing": "recorte con margen natural + normalización de pico a -3 dBFS; AAC 64 kbps",
-    "status": "validated_v1"
+    "word": "amo",
+    "file": "assets/audio/words/amo.m4a",
+    "source": "Archivo individual aportado por el docente",
+    "status": "provided_by_teacher"
   },
   {
-    "word": "mano",
-    "file": "assets/audio/words/mano.m4a",
-    "source": "Palabras básicas LectoAP.m4a",
-    "sourceStartMs": 10955,
-    "sourceEndMs": 12075,
-    "processing": "recorte con margen natural + normalización de pico a -3 dBFS; AAC 64 kbps",
-    "status": "validated_v1"
-  },
-  {
-    "word": "mesa",
-    "file": "assets/audio/words/mesa.m4a",
-    "source": "Palabras básicas LectoAP.m4a",
-    "sourceStartMs": 12420,
-    "sourceEndMs": 13480,
-    "processing": "recorte con margen natural + normalización de pico a -3 dBFS; AAC 64 kbps",
-    "status": "validated_v1"
-  },
-  {
-    "word": "mula",
-    "file": "assets/audio/words/mula.m4a",
-    "source": "Palabras básicas LectoAP.m4a",
-    "sourceStartMs": 13465,
-    "sourceEndMs": 14460,
-    "processing": "recorte con margen natural + normalización de pico a -3 dBFS; AAC 64 kbps",
-    "status": "validated_v1"
-  },
-  {
-    "word": "mono",
-    "file": "assets/audio/words/mono.m4a",
-    "source": "Palabras básicas LectoAP.m4a",
-    "sourceStartMs": 14695,
-    "sourceEndMs": 15680,
-    "processing": "recorte con margen natural + normalización de pico a -3 dBFS; AAC 64 kbps",
-    "status": "validated_v1"
+    "word": "animal",
+    "file": "assets/audio/words/animal.m4a",
+    "source": "Archivo individual aportado por el docente",
+    "status": "provided_by_teacher"
   },
   {
     "word": "asa",
     "file": "assets/audio/words/asa.m4a",
-    "source": "Palabras básicas LectoAP.m4a",
-    "sourceStartMs": 16095,
-    "sourceEndMs": 16910,
-    "processing": "recorte con margen natural + normalización de pico a -3 dBFS; AAC 64 kbps",
-    "status": "validated_v1"
+    "source": "Archivo individual aportado por el docente",
+    "status": "provided_by_teacher"
   },
   {
-    "word": "uno",
-    "file": "assets/audio/words/uno.m4a",
-    "source": "Palabras básicas LectoAP.m4a",
-    "sourceStartMs": 17315,
-    "sourceEndMs": 18055,
-    "processing": "recorte con margen natural + normalización de pico a -3 dBFS; AAC 64 kbps",
-    "status": "validated_v1"
+    "word": "asno",
+    "file": "assets/audio/words/asno.m4a",
+    "source": "Archivo individual aportado por el docente",
+    "status": "provided_by_teacher"
   },
   {
-    "word": "masa",
-    "file": "assets/audio/words/masa.m4a",
-    "source": "Palabras básicas LectoAP.m4a",
-    "sourceStartMs": 18440,
-    "sourceEndMs": 19345,
-    "processing": "recorte con margen natural + normalización de pico a -3 dBFS; AAC 64 kbps",
-    "status": "validated_v1"
+    "word": "isla",
+    "file": "assets/audio/words/isla.m4a",
+    "source": "Archivo individual aportado por el docente",
+    "status": "provided_by_teacher"
   },
   {
-    "word": "suma",
-    "file": "assets/audio/words/suma.m4a",
-    "source": "Palabras básicas LectoAP.m4a",
-    "sourceStartMs": 19730,
-    "sourceEndMs": 20425,
-    "processing": "recorte con margen natural + normalización de pico a -3 dBFS; AAC 64 kbps",
-    "status": "validated_v1"
+    "word": "lana",
+    "file": "assets/audio/words/lana.m4a",
+    "source": "Archivo individual aportado por el docente",
+    "status": "provided_by_teacher"
+  },
+  {
+    "word": "lee",
+    "file": "assets/audio/words/lee.m4a",
+    "source": "Archivo individual aportado por el docente",
+    "status": "provided_by_teacher"
+  },
+  {
+    "word": "leo",
+    "file": "assets/audio/words/leo.m4a",
+    "source": "Archivo individual aportado por el docente",
+    "status": "provided_by_teacher"
+  },
+  {
+    "word": "lima",
+    "file": "assets/audio/words/lima.m4a",
+    "source": "Archivo individual aportado por el docente",
+    "status": "provided_by_teacher"
   },
   {
     "word": "limón",
     "file": "assets/audio/words/limon.m4a",
-    "source": "Palabras básicas LectoAP.m4a",
-    "sourceStartMs": 20690,
-    "sourceEndMs": 21500,
-    "processing": "recorte con margen natural + normalización de pico a -3 dBFS; AAC 64 kbps",
-    "status": "validated_v1"
+    "source": "Archivo individual aportado por el docente",
+    "status": "provided_by_teacher"
+  },
+  {
+    "word": "lisa",
+    "file": "assets/audio/words/lisa.m4a",
+    "source": "Archivo individual aportado por el docente",
+    "status": "provided_by_teacher"
+  },
+  {
+    "word": "liso",
+    "file": "assets/audio/words/liso.m4a",
+    "source": "Archivo individual aportado por el docente",
+    "status": "provided_by_teacher"
+  },
+  {
+    "word": "luna",
+    "file": "assets/audio/words/luna.m4a",
+    "source": "Archivo individual aportado por el docente",
+    "status": "provided_by_teacher"
+  },
+  {
+    "word": "mala",
+    "file": "assets/audio/words/mala.m4a",
+    "source": "Archivo individual aportado por el docente",
+    "status": "provided_by_teacher"
+  },
+  {
+    "word": "malo",
+    "file": "assets/audio/words/malo.m4a",
+    "source": "Archivo individual aportado por el docente",
+    "status": "provided_by_teacher"
+  },
+  {
+    "word": "mano",
+    "file": "assets/audio/words/mano.m4a",
+    "source": "Archivo individual aportado por el docente",
+    "status": "provided_by_teacher"
+  },
+  {
+    "word": "mansa",
+    "file": "assets/audio/words/mansa.m4a",
+    "source": "Archivo individual aportado por el docente",
+    "status": "provided_by_teacher"
+  },
+  {
+    "word": "manso",
+    "file": "assets/audio/words/manso.m4a",
+    "source": "Archivo individual aportado por el docente",
+    "status": "provided_by_teacher"
+  },
+  {
+    "word": "manual",
+    "file": "assets/audio/words/manual.m4a",
+    "source": "Archivo individual aportado por el docente",
+    "status": "provided_by_teacher"
+  },
+  {
+    "word": "masa",
+    "file": "assets/audio/words/masa.m4a",
+    "source": "Archivo individual aportado por el docente",
+    "status": "provided_by_teacher"
+  },
+  {
+    "word": "melena",
+    "file": "assets/audio/words/melena.m4a",
+    "source": "Archivo individual aportado por el docente",
+    "status": "provided_by_teacher"
   },
   {
     "word": "melón",
     "file": "assets/audio/words/melon.m4a",
-    "source": "Palabras básicas LectoAP.m4a",
-    "sourceStartMs": 21805,
-    "sourceEndMs": 22675,
-    "processing": "recorte con margen natural + normalización de pico a -3 dBFS; AAC 64 kbps",
-    "status": "validated_v1"
+    "source": "Archivo individual aportado por el docente",
+    "status": "provided_by_teacher"
+  },
+  {
+    "word": "mesa",
+    "file": "assets/audio/words/mesa.m4a",
+    "source": "Archivo individual aportado por el docente",
+    "status": "provided_by_teacher"
+  },
+  {
+    "word": "milenio",
+    "file": "assets/audio/words/milenio.m4a",
+    "source": "Archivo individual aportado por el docente",
+    "status": "provided_by_teacher"
+  },
+  {
+    "word": "mima",
+    "file": "assets/audio/words/mima.m4a",
+    "source": "Archivo individual aportado por el docente",
+    "status": "provided_by_teacher"
+  },
+  {
+    "word": "mimo",
+    "file": "assets/audio/words/mimo.m4a",
+    "source": "Archivo individual aportado por el docente",
+    "status": "provided_by_teacher"
+  },
+  {
+    "word": "mina",
+    "file": "assets/audio/words/mina.m4a",
+    "source": "Archivo individual aportado por el docente",
+    "status": "provided_by_teacher"
+  },
+  {
+    "word": "misión",
+    "file": "assets/audio/words/mision.m4a",
+    "source": "Archivo individual aportado por el docente",
+    "status": "provided_by_teacher"
   },
   {
     "word": "molino",
     "file": "assets/audio/words/molino.m4a",
-    "source": "Palabras básicas LectoAP.m4a",
-    "sourceStartMs": 23020,
-    "sourceEndMs": 23945,
-    "processing": "recorte con margen natural + normalización de pico a -3 dBFS; AAC 64 kbps",
-    "status": "validated_v1"
+    "source": "Archivo individual aportado por el docente",
+    "status": "provided_by_teacher"
+  },
+  {
+    "word": "mona",
+    "file": "assets/audio/words/mona.m4a",
+    "source": "Archivo individual aportado por el docente",
+    "status": "provided_by_teacher"
+  },
+  {
+    "word": "mono",
+    "file": "assets/audio/words/mono.m4a",
+    "source": "Archivo individual aportado por el docente",
+    "status": "provided_by_teacher"
+  },
+  {
+    "word": "mula",
+    "file": "assets/audio/words/mula.m4a",
+    "source": "Archivo individual aportado por el docente",
+    "status": "provided_by_teacher"
+  },
+  {
+    "word": "museo",
+    "file": "assets/audio/words/museo.m4a",
+    "source": "Archivo individual aportado por el docente",
+    "status": "provided_by_teacher"
+  },
+  {
+    "word": "muslo",
+    "file": "assets/audio/words/muslo.m4a",
+    "source": "Archivo individual aportado por el docente",
+    "status": "provided_by_teacher"
+  },
+  {
+    "word": "nena",
+    "file": "assets/audio/words/nena.m4a",
+    "source": "Archivo individual aportado por el docente",
+    "status": "provided_by_teacher"
+  },
+  {
+    "word": "nene",
+    "file": "assets/audio/words/nene.m4a",
+    "source": "Archivo individual aportado por el docente",
+    "status": "provided_by_teacher"
+  },
+  {
+    "word": "nube",
+    "file": "assets/audio/words/nube.m4a",
+    "source": "Archivo individual aportado por el docente",
+    "status": "provided_by_teacher"
+  },
+  {
+    "word": "ola",
+    "file": "assets/audio/words/ola.m4a",
+    "source": "Archivo individual aportado por el docente",
+    "status": "provided_by_teacher"
+  },
+  {
+    "word": "olmo",
+    "file": "assets/audio/words/olmo.m4a",
+    "source": "Archivo individual aportado por el docente",
+    "status": "provided_by_teacher"
+  },
+  {
+    "word": "osa",
+    "file": "assets/audio/words/osa.m4a",
+    "source": "Archivo individual aportado por el docente",
+    "status": "provided_by_teacher"
+  },
+  {
+    "word": "oso",
+    "file": "assets/audio/words/oso.m4a",
+    "source": "Archivo individual aportado por el docente",
+    "status": "provided_by_teacher"
+  },
+  {
+    "word": "sal",
+    "file": "assets/audio/words/sal.m4a",
+    "source": "Archivo individual aportado por el docente",
+    "status": "provided_by_teacher"
+  },
+  {
+    "word": "sala",
+    "file": "assets/audio/words/sala.m4a",
+    "source": "Archivo individual aportado por el docente",
+    "status": "provided_by_teacher"
+  },
+  {
+    "word": "sale",
+    "file": "assets/audio/words/sale.m4a",
+    "source": "Archivo individual aportado por el docente",
+    "status": "provided_by_teacher"
+  },
+  {
+    "word": "salmón",
+    "file": "assets/audio/words/salmon.m4a",
+    "source": "Archivo individual aportado por el docente",
+    "status": "provided_by_teacher"
+  },
+  {
+    "word": "salón",
+    "file": "assets/audio/words/salon.m4a",
+    "source": "Archivo individual aportado por el docente",
+    "status": "provided_by_teacher"
+  },
+  {
+    "word": "sano",
+    "file": "assets/audio/words/sano.m4a",
+    "source": "Archivo individual aportado por el docente",
+    "status": "provided_by_teacher"
+  },
+  {
+    "word": "semana",
+    "file": "assets/audio/words/semana.m4a",
+    "source": "Archivo individual aportado por el docente",
+    "status": "provided_by_teacher"
+  },
+  {
+    "word": "sol",
+    "file": "assets/audio/words/sol.m4a",
+    "source": "Archivo individual aportado por el docente",
+    "status": "provided_by_teacher"
+  },
+  {
+    "word": "sola",
+    "file": "assets/audio/words/sola.m4a",
+    "source": "Archivo individual aportado por el docente",
+    "status": "provided_by_teacher"
+  },
+  {
+    "word": "solo",
+    "file": "assets/audio/words/solo.m4a",
+    "source": "Archivo individual aportado por el docente",
+    "status": "provided_by_teacher"
+  },
+  {
+    "word": "suma",
+    "file": "assets/audio/words/suma.m4a",
+    "source": "Archivo individual aportado por el docente",
+    "status": "provided_by_teacher"
+  },
+  {
+    "word": "una",
+    "file": "assets/audio/words/una.m4a",
+    "source": "Archivo individual aportado por el docente",
+    "status": "provided_by_teacher"
+  },
+  {
+    "word": "uno",
+    "file": "assets/audio/words/uno.m4a",
+    "source": "Archivo individual aportado por el docente",
+    "status": "provided_by_teacher"
   }
 ]

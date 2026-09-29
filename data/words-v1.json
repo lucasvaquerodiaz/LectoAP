@@ -46,7 +46,7 @@
     "reviewRequired": false,
     "difficulty": 1,
     "priority": 1,
-    "wordAudio": "assets/audio/words/sol.f561844faf2c3942.m4a",
+    "wordAudio": "assets/audio/words/sol.5850a324110929f6.m4a",
     "wordAudioRequired": true,
     "meaning": "sol",
     "kind": "word"
@@ -98,7 +98,7 @@
     "reviewRequired": false,
     "difficulty": 1,
     "priority": 1,
-    "wordAudio": "assets/audio/words/sal.552ad76a6d7232e5.m4a",
+    "wordAudio": "assets/audio/words/sal.fdfa711d35afa94a.m4a",
     "wordAudioRequired": true,
     "meaning": "sal",
     "kind": "word"
@@ -413,7 +413,7 @@
     "reviewRequired": false,
     "difficulty": 1,
     "priority": 1,
-    "wordAudio": "assets/audio/words/luna.9b4b9f5bcec974ef.m4a",
+    "wordAudio": "assets/audio/words/luna.4dedded0ef9b92b3.m4a",
     "wordAudioRequired": true,
     "meaning": "luna",
     "kind": "word"

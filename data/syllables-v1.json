@@ -1,270 +1,5 @@
 [
   {
-    "id": "sy-a",
-    "string": "a",
-    "word": "a",
-    "displayUpper": "A",
-    "phonemes": [
-      "a"
-    ],
-    "graphemes": [
-      "a"
-    ],
-    "phonemeCount": 1,
-    "structure": "V",
-    "requiredLetters": [
-      "a"
-    ],
-    "priority": 2,
-    "frequency": "common",
-    "difficulty": 1,
-    "recommended": true,
-    "interleave": true,
-    "writing": true,
-    "reading": true,
-    "kind": "syllable"
-  },
-  {
-    "id": "sy-e",
-    "string": "e",
-    "word": "e",
-    "displayUpper": "E",
-    "phonemes": [
-      "e"
-    ],
-    "graphemes": [
-      "e"
-    ],
-    "phonemeCount": 1,
-    "structure": "V",
-    "requiredLetters": [
-      "e"
-    ],
-    "priority": 2,
-    "frequency": "common",
-    "difficulty": 1,
-    "recommended": true,
-    "interleave": true,
-    "writing": true,
-    "reading": true,
-    "kind": "syllable"
-  },
-  {
-    "id": "sy-i",
-    "string": "i",
-    "word": "i",
-    "displayUpper": "I",
-    "phonemes": [
-      "i"
-    ],
-    "graphemes": [
-      "i"
-    ],
-    "phonemeCount": 1,
-    "structure": "V",
-    "requiredLetters": [
-      "i"
-    ],
-    "priority": 2,
-    "frequency": "common",
-    "difficulty": 1,
-    "recommended": true,
-    "interleave": true,
-    "writing": true,
-    "reading": true,
-    "kind": "syllable"
-  },
-  {
-    "id": "sy-o",
-    "string": "o",
-    "word": "o",
-    "displayUpper": "O",
-    "phonemes": [
-      "o"
-    ],
-    "graphemes": [
-      "o"
-    ],
-    "phonemeCount": 1,
-    "structure": "V",
-    "requiredLetters": [
-      "o"
-    ],
-    "priority": 2,
-    "frequency": "common",
-    "difficulty": 1,
-    "recommended": true,
-    "interleave": true,
-    "writing": true,
-    "reading": true,
-    "kind": "syllable"
-  },
-  {
-    "id": "sy-u",
-    "string": "u",
-    "word": "u",
-    "displayUpper": "U",
-    "phonemes": [
-      "u"
-    ],
-    "graphemes": [
-      "u"
-    ],
-    "phonemeCount": 1,
-    "structure": "V",
-    "requiredLetters": [
-      "u"
-    ],
-    "priority": 2,
-    "frequency": "common",
-    "difficulty": 1,
-    "recommended": true,
-    "interleave": true,
-    "writing": true,
-    "reading": true,
-    "kind": "syllable"
-  },
-  {
-    "id": "sy-la",
-    "string": "la",
-    "word": "la",
-    "displayUpper": "LA",
-    "phonemes": [
-      "l",
-      "a"
-    ],
-    "graphemes": [
-      "l",
-      "a"
-    ],
-    "phonemeCount": 2,
-    "structure": "CV",
-    "requiredLetters": [
-      "l",
-      "a"
-    ],
-    "priority": 1,
-    "frequency": "common",
-    "difficulty": 2,
-    "recommended": true,
-    "interleave": true,
-    "writing": true,
-    "reading": true,
-    "kind": "syllable"
-  },
-  {
-    "id": "sy-le",
-    "string": "le",
-    "word": "le",
-    "displayUpper": "LE",
-    "phonemes": [
-      "l",
-      "e"
-    ],
-    "graphemes": [
-      "l",
-      "e"
-    ],
-    "phonemeCount": 2,
-    "structure": "CV",
-    "requiredLetters": [
-      "l",
-      "e"
-    ],
-    "priority": 1,
-    "frequency": "common",
-    "difficulty": 2,
-    "recommended": true,
-    "interleave": true,
-    "writing": true,
-    "reading": true,
-    "kind": "syllable"
-  },
-  {
-    "id": "sy-li",
-    "string": "li",
-    "word": "li",
-    "displayUpper": "LI",
-    "phonemes": [
-      "l",
-      "i"
-    ],
-    "graphemes": [
-      "l",
-      "i"
-    ],
-    "phonemeCount": 2,
-    "structure": "CV",
-    "requiredLetters": [
-      "l",
-      "i"
-    ],
-    "priority": 1,
-    "frequency": "common",
-    "difficulty": 2,
-    "recommended": true,
-    "interleave": true,
-    "writing": true,
-    "reading": true,
-    "kind": "syllable"
-  },
-  {
-    "id": "sy-lo",
-    "string": "lo",
-    "word": "lo",
-    "displayUpper": "LO",
-    "phonemes": [
-      "l",
-      "o"
-    ],
-    "graphemes": [
-      "l",
-      "o"
-    ],
-    "phonemeCount": 2,
-    "structure": "CV",
-    "requiredLetters": [
-      "l",
-      "o"
-    ],
-    "priority": 1,
-    "frequency": "common",
-    "difficulty": 2,
-    "recommended": true,
-    "interleave": true,
-    "writing": true,
-    "reading": true,
-    "kind": "syllable"
-  },
-  {
-    "id": "sy-lu",
-    "string": "lu",
-    "word": "lu",
-    "displayUpper": "LU",
-    "phonemes": [
-      "l",
-      "u"
-    ],
-    "graphemes": [
-      "l",
-      "u"
-    ],
-    "phonemeCount": 2,
-    "structure": "CV",
-    "requiredLetters": [
-      "l",
-      "u"
-    ],
-    "priority": 1,
-    "frequency": "common",
-    "difficulty": 2,
-    "recommended": true,
-    "interleave": true,
-    "writing": true,
-    "reading": true,
-    "kind": "syllable"
-  },
-  {
     "id": "sy-ma",
     "string": "ma",
     "word": "ma",
@@ -285,12 +20,13 @@
     ],
     "priority": 1,
     "frequency": "common",
-    "difficulty": 2,
+    "difficulty": 1,
     "recommended": true,
     "interleave": true,
     "writing": true,
     "reading": true,
-    "kind": "syllable"
+    "kind": "syllable",
+    "syllableAudio": "assets/audio/syllables/ma.1176b4f64f8184ba.m4a"
   },
   {
     "id": "sy-me",
@@ -313,12 +49,13 @@
     ],
     "priority": 1,
     "frequency": "common",
-    "difficulty": 2,
+    "difficulty": 1,
     "recommended": true,
     "interleave": true,
     "writing": true,
     "reading": true,
-    "kind": "syllable"
+    "kind": "syllable",
+    "syllableAudio": "assets/audio/syllables/me.ee5c3599f185d5ea.m4a"
   },
   {
     "id": "sy-mi",
@@ -341,12 +78,13 @@
     ],
     "priority": 1,
     "frequency": "common",
-    "difficulty": 2,
+    "difficulty": 1,
     "recommended": true,
     "interleave": true,
     "writing": true,
     "reading": true,
-    "kind": "syllable"
+    "kind": "syllable",
+    "syllableAudio": "assets/audio/syllables/mi.1503f3feccc9327c.m4a"
   },
   {
     "id": "sy-mo",
@@ -369,12 +107,13 @@
     ],
     "priority": 1,
     "frequency": "common",
-    "difficulty": 2,
+    "difficulty": 1,
     "recommended": true,
     "interleave": true,
     "writing": true,
     "reading": true,
-    "kind": "syllable"
+    "kind": "syllable",
+    "syllableAudio": "assets/audio/syllables/mo.dd8c949ac7579527.m4a"
   },
   {
     "id": "sy-mu",
@@ -397,12 +136,158 @@
     ],
     "priority": 1,
     "frequency": "common",
-    "difficulty": 2,
+    "difficulty": 1,
     "recommended": true,
     "interleave": true,
     "writing": true,
     "reading": true,
-    "kind": "syllable"
+    "kind": "syllable",
+    "syllableAudio": "assets/audio/syllables/mu.e6b495a29e4f06be.m4a"
+  },
+  {
+    "id": "sy-la",
+    "string": "la",
+    "word": "la",
+    "displayUpper": "LA",
+    "phonemes": [
+      "l",
+      "a"
+    ],
+    "graphemes": [
+      "l",
+      "a"
+    ],
+    "phonemeCount": 2,
+    "structure": "CV",
+    "requiredLetters": [
+      "l",
+      "a"
+    ],
+    "priority": 1,
+    "frequency": "common",
+    "difficulty": 1,
+    "recommended": true,
+    "interleave": true,
+    "writing": true,
+    "reading": true,
+    "kind": "syllable",
+    "syllableAudio": "assets/audio/syllables/la.cdbd161265c0cb35.m4a"
+  },
+  {
+    "id": "sy-le",
+    "string": "le",
+    "word": "le",
+    "displayUpper": "LE",
+    "phonemes": [
+      "l",
+      "e"
+    ],
+    "graphemes": [
+      "l",
+      "e"
+    ],
+    "phonemeCount": 2,
+    "structure": "CV",
+    "requiredLetters": [
+      "l",
+      "e"
+    ],
+    "priority": 1,
+    "frequency": "common",
+    "difficulty": 1,
+    "recommended": true,
+    "interleave": true,
+    "writing": true,
+    "reading": true,
+    "kind": "syllable",
+    "syllableAudio": "assets/audio/syllables/le.4f1aff189c840ef4.m4a"
+  },
+  {
+    "id": "sy-li",
+    "string": "li",
+    "word": "li",
+    "displayUpper": "LI",
+    "phonemes": [
+      "l",
+      "i"
+    ],
+    "graphemes": [
+      "l",
+      "i"
+    ],
+    "phonemeCount": 2,
+    "structure": "CV",
+    "requiredLetters": [
+      "l",
+      "i"
+    ],
+    "priority": 1,
+    "frequency": "common",
+    "difficulty": 1,
+    "recommended": true,
+    "interleave": true,
+    "writing": true,
+    "reading": true,
+    "kind": "syllable",
+    "syllableAudio": "assets/audio/syllables/li.d70d474bdb6042a4.m4a"
+  },
+  {
+    "id": "sy-lo",
+    "string": "lo",
+    "word": "lo",
+    "displayUpper": "LO",
+    "phonemes": [
+      "l",
+      "o"
+    ],
+    "graphemes": [
+      "l",
+      "o"
+    ],
+    "phonemeCount": 2,
+    "structure": "CV",
+    "requiredLetters": [
+      "l",
+      "o"
+    ],
+    "priority": 1,
+    "frequency": "common",
+    "difficulty": 1,
+    "recommended": true,
+    "interleave": true,
+    "writing": true,
+    "reading": true,
+    "kind": "syllable",
+    "syllableAudio": "assets/audio/syllables/lo.37ecdaee36a6e88a.m4a"
+  },
+  {
+    "id": "sy-lu",
+    "string": "lu",
+    "word": "lu",
+    "displayUpper": "LU",
+    "phonemes": [
+      "l",
+      "u"
+    ],
+    "graphemes": [
+      "l",
+      "u"
+    ],
+    "phonemeCount": 2,
+    "structure": "CV",
+    "requiredLetters": [
+      "l",
+      "u"
+    ],
+    "priority": 1,
+    "frequency": "common",
+    "difficulty": 1,
+    "recommended": true,
+    "interleave": true,
+    "writing": true,
+    "reading": true,
+    "kind": "syllable",
+    "syllableAudio": "assets/audio/syllables/lu.aa3bc83dbb45d0cd.m4a"
   },
   {
     "id": "sy-sa",
@@ -425,12 +310,13 @@
     ],
     "priority": 1,
     "frequency": "common",
-    "difficulty": 2,
+    "difficulty": 1,
     "recommended": true,
     "interleave": true,
     "writing": true,
     "reading": true,
-    "kind": "syllable"
+    "kind": "syllable",
+    "syllableAudio": "assets/audio/syllables/sa.c45268287a3a38f5.m4a"
   },
   {
     "id": "sy-se",
@@ -453,12 +339,13 @@
     ],
     "priority": 1,
     "frequency": "common",
-    "difficulty": 2,
+    "difficulty": 1,
     "recommended": true,
     "interleave": true,
     "writing": true,
     "reading": true,
-    "kind": "syllable"
+    "kind": "syllable",
+    "syllableAudio": "assets/audio/syllables/se.5e048fdd9b4bcfa8.m4a"
   },
   {
     "id": "sy-si",
@@ -481,12 +368,13 @@
     ],
     "priority": 1,
     "frequency": "common",
-    "difficulty": 2,
+    "difficulty": 1,
     "recommended": true,
     "interleave": true,
     "writing": true,
     "reading": true,
-    "kind": "syllable"
+    "kind": "syllable",
+    "syllableAudio": "assets/audio/syllables/si.5d793aff9ec7e2af.m4a"
   },
   {
     "id": "sy-so",
@@ -509,12 +397,13 @@
     ],
     "priority": 1,
     "frequency": "common",
-    "difficulty": 2,
+    "difficulty": 1,
     "recommended": true,
     "interleave": true,
     "writing": true,
     "reading": true,
-    "kind": "syllable"
+    "kind": "syllable",
+    "syllableAudio": "assets/audio/syllables/so.62d8a94a289951c8.m4a"
   },
   {
     "id": "sy-su",
@@ -537,12 +426,13 @@
     ],
     "priority": 1,
     "frequency": "common",
-    "difficulty": 2,
+    "difficulty": 1,
     "recommended": true,
     "interleave": true,
     "writing": true,
     "reading": true,
-    "kind": "syllable"
+    "kind": "syllable",
+    "syllableAudio": "assets/audio/syllables/su.085c66e71f0829b0.m4a"
   },
   {
     "id": "sy-na",
@@ -565,12 +455,13 @@
     ],
     "priority": 1,
     "frequency": "common",
-    "difficulty": 2,
+    "difficulty": 1,
     "recommended": true,
     "interleave": true,
     "writing": true,
     "reading": true,
-    "kind": "syllable"
+    "kind": "syllable",
+    "syllableAudio": "assets/audio/syllables/na.73330f43d3e46c1f.m4a"
   },
   {
     "id": "sy-ne",
@@ -593,12 +484,13 @@
     ],
     "priority": 1,
     "frequency": "common",
-    "difficulty": 2,
+    "difficulty": 1,
     "recommended": true,
     "interleave": true,
     "writing": true,
     "reading": true,
-    "kind": "syllable"
+    "kind": "syllable",
+    "syllableAudio": "assets/audio/syllables/ne.2aa214ccc8081ccf.m4a"
   },
   {
     "id": "sy-ni",
@@ -621,12 +513,13 @@
     ],
     "priority": 1,
     "frequency": "common",
-    "difficulty": 2,
+    "difficulty": 1,
     "recommended": true,
     "interleave": true,
     "writing": true,
     "reading": true,
-    "kind": "syllable"
+    "kind": "syllable",
+    "syllableAudio": "assets/audio/syllables/ni.b4755e338b721ca4.m4a"
   },
   {
     "id": "sy-no",
@@ -649,12 +542,13 @@
     ],
     "priority": 1,
     "frequency": "common",
-    "difficulty": 2,
+    "difficulty": 1,
     "recommended": true,
     "interleave": true,
     "writing": true,
     "reading": true,
-    "kind": "syllable"
+    "kind": "syllable",
+    "syllableAudio": "assets/audio/syllables/no.350b3e640172e8a2.m4a"
   },
   {
     "id": "sy-nu",
@@ -677,12 +571,13 @@
     ],
     "priority": 1,
     "frequency": "common",
-    "difficulty": 2,
+    "difficulty": 1,
     "recommended": true,
     "interleave": true,
     "writing": true,
     "reading": true,
-    "kind": "syllable"
+    "kind": "syllable",
+    "syllableAudio": "assets/audio/syllables/nu.f5b531a8f89c8ba9.m4a"
   },
   {
     "id": "sy-al",
@@ -703,14 +598,15 @@
       "a",
       "l"
     ],
-    "priority": 1,
+    "priority": 2,
     "frequency": "common",
     "difficulty": 2,
     "recommended": true,
     "interleave": true,
     "writing": true,
     "reading": true,
-    "kind": "syllable"
+    "kind": "syllable",
+    "syllableAudio": "assets/audio/syllables/al.b406a836ec942da5.m4a"
   },
   {
     "id": "sy-el",
@@ -731,14 +627,15 @@
       "e",
       "l"
     ],
-    "priority": 1,
+    "priority": 2,
     "frequency": "common",
     "difficulty": 2,
     "recommended": true,
     "interleave": true,
     "writing": true,
     "reading": true,
-    "kind": "syllable"
+    "kind": "syllable",
+    "syllableAudio": "assets/audio/syllables/el.3bedddfd19285b1b.m4a"
   },
   {
     "id": "sy-es",
@@ -759,14 +656,15 @@
       "e",
       "s"
     ],
-    "priority": 1,
+    "priority": 2,
     "frequency": "common",
     "difficulty": 2,
     "recommended": true,
     "interleave": true,
     "writing": true,
     "reading": true,
-    "kind": "syllable"
+    "kind": "syllable",
+    "syllableAudio": "assets/audio/syllables/es.276ca803d52e8330.m4a"
   },
   {
     "id": "sy-en",
@@ -787,14 +685,15 @@
       "e",
       "n"
     ],
-    "priority": 1,
+    "priority": 2,
     "frequency": "common",
     "difficulty": 2,
     "recommended": true,
     "interleave": true,
     "writing": true,
     "reading": true,
-    "kind": "syllable"
+    "kind": "syllable",
+    "syllableAudio": "assets/audio/syllables/en.03c77c985c9d2dee.m4a"
   },
   {
     "id": "sy-un",
@@ -815,125 +714,426 @@
       "u",
       "n"
     ],
-    "priority": 1,
+    "priority": 2,
     "frequency": "common",
     "difficulty": 2,
     "recommended": true,
     "interleave": true,
     "writing": true,
     "reading": true,
-    "kind": "syllable"
+    "kind": "syllable",
+    "syllableAudio": "assets/audio/syllables/un.3c0973225fc7a81d.m4a"
   },
   {
-    "id": "sy-as",
-    "string": "as",
-    "word": "as",
-    "displayUpper": "AS",
-    "phonemes": [
-      "a",
-      "s"
-    ],
-    "graphemes": [
-      "a",
-      "s"
-    ],
-    "phonemeCount": 2,
-    "structure": "VC",
-    "requiredLetters": [
-      "a",
-      "s"
-    ],
-    "priority": 1,
-    "frequency": "common",
-    "difficulty": 2,
-    "recommended": true,
-    "interleave": true,
-    "writing": true,
-    "reading": true,
-    "kind": "syllable"
-  },
-  {
-    "id": "sy-os",
-    "string": "os",
-    "word": "os",
-    "displayUpper": "OS",
+    "id": "sy-on",
+    "string": "on",
+    "word": "on",
+    "displayUpper": "ON",
     "phonemes": [
       "o",
-      "s"
-    ],
-    "graphemes": [
-      "o",
-      "s"
-    ],
-    "phonemeCount": 2,
-    "structure": "VC",
-    "requiredLetters": [
-      "o",
-      "s"
-    ],
-    "priority": 1,
-    "frequency": "common",
-    "difficulty": 2,
-    "recommended": true,
-    "interleave": true,
-    "writing": true,
-    "reading": true,
-    "kind": "syllable"
-  },
-  {
-    "id": "sy-ol",
-    "string": "ol",
-    "word": "ol",
-    "displayUpper": "OL",
-    "phonemes": [
-      "o",
-      "l"
-    ],
-    "graphemes": [
-      "o",
-      "l"
-    ],
-    "phonemeCount": 2,
-    "structure": "VC",
-    "requiredLetters": [
-      "o",
-      "l"
-    ],
-    "priority": 1,
-    "frequency": "common",
-    "difficulty": 2,
-    "recommended": true,
-    "interleave": true,
-    "writing": true,
-    "reading": true,
-    "kind": "syllable"
-  },
-  {
-    "id": "sy-an",
-    "string": "an",
-    "word": "an",
-    "displayUpper": "AN",
-    "phonemes": [
-      "a",
       "n"
     ],
     "graphemes": [
-      "a",
+      "o",
       "n"
     ],
     "phonemeCount": 2,
     "structure": "VC",
     "requiredLetters": [
-      "a",
+      "o",
       "n"
     ],
-    "priority": 1,
+    "priority": 2,
     "frequency": "common",
     "difficulty": 2,
     "recommended": true,
     "interleave": true,
     "writing": true,
     "reading": true,
-    "kind": "syllable"
+    "kind": "syllable",
+    "syllableAudio": "assets/audio/syllables/on.cc32acebc49afef3.m4a"
+  },
+  {
+    "id": "sy-sal",
+    "string": "sal",
+    "word": "sal",
+    "displayUpper": "SAL",
+    "phonemes": [
+      "s",
+      "a",
+      "l"
+    ],
+    "graphemes": [
+      "s",
+      "a",
+      "l"
+    ],
+    "phonemeCount": 3,
+    "structure": "CVC",
+    "requiredLetters": [
+      "s",
+      "a",
+      "l"
+    ],
+    "priority": 3,
+    "frequency": "common",
+    "difficulty": 3,
+    "recommended": true,
+    "interleave": true,
+    "writing": true,
+    "reading": true,
+    "kind": "syllable",
+    "syllableAudio": "assets/audio/syllables/sal.fdfa711d35afa94a.m4a"
+  },
+  {
+    "id": "sy-sol",
+    "string": "sol",
+    "word": "sol",
+    "displayUpper": "SOL",
+    "phonemes": [
+      "s",
+      "o",
+      "l"
+    ],
+    "graphemes": [
+      "s",
+      "o",
+      "l"
+    ],
+    "phonemeCount": 3,
+    "structure": "CVC",
+    "requiredLetters": [
+      "s",
+      "o",
+      "l"
+    ],
+    "priority": 3,
+    "frequency": "common",
+    "difficulty": 3,
+    "recommended": true,
+    "interleave": true,
+    "writing": true,
+    "reading": true,
+    "kind": "syllable",
+    "syllableAudio": "assets/audio/syllables/sol.5850a324110929f6.m4a"
+  },
+  {
+    "id": "sy-son",
+    "string": "son",
+    "word": "son",
+    "displayUpper": "SON",
+    "phonemes": [
+      "s",
+      "o",
+      "n"
+    ],
+    "graphemes": [
+      "s",
+      "o",
+      "n"
+    ],
+    "phonemeCount": 3,
+    "structure": "CVC",
+    "requiredLetters": [
+      "s",
+      "o",
+      "n"
+    ],
+    "priority": 3,
+    "frequency": "common",
+    "difficulty": 3,
+    "recommended": true,
+    "interleave": true,
+    "writing": true,
+    "reading": true,
+    "kind": "syllable",
+    "syllableAudio": "assets/audio/syllables/son.d412ef5b83756e9d.m4a"
+  },
+  {
+    "id": "sy-sin",
+    "string": "sin",
+    "word": "sin",
+    "displayUpper": "SIN",
+    "phonemes": [
+      "s",
+      "i",
+      "n"
+    ],
+    "graphemes": [
+      "s",
+      "i",
+      "n"
+    ],
+    "phonemeCount": 3,
+    "structure": "CVC",
+    "requiredLetters": [
+      "s",
+      "i",
+      "n"
+    ],
+    "priority": 3,
+    "frequency": "common",
+    "difficulty": 3,
+    "recommended": true,
+    "interleave": true,
+    "writing": true,
+    "reading": true,
+    "kind": "syllable",
+    "syllableAudio": "assets/audio/syllables/sin.74bb717c4c928578.m4a"
+  },
+  {
+    "id": "sy-mes",
+    "string": "mes",
+    "word": "mes",
+    "displayUpper": "MES",
+    "phonemes": [
+      "m",
+      "e",
+      "s"
+    ],
+    "graphemes": [
+      "m",
+      "e",
+      "s"
+    ],
+    "phonemeCount": 3,
+    "structure": "CVC",
+    "requiredLetters": [
+      "m",
+      "e",
+      "s"
+    ],
+    "priority": 3,
+    "frequency": "common",
+    "difficulty": 3,
+    "recommended": true,
+    "interleave": true,
+    "writing": true,
+    "reading": true,
+    "kind": "syllable",
+    "syllableAudio": "assets/audio/syllables/mes.a37aa716a022aa30.m4a"
+  },
+  {
+    "id": "sy-mis",
+    "string": "mis",
+    "word": "mis",
+    "displayUpper": "MIS",
+    "phonemes": [
+      "m",
+      "i",
+      "s"
+    ],
+    "graphemes": [
+      "m",
+      "i",
+      "s"
+    ],
+    "phonemeCount": 3,
+    "structure": "CVC",
+    "requiredLetters": [
+      "m",
+      "i",
+      "s"
+    ],
+    "priority": 3,
+    "frequency": "common",
+    "difficulty": 3,
+    "recommended": true,
+    "interleave": true,
+    "writing": true,
+    "reading": true,
+    "kind": "syllable",
+    "syllableAudio": "assets/audio/syllables/mis.ca80428f1429fe72.m4a"
+  },
+  {
+    "id": "sy-mal",
+    "string": "mal",
+    "word": "mal",
+    "displayUpper": "MAL",
+    "phonemes": [
+      "m",
+      "a",
+      "l"
+    ],
+    "graphemes": [
+      "m",
+      "a",
+      "l"
+    ],
+    "phonemeCount": 3,
+    "structure": "CVC",
+    "requiredLetters": [
+      "m",
+      "a",
+      "l"
+    ],
+    "priority": 3,
+    "frequency": "common",
+    "difficulty": 3,
+    "recommended": true,
+    "interleave": true,
+    "writing": true,
+    "reading": true,
+    "kind": "syllable",
+    "syllableAudio": "assets/audio/syllables/mal.17c0cea53138c612.m4a"
+  },
+  {
+    "id": "sy-mil",
+    "string": "mil",
+    "word": "mil",
+    "displayUpper": "MIL",
+    "phonemes": [
+      "m",
+      "i",
+      "l"
+    ],
+    "graphemes": [
+      "m",
+      "i",
+      "l"
+    ],
+    "phonemeCount": 3,
+    "structure": "CVC",
+    "requiredLetters": [
+      "m",
+      "i",
+      "l"
+    ],
+    "priority": 3,
+    "frequency": "common",
+    "difficulty": 3,
+    "recommended": true,
+    "interleave": true,
+    "writing": true,
+    "reading": true,
+    "kind": "syllable",
+    "syllableAudio": "assets/audio/syllables/mil.73beead4eac21dc5.m4a"
+  },
+  {
+    "id": "sy-las",
+    "string": "las",
+    "word": "las",
+    "displayUpper": "LAS",
+    "phonemes": [
+      "l",
+      "a",
+      "s"
+    ],
+    "graphemes": [
+      "l",
+      "a",
+      "s"
+    ],
+    "phonemeCount": 3,
+    "structure": "CVC",
+    "requiredLetters": [
+      "l",
+      "a",
+      "s"
+    ],
+    "priority": 3,
+    "frequency": "common",
+    "difficulty": 3,
+    "recommended": true,
+    "interleave": true,
+    "writing": true,
+    "reading": true,
+    "kind": "syllable",
+    "syllableAudio": "assets/audio/syllables/las.43db5ed3c478dbaa.m4a"
+  },
+  {
+    "id": "sy-los",
+    "string": "los",
+    "word": "los",
+    "displayUpper": "LOS",
+    "phonemes": [
+      "l",
+      "o",
+      "s"
+    ],
+    "graphemes": [
+      "l",
+      "o",
+      "s"
+    ],
+    "phonemeCount": 3,
+    "structure": "CVC",
+    "requiredLetters": [
+      "l",
+      "o",
+      "s"
+    ],
+    "priority": 3,
+    "frequency": "common",
+    "difficulty": 3,
+    "recommended": true,
+    "interleave": true,
+    "writing": true,
+    "reading": true,
+    "kind": "syllable",
+    "syllableAudio": "assets/audio/syllables/los.ef2053d320291c71.m4a"
+  },
+  {
+    "id": "sy-nos",
+    "string": "nos",
+    "word": "nos",
+    "displayUpper": "NOS",
+    "phonemes": [
+      "n",
+      "o",
+      "s"
+    ],
+    "graphemes": [
+      "n",
+      "o",
+      "s"
+    ],
+    "phonemeCount": 3,
+    "structure": "CVC",
+    "requiredLetters": [
+      "n",
+      "o",
+      "s"
+    ],
+    "priority": 3,
+    "frequency": "common",
+    "difficulty": 3,
+    "recommended": true,
+    "interleave": true,
+    "writing": true,
+    "reading": true,
+    "kind": "syllable",
+    "syllableAudio": "assets/audio/syllables/nos.cf84a5c4e9809458.m4a"
+  },
+  {
+    "id": "sy-sus",
+    "string": "sus",
+    "word": "sus",
+    "displayUpper": "SUS",
+    "phonemes": [
+      "s",
+      "u",
+      "s"
+    ],
+    "graphemes": [
+      "s",
+      "u",
+      "s"
+    ],
+    "phonemeCount": 3,
+    "structure": "CVC",
+    "requiredLetters": [
+      "s",
+      "u"
+    ],
+    "priority": 3,
+    "frequency": "common",
+    "difficulty": 3,
+    "recommended": true,
+    "interleave": true,
+    "writing": true,
+    "reading": true,
+    "kind": "syllable",
+    "syllableAudio": "assets/audio/syllables/sus.4654da33b7b62aab.m4a"
   }
 ]
