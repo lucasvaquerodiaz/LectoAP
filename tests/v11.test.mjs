@@ -57,10 +57,11 @@ test('SOL y MELÓN comparten O y L sin duplicar Ó',()=>{
 test('un segundo ▶ detiene el audio anterior',async()=>{
  const p=new PhonemeAudio(data.audio,data.wordAudio,{...data.audioVerification,status:'confirmed_by_teacher'},data.syllableAudio);
  const sources=[];
- p.context={state:'running',currentTime:0,destination:{},resume:async()=>{},createBufferSource(){
+ const gainNode={gain:{},connect(){}},compressor={threshold:{},knee:{},ratio:{},attack:{},release:{},connect(){}};
+ p.context={state:'running',currentTime:0,destination:{},resume:async()=>{},createGain:()=>gainNode,createDynamicsCompressor:()=>compressor,createBufferSource(){
   const source={stopped:false,connect(){},start(){},stop(){this.stopped=true;}};sources.push(source);return source;
  }};
- p.buffer=async()=>({duration:1});
+ p.buffer=async()=>({duration:1,sampleRate:1000,getChannelData:()=>new Float32Array(1000).fill(.1)});
  await p.play(['m']);await p.play(['n']);
  assert.equal(sources.length,2);assert.equal(sources[0].stopped,true);assert.equal(sources[1].stopped,false);
 });
@@ -68,10 +69,16 @@ test('las grabaciones nuevas suben de volumen con control de picos',async()=>{
  const connections=[],gain={gain:{value:1},connect(next){connections.push(['gain',next]);}},limiter={threshold:{},knee:{},ratio:{},attack:{},release:{},connect(next){connections.push(['limiter',next]);}},source={connect(next){connections.push(['source',next]);},start(){}};
  const p=new PhonemeAudio(data.audio,data.wordAudio,{...data.audioVerification,status:'confirmed_by_teacher'},data.syllableAudio);
  p.context={state:'running',currentTime:0,destination:{name:'destination'},resume:async()=>{},createBufferSource:()=>source,createGain:()=>gain,createDynamicsCompressor:()=>limiter};
- p.buffer=async()=>({duration:1});
+ p.buffer=async()=>({duration:1,sampleRate:1000,getChannelData:()=>new Float32Array(1000).fill(.1)});
  await p.playEntries([{file:'new-word.m4a',playbackGain:2.5}],0);
- assert.equal(gain.gain.value,2.5);assert.equal(limiter.threshold.value,-1);assert.equal(limiter.ratio.value,20);
+ assert(Math.abs(gain.gain.value-2.5)<.001);assert.equal(limiter.threshold.value,-1);assert.equal(limiter.ratio.value,20);
  assert.deepEqual(connections.map(([from])=>from),['source','gain','limiter']);
+});
+test('el reproductor elimina silencio inicial y nivela la señal conservando margen de ataque',()=>{
+ const samples=new Float32Array(2000);samples.fill(.02,500,1400);
+ const p=new PhonemeAudio(data.audio,data.wordAudio,{...data.audioVerification,status:'confirmed_by_teacher'},data.syllableAudio);
+ const settings=p.playbackSettings({duration:2,sampleRate:1000,getChannelData:()=>samples},{phoneme:'s',playbackGain:2.5});
+ assert.equal(settings.offset,.48);assert.equal(settings.duration,1);assert.equal(settings.gain,4);
 });
 test('no quedan archivos de audio anteriores en el catálogo público',async()=>{
  for(const kind of ['audio','wordAudio','syllableAudio'])for(const row of data[kind]){
@@ -79,3 +86,4 @@ test('no quedan archivos de audio anteriores en el catálogo público',async()=>
   assert(bytes.length>1000);assert(row.file.includes(row.sha256.slice(0,16)));
  }
 });
+

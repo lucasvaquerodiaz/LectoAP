@@ -120,17 +120,15 @@
   },
   {
     "phoneme": "s",
-    "file": "assets/audio/phonemes/s.b54b9fb7770fb9dd.m4a",
-    "source": "Fonemas (18) Lucas.m4a",
-    "sourceStartMs": 27150,
-    "sourceEndMs": 28600,
-    "processing": "recorte manual corregido del fonema posterior al número hablado; normalización conservadora; AAC 64 kbps",
+    "file": "assets/audio/phonemes/s.518664ca606efb58.m4a",
+    "source": "Grabación individual nueva aportada por el docente",
+    "processing": "Grabación definitiva sustituida por el docente; subida y recorte automático del silencio inicial durante la reproducción",
     "status": "final_v11",
+    "playbackGain": 2.5,
     "id": "s",
     "sourceFile": "inputs/audio_final/fonemas/assets/audio/phonemes/s.m4a",
-    "sha256": "b54b9fb7770fb9dd06c08e5d9b6d36d02bddce245ee1d70f8651cd6e3e08c97c",
+    "sha256": "518664ca606efb589f2e8f3739e38e37cf4f93483d8d1202b71950d1e91291f3",
     "integration": "byte-identical teacher source",
-    "playbackGain": 1,
     "graphemes": [
       "s"
     ]
@@ -153,3 +151,4 @@
     ]
   }
 ]
+

@@ -65,11 +65,10 @@
   {
     "phoneme": "s",
     "file": "assets/audio/phonemes/s.m4a",
-    "source": "Fonemas (18) Lucas.m4a",
-    "sourceStartMs": 27150,
-    "sourceEndMs": 28600,
-    "processing": "recorte manual corregido del fonema posterior al número hablado; normalización conservadora; AAC 64 kbps",
-    "status": "validated_final_v1"
+    "source": "Grabación individual nueva aportada por el docente",
+    "processing": "Grabación definitiva sustituida por el docente; subida y recorte automático del silencio inicial durante la reproducción",
+    "status": "validated_final_v1",
+    "playbackGain": 2.5
   },
   {
     "phoneme": "n",
@@ -81,3 +80,4 @@
     "status": "validated_final_v1"
   }
 ]
+

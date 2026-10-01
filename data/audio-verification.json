@@ -1,7 +1,7 @@
 {
-  "sourceFingerprint": "9c3058cb23ed1b0359ebd85b77ff428bd6a98d2ee33310f0584177f954b0a745",
+  "sourceFingerprint": "dedee8674d781faec5cc60288a8c2f16d4124804d944729ed88f51a9542c60e7",
   "status": "confirmed_by_teacher",
-  "method": "Confirmación explícita del docente: Ya verifiqué todos los audios.",
-  "previousConfirmation": "Confirmación previa del docente de los 28 audios iniciales.",
-  "notes": "La confirmación del docente queda vinculada a las huellas actuales de los 106 audios definitivos."
+  "method": "El docente identifica el archivo fuente inputs/audio_final/fonemas/assets/audio/phonemes/s.m4a como la nueva grabación de /s/; se conserva su confirmación previa del resto del inventario.",
+  "notes": "La confirmación está vinculada a las huellas actuales de los 106 audios definitivos; la sustitución /s/ fue identificada por el docente."
 }
+

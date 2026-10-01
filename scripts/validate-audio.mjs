@@ -17,7 +17,7 @@ export async function validateAudio(data){
    const entry=source.find(x=>x[spec.key]===a[spec.key]);
    assert(!!entry,'Audio no declarado en fuente definitiva: '+a.id);if(!entry)continue;
    const authoritative=sourceRoots[kind]+'/'+entry.file;
-   assert(a.playbackGain===(kind==='phoneme'?1:entry.playbackGain??1),'Ganancia de reproducción desincronizada: '+a.id);
+   assert(a.playbackGain===(Number.isFinite(entry.playbackGain)&&entry.playbackGain>1?Math.min(entry.playbackGain,2.5):1),'Ganancia de reproducción desincronizada: '+a.id);
    assert(a.sourceFile===authoritative,'Fuente no definitiva: '+a.id);
    try{
     const original=await readFile(authoritative),hash=sha256(original);
@@ -44,3 +44,4 @@ export async function validateAudio(data){
  }
  return errors;
 }
+

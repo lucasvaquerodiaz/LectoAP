@@ -24,7 +24,7 @@ export async function syncAudio(){
    if(entry.file!==`assets/audio/${kind==='phoneme'?'phonemes':'words'}/${id}.m4a`)throw Error('Nombre de archivo no corresponde: '+entry[spec.key]);
    const sourceFile=`${sourceRoots[kind]}/${entry.file}`,bytes=await readFile(sourceFile),hash=sha256(bytes);
    if(bytes.length<1000||!bytes.includes(Buffer.from('ftyp'))||!bytes.includes(Buffer.from('mp4a')))throw Error('M4A/AAC inválido: '+sourceFile);
-   const playbackGain=kind!=='phoneme'&&Number.isFinite(entry.playbackGain)&&entry.playbackGain>1?Math.min(entry.playbackGain,2.5):1;
+   const playbackGain=Number.isFinite(entry.playbackGain)&&entry.playbackGain>1?Math.min(entry.playbackGain,2.5):1;
    prepared[kind].push({bytes,entry:{...entry,id,file:`assets/audio/${spec.folder}/${id}.${hash.slice(0,16)}.m4a`,sourceFile,sha256:hash,status:'final_v11',integration:'byte-identical teacher source',playbackGain,...(kind==='phoneme'?{graphemes:[id]}:kind==='word'?{fallback:null,required:true}:{required:true})}});
   }
  }
@@ -60,3 +60,4 @@ export async function syncAudio(){
  console.log(`Audio sincronizado: ${phonemes.length} fonemas, ${words.length} palabras, ${syllables.length} sílabas; confirmación: ${verification.status}`);
 }
 if(process.argv[1]&&resolve(process.argv[1])===fileURLToPath(import.meta.url))await syncAudio();
+
