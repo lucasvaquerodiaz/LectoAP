@@ -6,6 +6,7 @@ export const instructionIcons={
  shared:()=>svg('Comparten',`<circle cx="62" cy="26" r="18" fill="none" stroke="currentColor" stroke-width="5"/><circle cx="98" cy="26" r="18" fill="none" stroke="currentColor" stroke-width="5"/><path d="M80 12a18 18 0 0 0 0 28 18 18 0 0 0 0-28Z" fill="currentColor" opacity=".35"/>`),
  game:type=>{
   const art={
+   games:`<path d="M13 31h8l10-8v25l-10-8h-8z" fill="none" stroke="currentColor" stroke-width="4"/><path d="M37 32q8 6 0 12m6-18q14 12 0 24" fill="none" stroke="currentColor" stroke-width="3"/><rect x="62" y="18" width="22" height="35" rx="5" fill="none" stroke="currentColor" stroke-width="4"/><path d="M68 45V27h10" fill="none" stroke="currentColor" stroke-width="3"/>`,
    hear:`<path d="M21 39h12l14-12v35L33 50H21z" fill="none" stroke="currentColor" stroke-width="5" stroke-linejoin="round"/><path d="M57 37q10 8 0 16m8-24q18 16 0 32" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>`,
    search:`<rect x="13" y="16" width="31" height="25" rx="5" fill="none" stroke="currentColor" stroke-width="4"/><circle cx="24" cy="25" r="4" fill="currentColor"/><path d="m16 36 8-7 6 5 5-4 8 7" fill="none" stroke="currentColor" stroke-width="3"/><rect x="52" y="16" width="28" height="25" rx="5" fill="none" stroke="currentColor" stroke-width="4"/><circle cx="64" cy="27" r="8" fill="none" stroke="currentColor" stroke-width="4"/><path d="m70 33 9 8" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>`,
    first:`<circle cx="20" cy="40" r="10" fill="currentColor"/><circle cx="49" cy="40" r="10" fill="none" stroke="currentColor" stroke-width="4"/><circle cx="78" cy="40" r="10" fill="none" stroke="currentColor" stroke-width="4"/><path d="M10 17h24m-7-7 7 7-7 7" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>`,
@@ -22,4 +23,3 @@ export const instructionIcons={
   return `<svg class="child-game-svg" viewBox="0 0 120 80" aria-hidden="true" focusable="false">${art[type]||art.hear}</svg>`;
  }
 };
-

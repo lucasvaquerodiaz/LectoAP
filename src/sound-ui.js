@@ -9,8 +9,8 @@ const symbol=item=>{
  return `<div class="sc-flow" aria-hidden="true"><span class="sc-flow-result">●</span><span>→</span>${circles(-1,item.expected.length)}</div>`;
 };
 
-export function startSoundCourse({root,data,player,onExit}){
- let stepIndex=0,itemIndex=0,item=null,answer=[],attempts=0,resolved=false,revealed=false,timer=null,closed=false;
+export function startSoundCourse({root,data,player,onExit,startStep=0,single=false}){
+ let stepIndex=startStep,itemIndex=0,item=null,answer=[],attempts=0,resolved=false,revealed=false,timer=null,closed=false;
  const recent=[];
  const stop=()=>{closed=true;clearTimeout(timer);player.stop();root.onclick=null;};
  const exit=()=>{stop();onExit();};
@@ -25,13 +25,14 @@ export function startSoundCourse({root,data,player,onExit}){
    else if(action==='stimulus')void playStimulus();
    else if(action==='option-play')void playOption(control.dataset.id);
    else if(action==='choose')choose(control.dataset.id);
+   else if(action==='skip')skipStep();
    else if(action==='remove')remove(Number(control.dataset.index));
    else if(action==='clear'){answer=[];render();}
   };
  };
  const guide=()=>{
   if(closed)return;
-  frame(`<section class="sc-guide"><span class="eyebrow">SOLO PARA EL ADULTO</span><h1>Guía del recorrido de sonidos</h1><p>Lee las consignas al niño al empezar cada etapa. La pantalla de juego cambia de icono y avanza automáticamente.</p><ol class="sc-guide-list">${SOUND_STEPS.map(step=>`<li><strong>${escapeHtml(step.title)}</strong><span>${escapeHtml(step.instruction)}</span></li>`).join('')}</ol><p class="footnote">Después de pulsar «Empezar», en la pantalla del niño solo habrá imágenes, círculos e iconos.</p><button class="primary" data-sc="begin">Empezar el recorrido ▶</button></section>`,true);
+  frame(`<section class="sc-guide"><span class="eyebrow">SOLO PARA EL ADULTO</span><h1>Guía de los juegos de sonidos</h1><p>Lee las consignas al niño al empezar cada etapa. La pantalla de juego cambia de icono y avanza automáticamente.</p><ol class="sc-guide-list">${(single?[SOUND_STEPS[stepIndex]]:SOUND_STEPS).map(step=>`<li><strong>${escapeHtml(step.title)}</strong><span>${escapeHtml(step.instruction)}</span></li>`).join('')}</ol><p class="footnote">Después de pulsar «Empezar», en la pantalla del niño solo habrá imágenes, círculos e iconos.</p><button class="primary" data-sc="begin">Empezar ${single?'el juego':'el recorrido'} ▶</button></section>`,true);
  };
  const preload=()=>{
   item.sounds.forEach(id=>player.preload('phoneme',id));
@@ -49,8 +50,13 @@ export function startSoundCourse({root,data,player,onExit}){
   if(closed)return;
   player.stop();recent.push(item.word.id);if(recent.length>3)recent.shift();
   itemIndex++;
-  if(itemIndex>=SOUND_STEPS[stepIndex].count){stepIndex++;itemIndex=0;recent.length=0;if(stepIndex>=SOUND_STEPS.length){finish();return;}transition();return;}
+  if(itemIndex>=SOUND_STEPS[stepIndex].count){if(single){finish();return;}stepIndex++;itemIndex=0;recent.length=0;if(stepIndex>=SOUND_STEPS.length){finish();return;}transition();return;}
   begin();
+ };
+ const skipStep=()=>{
+  if(single||closed)return;
+  clearTimeout(timer);player.stop();stepIndex++;itemIndex=0;recent.length=0;
+  if(stepIndex>=SOUND_STEPS.length)finish();else transition();
  };
  const finish=()=>frame(`<section class="sc-finish" aria-label="Recorrido de sonidos terminado"><div aria-hidden="true">★</div><button class="primary" data-sc="exit" aria-label="Volver al menú">⌂</button></section>`);
  const transition=()=>{frame(`<section class="sc-transition" aria-label="Nueva etapa de sonidos"><div aria-hidden="true">${SOUND_STEPS[stepIndex].icon}</div></section>`);timer=setTimeout(begin,1800);};
@@ -86,7 +92,7 @@ export function startSoundCourse({root,data,player,onExit}){
   }).join('');
   const slots=item.kind==='sequence'?`<div class="sc-slots">${item.expected.map((_,index)=>`<button data-sc="remove" data-index="${index}" aria-label="Quitar sonido ${index+1}" ${index>=answer.length?'disabled':''}>${index<answer.length?'●':'○'}</button>`).join('')}</div>${answer.length&&!resolved?'<button class="sc-clear" data-sc="clear" aria-label="Borrar la respuesta">↶</button>':''}`:'';
   const feedback=resolved?(revealed?'◉':'✓'):wrong?'×':'';
-  frame(`<section class="sc-activity" aria-label="Juego de sonidos"><div class="sc-stage-progress" aria-label="Etapa ${stepIndex+1} de ${SOUND_STEPS.length}">${Array.from({length:SOUND_STEPS.length},(_,index)=>`<span class="${index<stepIndex?'done':index===stepIndex?'now':''}"></span>`).join('')}</div><div class="sc-item-progress" aria-label="Juego ${itemIndex+1} de ${step.count}">${progress}</div><div class="sc-symbol">${symbol(item)}</div><div class="sc-inputs">${soundButton}${stimulusButton}</div>${slots}<div class="sc-options">${options}</div><div class="sc-feedback ${resolved&&!revealed?'success':wrong?'mistake':''}" aria-live="polite" aria-label="${resolved?revealed?'Respuesta mostrada':'Correcto':wrong?'Prueba otra vez':''}">${feedback}</div></section>`);
+  frame(`<section class="sc-activity" aria-label="Juego de sonidos">${single?'':`<div class="sc-stage-progress" aria-label="Etapa ${stepIndex+1} de ${SOUND_STEPS.length}">${Array.from({length:SOUND_STEPS.length},(_,index)=>`<span class="${index<stepIndex?'done':index===stepIndex?'now':''}"></span>`).join('')}</div><button class="sc-skip" data-sc="skip" aria-label="Pasar a la siguiente tarea">Siguiente tarea →</button>`}<div class="sc-item-progress" aria-label="Juego ${itemIndex+1} de ${step.count}">${progress}</div><div class="sc-symbol">${symbol(item)}</div><div class="sc-inputs">${soundButton}${stimulusButton}</div>${slots}<div class="sc-options">${options}</div><div class="sc-feedback ${resolved&&!revealed?'success':wrong?'mistake':''}" aria-live="polite" aria-label="${resolved?revealed?'Respuesta mostrada':'Correcto':wrong?'Prueba otra vez':''}">${feedback}</div></section>`);
  };
  guide();
  return {stop};
