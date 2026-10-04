@@ -33,16 +33,17 @@ test('LEO entra en dictado sin pictograma; NUBE sigue excluida y las tildes se c
  assert(!data.dictationWords.some(w=>w.id==='nube'));
  for(const id of ['limon','melon','mision','salmon','salon'])assert(data.wordAudio.find(a=>a.id===id).word.includes('ó'));
 });
-test('M/N no se distraen entre sí en fácil y sí pueden coexistir en difícil',()=>{
- let easyM=0,easyN=0,hardTogether=0;
+test('M/N nunca se ofrecen como contraste entre sí',()=>{
+ let easyM=0,easyN=0;
  for(const activity of ['CF03','SL02','SL01'])for(let seed=1;seed<250;seed++){
   const easy=generateItem(data,createSession({...DEFAULTS,activity,difficulty:'easy'}),rng(seed));
   if(easy.expected.includes('m')){easyM++;assert(!easy.options.some(o=>o.id==='n'));}
   if(easy.expected.includes('n')){easyN++;assert(!easy.options.some(o=>o.id==='m'));}
   const hard=generateItem(data,createSession({...DEFAULTS,activity,difficulty:'hard'}),rng(seed));
-  if(hard.expected.some(x=>['m','n'].includes(x))&&hard.options.some(o=>o.id==='m')&&hard.options.some(o=>o.id==='n'))hardTogether++;
+  if(hard.expected.includes('m')&&!hard.expected.includes('n'))assert(!hard.options.some(o=>o.id==='n'));
+  if(hard.expected.includes('n')&&!hard.expected.includes('m'))assert(!hard.options.some(o=>o.id==='m'));
  }
- assert(easyM>0&&easyN>0&&hardTogether>0);
+ assert(easyM>0&&easyN>0);
 });
 test('SOL y MELÓN comparten O y L sin duplicar Ó',()=>{
  let found=false;
@@ -86,4 +87,3 @@ test('no quedan archivos de audio anteriores en el catálogo público',async()=>
   assert(bytes.length>1000);assert(row.file.includes(row.sha256.slice(0,16)));
  }
 });
-

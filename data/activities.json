@@ -14,6 +14,7 @@
  {"id":"SL05","module":"SL","name":"Dictado de sílabas","response":"sequence","wordAudioHelp":"disabled"},
  {"id":"SL06","module":"SL","name":"Dictado de palabras","response":"sequence","wordAudioHelp":"disabled"},
  {"id":"SL07","module":"SL","name":"Leer → imagen","response":"image","wordAudioHelp":"disabled"},
+ {"id":"SL08","module":"SL","name":"Leer sílabas → audio","response":"audio","wordAudioHelp":"disabled"},
  {"id":"S+L01","module":"COMBO","name":"Sonidos y letras compartidos","response":"multi","wordAudioHelp":"optional"},
  {"id":"S+L02","module":"COMBO","name":"¿Qué letra se añadió?","response":"choice","wordAudioHelp":"optional"},
  {"id":"S+L03","module":"COMBO","name":"¿Qué letra cambió?","response":"choice","wordAudioHelp":"optional"},

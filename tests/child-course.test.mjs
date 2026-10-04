@@ -7,8 +7,8 @@ import {createSession,generateItem,isCorrect} from '../src/engine.js';
 const data=await loadData();
 const rng=seed=>()=>{seed=(seed*1664525+1013904223)>>>0;return seed/4294967296;};
 
-test('el curso autónomo conserva el orden solicitado, usa seis ítems fáciles y solo palabras grabadas',()=>{
- assert.deepEqual(CHILD_COURSE.map(s=>s.activity),['CF01','CF02','CF03','CF05','CF07','SL01','SL02','SL03','SL05','SL07','SL04','SL06']);
+test('el curso de letras avanza de correspondencias a sílabas y palabras grabadas',()=>{
+ assert.deepEqual(CHILD_COURSE.map(s=>s.activity),['SL02','SL01','SL03','SL08','SL05','SL07','SL04','SL06']);
  assert(CHILD_COURSE.every(s=>s.label&&s.hint&&s.icon));
  assert.equal(childCompletion('course',0),'next');
  assert.equal(childCompletion('course',CHILD_COURSE.length-2),'next');
@@ -23,7 +23,8 @@ test('el curso autónomo conserva el orden solicitado, usa seis ítems fáciles 
    const item=generateItem(data,createSession(config),rng(index*100+seed));
    assert.equal(item.activity,CHILD_COURSE[index].activity);
    assert(isCorrect(item,item.expected));
-   if(item.activity==='SL05')assert(data.syllableAudio.some(a=>a.unit===item.target.string));
+   if(['SL05','SL08'].includes(item.activity))assert(data.syllableAudio.some(a=>a.unit===item.target.string));
+   if(item.activity==='SL08')for(const option of item.options)assert(data.syllableAudio.some(a=>a.unit===option.id));
    else if(data.words.some(w=>w.id===item.target.id)||data.oral.some(w=>w.id===item.target.id)||data.dictationWords.some(w=>w.id===item.target.id))assert(recorded.has(item.target.id));
    for(const option of item.options.filter(o=>o.type==='image'))assert(recorded.has(option.id));
   }
@@ -46,4 +47,3 @@ test('en fácil M y N no producen negativas engañosas ni distraen como respuest
   }
  }
 });
-
