@@ -14,6 +14,7 @@ const sample=(entries,rng)=>entries[Math.floor(rng()*entries.length)];
 const shuffled=(entries,rng)=>{const result=entries.slice();for(let index=result.length-1;index>0;index--){const other=Math.floor(rng()*(index+1));[result[index],result[other]]=[result[other],result[index]];}return result;};
 const otherN=(p)=>p==='m'?'n':p==='n'?'m':null;
 const safeNegative=(word,p)=>!word.phonemes.includes(p)&&(!otherN(p)||!word.phonemes.includes(otherN(p)));
+const safeContrast=(target,other)=>!(target.phonemes.includes('m')&&!target.phonemes.includes('n')&&other.phonemes.includes('n')&&!other.phonemes.includes('m'))&&!(target.phonemes.includes('n')&&!target.phonemes.includes('m')&&other.phonemes.includes('m')&&!other.phonemes.includes('n'));
 const wordPool=data=>{
  const recorded=new Set(data.wordAudio.map(entry=>entry.id));
  return data.words.concat(data.oral).filter(word=>recorded.has(word.id)&&word.oral&&word.image&&!word.reviewRequired&&word.priority<=1&&word.phonemeCount<=4);
@@ -51,7 +52,7 @@ export function makeSoundItem(data,stepIndex,itemIndex,recent=[],rng=Math.random
   const unit=chooseWord(units,recent,rng);item.word=unit;
   if(step.id==='blend2'){
    item.sounds=unit.phonemes;item.expected=unit.string;
-   item.options=shuffled([unit,...shuffled(units.filter(s=>s.string!==unit.string),rng).slice(0,2)],rng).map(s=>({id:s.string,type:'syllable'}));
+   item.options=shuffled([unit,...shuffled(units.filter(s=>s.string!==unit.string&&safeContrast(unit,s)),rng).slice(0,2)],rng).map(s=>({id:s.string,type:'syllable'}));
   }else{
    item.kind='sequence';item.stimulus='syllable';item.expected=unit.phonemes.slice();
    item.options=soundOptions(data,[...new Set(unit.phonemes)],rng,Math.max(3,new Set(unit.phonemes).size+1));
@@ -62,7 +63,7 @@ export function makeSoundItem(data,stepIndex,itemIndex,recent=[],rng=Math.random
   const word=chooseWord(pool,recent,rng);item.word=word;
   if(step.id==='blend3'){
    item.sounds=word.phonemes.slice();item.expected=word.id;
-   item.options=shuffled([word,...shuffled(pool.filter(w=>w.id!==word.id),rng).slice(0,2)],rng).map(w=>({id:w.id,type:'image',image:w.image}));
+   item.options=shuffled([word,...shuffled(pool.filter(w=>w.id!==word.id&&safeContrast(word,w)),rng).slice(0,2)],rng).map(w=>({id:w.id,type:'image',image:w.image}));
   }else{
    item.kind='sequence';item.stimulus='word';item.expected=word.phonemes.slice();
    item.options=soundOptions(data,[...new Set(word.phonemes)],rng,Math.max(4,new Set(word.phonemes).size+1));

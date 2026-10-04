@@ -18,6 +18,12 @@ test('el recorrido oral pasa de reconocer a aislar, integrar y segmentar sin res
   assert(item.kind==='sequence'?item.expected.every(p=>item.options.some(o=>o.id===p)):item.options.some(o=>o.id===item.expected));
   if(item.stimulus==='word'||item.step==='blend3')assert(words.has(item.word.id));
   if(item.stimulus==='syllable'||item.step==='blend2')assert(syllables.has(item.word.string));
+  if(['blend2','blend3'].includes(item.step))assert.equal(item.options.length,3);
+  if(['blend2','blend3'].includes(item.step))for(const option of item.options.filter(o=>o.id!==item.expected)){
+   const other=item.step==='blend2'?data.syllables.find(s=>s.string===option.id):data.words.concat(data.oral).find(w=>w.id===option.id);
+   if(item.word.phonemes.includes('m')&&!item.word.phonemes.includes('n'))assert(!(other.phonemes.includes('n')&&!other.phonemes.includes('m')));
+   if(item.word.phonemes.includes('n')&&!item.word.phonemes.includes('m'))assert(!(other.phonemes.includes('m')&&!other.phonemes.includes('n')));
+  }
   if(item.step==='place'){
    assert.equal(item.position,['initial','final','middle'][Math.floor(index/4)]);
    const sound=item.sounds[0],heard=item.position==='initial'?item.word.initialPhoneme===sound:item.position==='final'?item.word.finalPhoneme===sound:item.word.phonemes.slice(1,-1).includes(sound);
