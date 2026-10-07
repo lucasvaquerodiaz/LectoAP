@@ -32,10 +32,6 @@ export function startSoundCourse({root,data,player,onExit,startStep=0,single=fal
    else if(action==='clear'){answer=[];render();}
   };
  };
- const guide=()=>{
-  if(closed)return;
-  frame(`<section class="sc-guide"><span class="eyebrow">SOLO PARA EL ADULTO</span><h1>Guía de los juegos de sonidos</h1><p>El niño puede tocar el botón de consigna si necesita oírla. No suena automáticamente. La pantalla cambia de icono y avanza sola al terminar cada etapa.</p><ol class="sc-guide-list">${(single?[SOUND_STEPS[stepIndex]]:SOUND_STEPS).map(step=>`<li><strong>${escapeHtml(step.title)}</strong><span>${escapeHtml(step.instruction)}</span></li>`).join('')}</ol><p class="footnote">Después de pulsar «Empezar», en la pantalla del niño solo habrá imágenes, círculos e iconos.</p><button class="primary" data-sc="begin">Empezar ${single?'el juego':'el recorrido'} ▶</button></section>`,true);
- };
  const preload=()=>{
   player.preload('instruction',soundInstructionId(stepIndex,itemIndex));
   item.sounds.forEach(id=>player.preload('phoneme',id));
@@ -98,6 +94,6 @@ export function startSoundCourse({root,data,player,onExit,startStep=0,single=fal
   const feedback=resolved?(revealed?'◉':'✓'):wrong?'×':'';
   frame(`<section class="sc-activity" aria-label="Juego de sonidos">${single?'':`<div class="sc-stage-progress" aria-label="Etapa ${stepIndex+1} de ${SOUND_STEPS.length}">${Array.from({length:SOUND_STEPS.length},(_,index)=>`<span class="${index<stepIndex?'done':index===stepIndex?'now':''}"></span>`).join('')}</div><button class="sc-skip" data-sc="skip" aria-label="Pasar a la siguiente tarea">Siguiente tarea →</button>`}<div class="sc-item-progress" aria-label="Juego ${itemIndex+1} de ${step.count}">${progress}</div><div class="sc-cue-row"><div class="sc-symbol">${symbol(item)}</div><button class="sc-instruction-play" data-sc="instruction" aria-label="Escuchar la consigna">▶ <span aria-hidden="true">♫</span></button></div><div class="sc-inputs">${soundButton}${stimulusButton}</div>${slots}<div class="sc-options">${options}</div><div class="sc-feedback ${resolved&&!revealed?'success':wrong?'mistake':''}" aria-live="polite" aria-label="${resolved?revealed?'Respuesta mostrada':'Correcto':wrong?'Prueba otra vez':''}">${feedback}</div></section>`);
  };
- guide();
+ begin();
  return {stop};
 }
