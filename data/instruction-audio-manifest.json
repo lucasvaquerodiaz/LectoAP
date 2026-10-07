@@ -1,0 +1,110 @@
+[
+  {
+    "id": "reconocer",
+    "file": "assets/audio/instructions/reconocer.aeb595c6651299ce.m4a",
+    "sourceFile": "inputs/audio_final/instrucciones/reconocer.m4a",
+    "sha256": "aeb595c6651299ce1e3fe66f83d036e1db5332e2e64a2d28e4fe400f95a5252c"
+  },
+  {
+    "id": "posicion-inicio",
+    "file": "assets/audio/instructions/posicion-inicio.b17ff2fcbbb89c5d.m4a",
+    "sourceFile": "inputs/audio_final/instrucciones/posición-inicio.m4a",
+    "sha256": "b17ff2fcbbb89c5dcb1433fdb852d9d29e9acb2c9f588da4f007075535c80f67"
+  },
+  {
+    "id": "aislar-inicio",
+    "file": "assets/audio/instructions/aislar-inicio.cf06cbeee1c855ae.m4a",
+    "sourceFile": "inputs/audio_final/instrucciones/aislar-inicio.m4a",
+    "sha256": "cf06cbeee1c855ae837c66ee3c4b1cdcf65633292dd7db8eb5cfb2acdb5a16ea"
+  },
+  {
+    "id": "aislar-final",
+    "file": "assets/audio/instructions/aislar-final.4b6e9931a0e464bc.m4a",
+    "sourceFile": "inputs/audio_final/instrucciones/aislar-final.m4a",
+    "sha256": "4b6e9931a0e464bc3258502ef67359c9c59c0dc788cbe0326e37f426ab15fe7b"
+  },
+  {
+    "id": "integrar-dos",
+    "file": "assets/audio/instructions/integrar-dos.cca010a311bd2ee8.m4a",
+    "sourceFile": "inputs/audio_final/instrucciones/integrar-dos.m4a",
+    "sha256": "cca010a311bd2ee8198c388723d79840517a865603898e904ac1ebd405bda482"
+  },
+  {
+    "id": "integrar-tres",
+    "file": "assets/audio/instructions/integrar-tres.c9a274e07adcf9c2.m4a",
+    "sourceFile": "inputs/audio_final/instrucciones/integrar-tres.m4a",
+    "sha256": "c9a274e07adcf9c27435ad75309f4bc0effc4459c774eaf0a0feeb1ba84099f2"
+  },
+  {
+    "id": "segmentar-dos",
+    "file": "assets/audio/instructions/segmentar-dos.a209853583105783.m4a",
+    "sourceFile": "inputs/audio_final/instrucciones/segmentar-dos.m4a",
+    "sha256": "a209853583105783f76d27c0ff172ff43d35942867666fa6cb30ba82331b5015"
+  },
+  {
+    "id": "segmentar-tres",
+    "file": "assets/audio/instructions/segmentar-tres.859374adcb7c6fa3.m4a",
+    "sourceFile": "inputs/audio_final/instrucciones/segmentar-tres.m4a",
+    "sha256": "859374adcb7c6fa34d8dc17ed1eb67c939d110b8d7cf448b54ce2554284df8cd"
+  },
+  {
+    "id": "posicion-final",
+    "file": "assets/audio/instructions/posicion-final.f7774b892498e77c.m4a",
+    "sourceFile": "inputs/audio_final/instrucciones/posicion-final.m4a",
+    "sha256": "f7774b892498e77ccb1895c788d18e6c80c2a4748e8923ad95686f762e64f5eb"
+  },
+  {
+    "id": "posicion-centro",
+    "file": "assets/audio/instructions/posicion-centro.cbaedd68f00ee88d.m4a",
+    "sourceFile": "inputs/audio_final/instrucciones/posicion-centro.m4a",
+    "sha256": "cbaedd68f00ee88d23e3af2fa2b587e562b643ea71f213de7f5f6a21b6a031f1"
+  },
+  {
+    "id": "letra-sonido",
+    "file": "assets/audio/instructions/letra-sonido.84f586647098ccbd.m4a",
+    "sourceFile": "inputs/audio_final/instrucciones/letra-sonido.m4a",
+    "sha256": "84f586647098ccbd1fdb2c2457dc6603835dd19071fd8f01721b057856145d69"
+  },
+  {
+    "id": "sonido-letra",
+    "file": "assets/audio/instructions/sonido-letra.97a087a725096d34.m4a",
+    "sourceFile": "inputs/audio_final/instrucciones/sonido-letra.m4a",
+    "sha256": "97a087a725096d34623683a716ff0d099183aedd9ef612d6c1135fa815bda59f"
+  },
+  {
+    "id": "imagen-letra",
+    "file": "assets/audio/instructions/imagen-letra.3fc78e02a3e15361.m4a",
+    "sourceFile": "inputs/audio_final/instrucciones/imagen-letra.m4a",
+    "sha256": "3fc78e02a3e153614a647263eadc5a737a7fb1bfe7b313fefb88207cd727c96f"
+  },
+  {
+    "id": "leer-silaba",
+    "file": "assets/audio/instructions/leer-silaba.c45b7aac4bc4aeae.m4a",
+    "sourceFile": "inputs/audio_final/instrucciones/leer-silaba.m4a",
+    "sha256": "c45b7aac4bc4aeae7223f1617d06406b76a4f7b4fab35e6e40237dd16ee84e9c"
+  },
+  {
+    "id": "dictado-silaba",
+    "file": "assets/audio/instructions/dictado-silaba.2b03f025eb97b739.m4a",
+    "sourceFile": "inputs/audio_final/instrucciones/dictado-silaba.m4a",
+    "sha256": "2b03f025eb97b7394fd10f8a65bd63f11caafca6041c30eb0838777e588fc1b9"
+  },
+  {
+    "id": "leer-imagen",
+    "file": "assets/audio/instructions/leer-imagen.669b72f5c0bbfcf9.m4a",
+    "sourceFile": "inputs/audio_final/instrucciones/leer-imagen.m4a",
+    "sha256": "669b72f5c0bbfcf9c27e02a8903be88946e400e76eba71ab13426db265d8cd24"
+  },
+  {
+    "id": "construir-palabra",
+    "file": "assets/audio/instructions/construir-palabra.2895dfdb139bf566.m4a",
+    "sourceFile": "inputs/audio_final/instrucciones/construir-palabra.m4a",
+    "sha256": "2895dfdb139bf566b5d1dff0ff53280c209bb66fe860d923d5f1fae49996b1c9"
+  },
+  {
+    "id": "dictado-palabra",
+    "file": "assets/audio/instructions/dictado-palabra.559143aee8294c91.m4a",
+    "sourceFile": "inputs/audio_final/instrucciones/dictado-palabra.m4a",
+    "sha256": "559143aee8294c915b18959f93178a4be423df12a1cf958b0277c5628e5b3ca6"
+  }
+]

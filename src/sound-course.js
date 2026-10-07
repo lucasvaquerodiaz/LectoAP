@@ -1,14 +1,14 @@
 // Oral-only practice. Child-facing screens never render graphemes or written words.
 import {distance,distractors,safeMNContrast,similarityStep} from './engine.js';
 export const SOUND_STEPS=[
- {id:'hear',count:6,title:'¿Se oye el sonido?',instruction:'Reproduce el sonido y la palabra. Pregunta: «¿Oyes ese sonido en la palabra?». Puede estar en cualquier lugar.',icon:'👂'},
- {id:'place',count:12,title:'Escuchar en un lugar',instruction:'Pregunta si el sonido se oye en el lugar señalado. Los primeros cuatro juegos señalan el principio, los cuatro siguientes el final y los últimos cuatro el centro. Algunas respuestas son «no».',icon:'🔎'},
- {id:'first',count:6,title:'El primer sonido',instruction:'Di: «Escucha la palabra. ¿Cuál es el primer sonido?». El círculo de la izquierda indica el principio. Los botones de respuesta reproducen sonidos.',icon:'◉ ○ ○'},
- {id:'last',count:6,title:'El último sonido',instruction:'Di: «Ahora buscamos el sonido del final. Escucha la palabra. ¿Cuál es el último sonido?». El círculo de la derecha indica el cambio.',icon:'○ ○ ◉'},
- {id:'blend2',count:6,title:'Juntar dos sonidos',instruction:'Di: «Escucha los dos sonidos y júntalos. ¿Cuál de estas tres grabaciones suena igual?». Cada opción reproduce una sílaba completa.',icon:'● ＋ ●'},
- {id:'blend3',count:6,title:'Juntar tres sonidos',instruction:'Di: «Escucha los tres sonidos y júntalos. ¿Qué palabra forman?». El niño toca su imagen.',icon:'● ＋ ● ＋ ●'},
- {id:'segment2',count:6,title:'Separar dos sonidos',instruction:'Di: «Escucha la sílaba. Ahora coloca sus dos sonidos en el mismo orden». Cada botón de respuesta reproduce un fonema.',icon:'● → ○ ○'},
- {id:'segment3',count:6,title:'Separar tres sonidos',instruction:'Di: «Escucha la palabra. Coloca sus tres sonidos en el mismo orden». Puede volver a escuchar la palabra o los fonemas.',icon:'● → ○ ○ ○'}
+ {id:'hear',count:6,title:'¿Se oye el sonido?',instruction:'¿Oyes este sonido en la palabra? Puede estar en cualquier posición.',icon:'👂'},
+ {id:'place',count:12,title:'Escuchar en un lugar',instruction:'¿Oyes este sonido al principio, al final o en medio? La consigna cambia cada cuatro ítems.',icon:'🔎'},
+ {id:'first',count:6,title:'El primer sonido',instruction:'¿Cuál es el primer sonido? El círculo de la izquierda indica el principio.',icon:'◉ ○ ○'},
+ {id:'last',count:6,title:'El último sonido',instruction:'¿Cuál es el último sonido? El círculo de la derecha indica el final.',icon:'○ ○ ◉'},
+ {id:'blend2',count:6,title:'Juntar dos sonidos',instruction:'Junta los sonidos. ¿Qué sílaba forman?',icon:'● ＋ ●'},
+ {id:'blend3',count:6,title:'Juntar tres sonidos',instruction:'Junta los sonidos. ¿Qué palabra forman?',icon:'● ＋ ● ＋ ●'},
+ {id:'segment2',count:6,title:'Separar dos sonidos',instruction:'Coloca en orden los sonidos de esta sílaba.',icon:'● → ○ ○'},
+ {id:'segment3',count:6,title:'Separar tres sonidos',instruction:'Coloca en orden los sonidos de esta palabra.',icon:'● → ○ ○ ○'}
 ];
 
 const sample=(entries,rng)=>entries[Math.floor(rng()*entries.length)];

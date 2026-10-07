@@ -1,5 +1,6 @@
 import {readFile,readdir} from 'node:fs/promises';
 import {sha256,sourceRoots} from './sync-audio.mjs';
+import {soundInstructionIds,letterInstructionIds} from '../src/instruction-cues.js';
 const specs={
  phoneme:{rows:'audio',manifest:'audio-manifest.json',key:'phoneme',folder:'phonemes'},
  word:{rows:'wordAudio',manifest:'word-audio-manifest.json',key:'word',folder:'words'},
@@ -30,6 +31,24 @@ export async function validateAudio(data){
   all.push(...rows);
   for(const filename of await readdir('public/assets/audio/'+spec.folder))assert(rows.some(a=>a.file===`assets/audio/${spec.folder}/${filename}`),'Audio obsoleto o no declarado en public: '+filename);
  }
+ const instructionIds=[...new Set([...soundInstructionIds,'posicion-final','posicion-centro',...Object.values(letterInstructionIds)])];
+ const instructions=data.instructionAudio||[];
+ assert(instructions.length===instructionIds.length,'Inventario de consignas incompleto');
+ assert(new Set(instructions.map(a=>a.id)).size===instructions.length,'Consignas duplicadas');
+ for(const id of instructionIds){
+  const entry=instructions.find(a=>a.id===id),sourceName=id==='posicion-inicio'?'posición-inicio.m4a':`${id}.m4a`;
+  assert(!!entry,'Falta consigna: '+id);if(!entry)continue;
+  const sourceFile=`inputs/audio_final/instrucciones/${sourceName}`;
+  assert(entry.sourceFile===sourceFile,'Fuente de consigna incorrecta: '+id);
+  try{
+   const original=await readFile(sourceFile),hash=sha256(original);
+   assert(original.length>1000&&original.includes(Buffer.from('ftyp'))&&original.includes(Buffer.from('mp4a')),'AAC de consigna inválido: '+id);
+   assert(entry.sha256===hash,'Consigna modificada: '+id);
+   assert(entry.file===`assets/audio/instructions/${id}.${hash.slice(0,16)}.m4a`,'Ruta de consigna incorrecta: '+id);
+   assert(sha256(await readFile('public/'+entry.file))===hash,'Consigna publicada distinta de fuente: '+id);
+  }catch{errors.push('Consigna ausente: '+id);}
+ }
+ for(const name of await readdir('public/assets/audio/instructions'))assert(instructions.some(a=>a.file===`assets/audio/instructions/${name}`),'Consigna obsoleta o no declarada: '+name);
  const expectedFingerprint=sha256(Buffer.from(JSON.stringify(all.map(a=>[a.sourceFile,a.sha256]))));
  assert(data.audioVerification.sourceFingerprint===expectedFingerprint,'La confirmación auditiva corresponde a otros archivos');
  assert(data.audioVerification.status==='confirmed_by_teacher','Falta confirmación auditiva del docente');
@@ -44,4 +63,3 @@ export async function validateAudio(data){
  }
  return errors;
 }
-

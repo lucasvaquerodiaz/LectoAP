@@ -1,6 +1,6 @@
 /* Final-audio migration retires unsafe legacy caches; later updates wait for teacher. */
 const VERSION='__VERSION__';
-const GENERATION='audio-v13';
+const GENERATION='audio-v14';
 const PREFIX='lectoap-'+self.registration.scope+'-';
 const CACHE=PREFIX+GENERATION+'-'+VERSION;
 const ASSETS=__ASSETS__;
@@ -28,5 +28,4 @@ self.addEventListener('fetch',event=>{
   return response;
  })());
 });
-
 

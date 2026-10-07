@@ -1,14 +1,14 @@
 // Separate namespaces: a phoneme ID can never resolve to a word recording.
 export class PhonemeAudio {
- constructor(phonemes,words=[],verification={status:'pending'},syllables=[]){
-  this.manifest=phonemes;this.words=words;this.syllables=syllables;this.verification=verification;
+ constructor(phonemes,words=[],verification={status:'pending'},syllables=[],instructions=[]){
+  this.manifest=phonemes;this.words=words;this.syllables=syllables;this.instructions=instructions;this.verification=verification;
   this.context=null;this.buffers={};this.sources=[];this.token=0;this.element=null;this.cancelPending=null;
   this.pendingBytes=new Map();
  }
  entry(kind,id){
   if(this.verification.status!=='confirmed_by_teacher')throw Error('Audio pendiente de confirmación auditiva del docente.');
-  const entry=(kind==='word'?this.words:kind==='syllable'?this.syllables:this.manifest).find(x=>kind==='word'?x.id===id:kind==='syllable'?x.unit===id:x.phoneme===id);
-  if(!entry)throw Error(kind==='word'?'Esta palabra todavía necesita la voz del docente.':kind==='syllable'?'No hay grabación de esta unidad.':'No hay grabación de este sonido.');
+  const entry=(kind==='word'?this.words:kind==='syllable'?this.syllables:kind==='instruction'?this.instructions:this.manifest).find(x=>kind==='word'||kind==='instruction'?x.id===id:kind==='syllable'?x.unit===id:x.phoneme===id);
+  if(!entry)throw Error(kind==='word'?'Esta palabra todavía necesita la voz del docente.':kind==='syllable'?'No hay grabación de esta unidad.':kind==='instruction'?'No hay grabación de esta consigna.':'No hay grabación de este sonido.');
   if(!entry.sourceFile.startsWith('inputs/audio_final/')||!entry.file.includes(entry.sha256.slice(0,16)))throw Error('Audio ajeno a la fuente definitiva.');
   return entry;
  }
@@ -44,6 +44,7 @@ export class PhonemeAudio {
  play(ids,gap=.42){return this.playEntries(ids.map(id=>this.entry('phoneme',id)),gap);}
  playWord(id){return this.playEntries([this.entry('word',id)],0);}
  playSyllable(id){return this.playEntries([this.entry('syllable',id)],0);}
+ playInstruction(id){return this.playEntries([this.entry('instruction',id)],0);}
  async playEntries(entries,gap){
   this.stop();const token=this.token;await this.unlock();
   if(this.context){const buffers=await Promise.all(entries.map(e=>this.buffer(e)));if(token!==this.token)return;let at=this.context.currentTime+.04;for(let i=0;i<buffers.length;i++){const b=buffers[i],entry=entries[i],settings=this.playbackSettings(b,entry),source=this.context.createBufferSource();source.buffer=b;const gain=this.context.createGain(),limiter=this.context.createDynamicsCompressor();gain.gain.value=settings.gain;limiter.threshold.value=-1;limiter.knee.value=0;limiter.ratio.value=20;limiter.attack.value=.003;limiter.release.value=.15;source.connect(gain);gain.connect(limiter);limiter.connect(this.context.destination);source.start(at,settings.offset,settings.duration);this.sources.push(source);at+=settings.duration+gap;}return;}
@@ -54,4 +55,3 @@ export class PhonemeAudio {
   }
  }
 }
-
